@@ -1,0 +1,1388 @@
+/***************PARAMETRES GENERAUX*******************/
+
+body:not, html {
+	font-family:'Dosis', Arial, sans-serif; /*on définit la Fira comme police pour l'ensemble du site*/
+	font-size:2em; /* = 20px */
+	margin:0; 
+	padding:0;
+	min-height:100%; /* Pour avoir des blocs en pleine hauteur */
+	}
+	
+html {
+	font-size:62.5%; /* 1em = 10px */
+	}	
+
+/* *********** svg page a propos ***************** */
+
+svg{
+	width:100%;
+	margin-left:auto;
+	margin-right:auto;
+	padding:0;
+}
+
+
+/* ********************** ANIMATIONS ************************* */
+
+@keyframes dash { /*animation tracé*/
+  to { 
+    stroke-dashoffset: 0;}
+}
+
+@keyframes floatingX{ /*flottement mongolfiere*/
+    from {transform:translate(0, 0px);}
+    65% {transform:translate(0, 15px);}
+    to {transform: translate(0, -0px);    }    
+}
+
+@keyframes floatingY{ /*flottement du nuage*/
+    from {transform:translate(0, 0px);}
+    65% {transform:translate(0, 2px);}
+    to {transform: translate(0, -0px);    }    
+}
+
+@keyframes floatingZ{ /*flottement du nuage*/
+    from {transform:translate(0, 0px);}
+    50% {transform:translate(0, 2px);}
+    to {transform: translate(0, -0px);    }    
+}
+
+
+@keyframes lighting { /*pour le prénom*/
+  20% {
+  	opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0px, 0px);
+  }
+}
+
+@keyframes opacity{   /*pour les étoiles*/
+ 0% { opacity: 0;}
+ 50% { opacity:1;}
+ 100%{opacity:0;}
+}
+
+
+.presentation{
+	position:absolute;
+	margin-left:34%;
+	margin-top:22%;
+	width:28%;
+	text-align:center;
+	z-index:200;
+	opacity:0;
+	animation: lighting 3s ease-out  forwards;
+	font-size:1em;
+	font-family: 'Dosis';
+	color:black;
+}
+
+
+
+
+
+
+
+/* ************************* MOTIF VEGETAL ********************************** */
+/* ************************* BRANCHES ********************************** */
+
+#branche1,#branche2,#branche3,#branche4,#feuilles1,#feuilles2,#feuilles3,#feuilles4{ /*animation pointillés*/
+	transform-origin: 50% 50%;
+	stroke-dasharray: 310; /*taille des pointilles*/
+	stroke-dashoffset: 310; /*decallage pointilles pousse*/
+}
+
+#branche1{
+	animation: dash 4s ease-in-out forwards;
+	animation-delay:0.2s;
+	}
+
+#branche2{
+	animation: dash 6s ease-in-out forwards;
+  	animation-delay:0.9s;
+}
+
+#branche3{
+	animation: dash 2s ease-in-out forwards;
+  	animation-delay:0.9s;
+}
+
+#branche4{
+	animation: dash 13s ease-in-out forwards;
+  	animation-delay:1s;
+}
+
+
+/************************* FEUILLES ******************************* */
+
+#feuilles1,#feuilles2{
+	fill:none; /*turquoise*/
+	fill-delay:14s;
+	animation: dash 10s ease-in-out forwards;
+	animation-delay:1s;
+}
+
+#feuilles4{
+	fill:none;
+	animation: dash 9s ease-in-out forwards;
+	animation-delay:7s;
+}
+
+#feuilles3{
+	fill:none;
+	animation: dash 14s ease-in-out forwards;
+	animation-delay:4.3s;
+}
+
+/* ********************************************************************************** */
+
+
+
+
+
+
+
+/* ************************* ICONES ********************************** */
+
+
+#rocher2_2_,#rocher1_2_,#tasse,#diaphragme,#camera-bouton,#camera-trait,#camera,#tasse-fumee,#tasse-the,#silhouette_2_,#chat_traits_2_,#avion_2_,#crayon-gomme,#crayon-mine,#crayon-traits,#crayon_1_{
+	transform-origin: 50% 50%;
+	stroke-dasharray: 200; /*taille des pointilles*/
+	stroke-dashoffset: 200; /*decallage pointilles pousse*/
+	animation: dash 3s ease-in-out forwards;
+	animation-delay:2s;
+}
+
+
+/* ****** AVION ******* */
+#avion-trace1,#avion-trace2,#avion-trace3,#avion-trace4,#avion-trace5{
+	transform-origin: 50% 50%;
+	stroke-dasharray: 150; /*taille des pointilles*/
+	stroke-dashoffset: 150; /*decallage pointilles pousse*/
+	animation: dash 1s ease-in-out forwards;
+}
+
+#avion_2_{
+	animation-delay:1s;
+}
+
+	/* traits vitesse de l'avion */
+	#avion-trace1{ 
+		animation-delay:10s;
+	}
+
+	#avion-trace2{
+		animation-delay:10.1s;
+	}
+
+	#avion-trace3{
+		animation-delay:10.2s;
+	}
+
+	#avion-trace4{
+		animation-delay:10.3s;
+	}
+
+	#avion-trace5{
+		animation-delay:10.4s;
+	}
+
+
+
+
+
+
+/* ****** APPAREIL PHOTO ******* */
+#camera{
+	stroke-dasharray: 800; /*taille des pointilles*/
+	stroke-dashoffset: 800; /*decallage pointilles pousse*/
+}
+
+
+/* ****** MAP MONDE ******* */
+#map,#map-continent,#map-structure{
+	transform-origin: 50% 50%;
+	stroke-dasharray: 800; /*taille des pointilles*/
+	stroke-dashoffset: 800; /*decallage pointilles pousse*/
+	animation: dash 2s ease-in-out forwards;
+	animation-delay:4s;
+}
+
+
+/* ****** TASSE ******* */
+#tasse{
+	animation-delay:4s;
+}
+
+#tasse-the,#tasse-fumee{
+	animation-delay:6s;
+}
+
+#tasse-fumee{
+animation-direction:reverse; /*fumee de la tasse de bas en haut*/
+animation-iteration-count: infinite;
+animation-timing-function: ease-in-out;
+}
+
+
+
+
+/* ****** CHAT ******* */
+#silhouette_2_,#chat_traits_2_{
+	stroke-dasharray: 500; /*taille des pointilles*/
+	stroke-dashoffset: 500; /*decallage pointilles pousse*/
+	animation-delay:8s;
+}
+
+
+
+#eclair,#verre,#verre-cuiller,#verre-trait,#glace_1_,#glace-baton,#glace-traits{
+	opacity:0;
+	animation: lighting 3s ease-out  forwards;
+	animation-delay:6s;
+}
+
+
+
+
+/* ********* MONTGOLFIERE ********* */
+#ballon,#ballon-trait{
+	animation-name: floatingX;
+   	animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+#ballon-nuage{
+	animation-name: floatingY;
+   	animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+
+
+
+
+
+/* ******************** ETOILES ******************* */
+
+#etoile1,#etoile2,#etoile3,#etoile4,#etoile5,#etoile6,#etoile7,#etoile8,#etoile9,#etoile10{
+	opacity:0;
+	animation-name: opacity; /*clignottement*/
+	animation-duration: 7s;
+	animation-iteration-count: infinite; /*se répette à l'infini*/
+}
+
+#etoile5,#etoile9{
+	animation-delay:6s;
+}
+
+#etoile1,#etoile3{
+	animation-delay:7s;
+}
+#etoile4,#etoile2,#etoile10{
+	animation-delay:5s;
+}
+#etoile6,#etoile7,#etoile8{
+	animation-delay:8s;
+}
+
+
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } } /*apparition des pages en opacité*/
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } } /*mozilla*/
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } } 
+
+
+@-webkit-keyframes tada { /*animation rotation pour fleche scroll up*/
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  10%, 20% {
+    -webkit-transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+    transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+  }
+
+  30%, 50%, 70%, 90% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+  }
+
+  40%, 60%, 80% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes tada {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  10%, 20% {
+    -webkit-transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+    transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+  }
+
+  30%, 50%, 70%, 90% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+  }
+
+  40%, 60%, 80% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@-moz-keyframes tada {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  10%, 20% {
+    -webkit-transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+    transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+  }
+
+  30%, 50%, 70%, 90% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+  }
+
+  40%, 60%, 80% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+body{
+  	opacity:0;  /* make things invisible upon start */
+  	-webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+  	-moz-animation:fadeIn ease-in 1;
+  	animation:fadeIn ease-in 1;
+
+  	-webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+  	-moz-animation-fill-mode:forwards;
+  	animation-fill-mode:forwards;
+
+  	-webkit-animation-duration:0.5s;
+  	-moz-animation-duration:0.5s;
+  	animation-duration:0.5s;
+	line-height:1.7; /*interlignage de 1.7*/
+	color:#414141; /* Gris foncé */
+	position: relative;
+	}
+
+
+body.pages{ /*body pages internes*/
+	background:url("../images/pattern2.jpg"); /*fond de page*/
+	}
+
+a{
+	text-decoration: none; /*on enlève les décorations des liens*/
+	color:#64e4c8; /*bleu turquoise*/
+	}
+
+a:hover{
+	color:#751ce3; /*violet au survol du lien*/
+	}
+
+p{ 
+	font-size:0.7em;
+	}
+
+h2{
+	font-family:'Dosis', Arial, sans-serif;
+	font-size:3em;
+	color:#64e4c8; /*turquoise*/
+	margin-top:3%;
+	font-weight:100;
+	}
+
+
+h2.au-centre{	/*les éléments ciblés se placent au centre de la page*/
+	text-align: center;
+	}
+
+
+.legende{ /*légendes des projets*/
+	font-size:1em;
+	text-align:center; /*texte centre*/
+	width:40%;
+	margin-left:30%;
+	margin-bottom:3%;
+	}
+
+img{
+	opacity:0;  /* make things invisible upon start */
+  	-webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+  	-moz-animation:fadeIn ease-in 1;
+  	animation:fadeIn ease-in 1;
+
+  	-webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+  	-moz-animation-fill-mode:forwards;
+  	animation-fill-mode:forwards;
+
+  	-webkit-animation-duration:1.1s;
+  	-moz-animation-duration:1.1s;
+  	animation-duration:1.1s;
+	}
+
+
+
+.logo { /*logo dans les pages internes*/
+	z-index:10000;
+	width:10%;
+	margin-left:1%;
+	margin-top:-2%;
+	margin-bottom:20%;
+	position:absolute;
+	position:fixed;
+	display:block;
+	}
+	
+.logo img{
+	width:100%;
+	}
+
+
+/**********BANDEAU**************/
+
+
+
+.header{  /*bandeau présent sur toutes les pages*/
+	width:100%;
+	height:8%;
+	opacity:0.5;
+	text-align:center;
+	}
+
+
+.portfolio,.apropos{ /*liens de retour à l'accueil ou vers les infos perso*/
+	vertical-align:center;
+	margin-top:20%;
+	display:inline;
+	text-align:center;
+	}
+
+
+.portfolio a ,.apropos a{ /*cible lien vers description et croquis*/
+	text-decoration:none;
+	color:black;
+	font-size:1.2em;
+	margin-left:1.7em;
+	}
+.portfolio a:hover,.apropos a:hover{
+	color:#751ce3; /*violet au survol*/
+	}
+
+
+
+
+/**************FLECHES DE NAVIGATION*******************/
+
+
+.fleche{
+	font-family:'GeniusThin', Arial, sans-serif;
+	font-weight:bold;
+	margin-top:	20%;
+	position:absolute;
+	position:fixed; /*permet de garder les flèches au même endroit même au scroll*/
+	font-size:6em;
+	z-index:4000;
+	}
+
+.gauche {
+	margin-left:2%;
+	}
+
+.droite{
+	margin-left:94%;
+	}
+
+
+
+/************************PIED DE PAGE**************************/
+
+#b-f{ /*mouvement f de la fleche du bas*/
+	-webkit-animation: anim-y 4s infinite linear;
+	-moz-animation: anim-y 4s infinite linear;
+	-o-animation: anim-y 4s infinite linear;
+	}
+
+@-webkit-keyframes anim-y {
+	0% { -webkit-transform: translate(0px,5px); }
+	20% { -webkit-transform: translate(0px,5px); }
+	60% { -webkit-transform: translate(0px,0px); }
+	100% { -webkit-transform: translate(0px,-5px); }
+	}
+
+@-moz-keyframes anim-y {
+	0% { -moz-transform: translate(0px,-5px); }
+	20% { -moz-transform: translate(0px,5px); }
+	60% { -moz-transform: translate(0px,0px); }
+	100% { -moz-transform: translate(0px,-5px); }
+	}
+
+@-o-keyframes anim-y {
+	0% { -o-transform:translate(0px,10px); }
+	20% { -o-transform: translate(0px,5px); }
+	60% { -o-transform: translate(0px,0px); }
+	100% { -o-transform: translate(0px,-5px); }
+	}
+
+
+.scrollup{ /*retour en haut de page*/
+	margin-top:5%;
+	margin-left:48%;
+	margin-bottom:2%;
+	text-align:center;
+	width:50px;
+	height:50px;
+	}
+
+.scrollupcroquis { 
+	margin-top:120%;
+	}
+
+#fleche-haut{ /*icone fleche du scrollup*/
+	width:100%;
+	}
+
+.reseaux{ /*conteneur des icones reseaux sociaux*/
+	margin-top:2%;
+	width:100%;
+	height:15%;
+	padding-top:25px;
+	padding-bottom:20px;
+	text-align:center;
+	background-color:white;
+	opacity:0.8;
+	}
+
+img.reseau { /*icones reseaux sociaux*/
+	display:inline;
+	width:4%;
+	height:4%;
+	margin-right:1%;
+	opacity:1;
+	}
+
+img.reseau:hover{
+  	-webkit-animation-name: tada;
+  	animation-name: tada; /*cible l'animation rotation*/
+	}
+
+
+/* *****************PAGE - A PROPOS******************** */
+
+
+
+
+
+h2.a-propos {
+	margin-top:2%;
+	text-align:center;
+	}
+
+.moi { /*texte descriptif*/
+	text-align:center;
+	font-size:1.3em;
+	width:49%;
+	height:20%;
+	margin-top:3%;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom:5%;
+	opacity:1;
+	}
+
+.autoportrait{ /*bloc contenant la photo*/
+	background:url("../images/autoportrait.jpg") center; /*fond photo*/
+	background-size:cover;
+	width:300px;
+	height:300px;
+	border-radius: 300px;
+	-webkit-border-radius: 300px;
+	-moz-border-radius: 300px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:3%;
+	}
+
+.croquis8{ /*croquis à gauche*/
+	width:30%;
+	margin-top:-15%;
+	z-index:-5000; /*passe au dessus*/
+	margin-left:-5%;
+	position:absolute;
+	opacity:0.7;
+	}
+
+.pieddepage2 .reseau{
+	width:10%;
+	margin-bottom:3%;
+	}
+
+
+body.a--propos img.reseau { /*les icones reseaux sociaux de cette page sont plus gros*/
+	width:6%;
+	margin-top:-2%;
+	}
+
+/* ******************ACCUEIL******************* */		
+
+
+.logo1 { /*logo de l'accueil*/
+	z-index:10000;
+	width:10%;
+	margin:auto;
+	display:block;
+
+  	-webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+  	-moz-animation-fill-mode:forwards;
+  	animation-fill-mode:forwards;
+
+  	-webkit-animation-duration:2s;
+  	-moz-animation-duration:2s;
+  	animation-duration:2s;
+	}
+
+.logo1 img {
+	width:100%;
+	}
+	
+
+.parent{  /*bloc qui contient les bulles*/
+	margin-top:370px;
+	width:100%;
+	height:1200px;
+	opacity:0;  /* make things invisible upon start */
+  	-webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+  	-moz-animation:fadeIn ease-in 1;
+  	animation:fadeIn ease-in 1;
+
+  	-webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+  	-moz-animation-fill-mode:forwards;
+  	animation-fill-mode:forwards;
+
+  	-webkit-animation-duration:1.3s;
+  	-moz-animation-duration:1.3s;
+  	animation-duration:1.3s;
+	}
+
+
+#b-x { /*mouvement x de certaines bulles*/
+	-webkit-animation: anim-x 10s infinite linear; 
+	-moz-animation: anim-x 10s infinite linear; /*vitesse sous mozilla*/
+	-o-animation: anim-x 10s infinite linear; /*vitesse sous opera*/
+	}
+
+@-webkit-keyframes anim-x {
+	0% { -webkit-transform:  translate(0px,20px) ; } 
+	30% { -webkit-transform:  translate(0px,-10px); }
+	100% { -webkit-transform:  translate(0px,20px); }
+	}
+	
+@-moz-keyframes anim-x { /*mozilla*/
+	0% { -moz-transform:  translate(0px,20px) ; } 
+	30% { -moz-transform: translate(0px,-10px); }
+	100% { -moz-transform:  translate(0px,20px); }
+	}
+	
+@-o-keyframes anim-x { /*opera*/
+	0% { -o-transform: translate(0px,-10px) ; }
+	30% { -o-transform:  translate(0px,20px); }
+	100% { -o-transform: translate(0px,-10px); }
+	}
+
+#b-y{ /*mouvement y de certaines bulles*/
+	-webkit-animation: anim-y 15s infinite linear;
+	-moz-animation: anim-y 15s infinite linear;
+	-o-animation: anim-y 15s infinite linear;
+	}
+
+@-webkit-keyframes anim-y {
+	0% { -webkit-transform: translate(0px,10px); }
+	60% { -webkit-transform: translate(0px,30px); }
+	100% { -webkit-transform: translate(0px,10px); }
+	}
+
+@-moz-keyframes anim-y {
+	0% { -moz-transform: translate(0px,10px); }
+	60% { -moz-transform: translate(0px,30px); }
+	100% { -moz-transform: translate(0px,10px); }
+	}
+
+@-o-keyframes anim-y {
+	0% { -o-transform:translate(0px,10px); }
+	60% { -o-transform: translate(0px,30px); }
+	100% { -o-transform:translate(0px,10px); }
+	}
+
+#b-z{ /*mouvement z de certaines bulles*/
+	-webkit-animation: anim-y 13s infinite linear;
+	-moz-animation: anim-y 13s infinite linear;
+	-o-animation: anim-y 13s infinite linear;
+	}
+
+@-webkit-keyframes anim-y {
+	0% { -webkit-transform: translate(0px,-10px); }
+	60% { -webkit-transform: translate(0px,-40px); }
+	100% { -webkit-transform: translate(0px,-10px); }
+	}
+
+@-moz-keyframes anim-y {
+	0% { -moz-transform: translate(0px,-10px); }
+	60% { -moz-transform: translate(0px,-40px); }
+	100% { -moz-transform: translate(0px,-10px); }
+	}
+
+@-o-keyframes anim-y {
+	0% { -o-transform:translate(0px,-10px); }
+	60% { -o-transform: translate(0px,-40px); }
+	100% { -o-transform:translate(0px,-10px); }
+	}
+
+
+
+.vignette{  /*blocs ronds*/
+	width:20%;
+  	box-shadow: 8px 8px 12px #c6cccb; /*ombre portée grise*/
+    filter: grayscale(1); /*filtre noir et blanc*/
+    -webkit-filter: grayscale(1);
+    -moz-filter: grayscale(1);
+    -o-filter: grayscale(1);
+   	-ms-filter: grayscale(1);
+	transition:filter.25s ease-in-out; /*on applique une transition d'opacité*/
+   -moz-transition: filter .25s ease-in-out;
+   -webkit-transition: filter .25s ease-in-out
+   
+}
+
+.vignette:hover { /*le filtre disparait (l'image se colore) au survol*/
+	filter: grayscale(0); 
+    -webkit-filter: grayscale(0);
+    -moz-filter: grayscale(0);
+    -o-filter: grayscale(0);
+    -ms-filter: grayscale(0);
+     }
+
+.cat{  /*bloc dans le bloc vignette, contenant le titre du projet*/
+	size:cover; /*sa taille s'adapte à la taille du bloc cercle*/
+	text-align:center; /*texte centré*/
+	margin-top:40%;
+ 	opacity:0; /*le bloc texte est invisible*/
+	-ms-filter: "prodig:DXImageTransform.Microsoft.Alpha(Opacity=25)"; /* Hack IE8 */
+    filter: alpha(opacity = 25); /* Hack IE 5-7 */
+    -webkit-transition: opacity 0.5s ease-in-out;/* transition pour Chrome et Safari */
+    -moz-transition: opacity 0.5s ease-in-out;/* transition pour Firefox */
+    -o-transition: opacity 0.5s ease-in-out;/* transition pour Opéra */
+    transition: opacity 0.5s ease-in-out; /* on écrit cette ligne à la fin de façon à ce que ce soit elle qui soit prise en compte lorsque l'attribut transition sera pris en compte par tous les navigateurs */
+ 	}
+ .vignette:hover .cat { 
+ 	opacity:0.9; /*au survol, bloc cat apparait*/
+ 	-ms-filter:"prodig:DXImageTransform.Microsoft.Alpha(Opacity=90)"; /* Hack IE 8 */
+    filter: alpha(opacity = 90); /* Hack IE 5-7 */}
+
+ .cat p{ /*titres de projets*/
+ 	font-family:'Dosis', Times, sans-serif;
+	font-size:2em;
+	font-weight:bold;
+	color:white;
+	}
+
+#noir { /*cible les vignettes dont le texte sera foncé*/
+	color:#3f4040; /*gris foncé*/
+	text-shadow: 1px 1px 12px white, 1px 1px 12px white, 1px 1px 12px white,1px 1px 12px white; /*ombre portée pour lisibilité du texte*/
+	}
+
+.claire { /*les textes sur fond clair prennent une ombre pour être lisibles*/
+  text-shadow: 1px 1px 12px #a6a6a6, 1px 1px 12px #a6a6a6, 1px 1px 12px #a6a6a6,1px 1px 12px #a6a6a6;}
+
+
+/* ************VIGNETTES**************** */
+
+
+
+
+.voyage { /*Projet Voyage au bout de la rue*/
+	width: 300px;
+	height: 300px;
+	border-radius: 300px;
+	-webkit-border-radius: 300px;
+	-moz-border-radius: 300px;
+    background:url("../pages/images/voyage/6.jpg") no-repeat center ;
+    background-size:cover;
+    position:absolute;
+    margin-top:-20%;
+	margin-left:50%
+	}
+p#lanuit {
+	opacity:1;
+	color:black;
+	}
+
+
+.trombi { /*Projet Trombinoscope*/
+	width: 290px;
+	height: 290px;
+	border-radius: 290px;
+	-webkit-border-radius: 290px;
+	-moz-border-radius: 290px;
+    background:url("../pages/images/trombi/Eloi.jpg") no-repeat center ;
+    background-size:cover;
+    position:absolute;
+	margin-top:-120px;
+	margin-left: 8%;
+	}
+
+
+.ulysse {  /*Projet Ulysse*/
+	width: 300px;
+	height: 300px;
+	border-radius: 300px; /*on arrondit les bords pour créer un rond*/
+	-webkit-border-radius: 300px;
+	-moz-border-radius: 300px;
+    background:url("../pages/images/ulysse/ulysse.jpg") no-repeat center ; /*on met une image en fond du bloc rond*/
+    background-size:200%; /*la taille de l'image de fond s'adapte à la taille de la bulle*/
+    position:absolute;
+    margin-top:0px;
+	margin-left: 35% ;
+	}
+
+.refresh { /*Projet Refresh*/
+	width: 310px;
+	height: 310px;
+	border-radius: 310px;
+	-webkit-border-radius: 310px;
+	-moz-border-radius: 310px;
+    background:url("../pages/images/refresh/refreshaffiche.jpg") no-repeat center ;
+    background-size:cover;
+    position:absolute;
+    margin-top:-30px;
+	margin-left: 68%;
+	}
+
+
+.lecancre{ /*Projet Le Cancre*/
+	width: 320px;
+	height: 320px;
+	border-radius: 320px;
+	-webkit-border-radius: 320px;
+	-moz-border-radius: 320px;
+    background:url("../pages/images/lecancre/lgbt.jpg") no-repeat center ;
+    background-size:cover;
+    position:absolute;
+    margin-top:220px;
+	margin-left: 12%;
+	}	
+
+.icon { /*Projet Icon you app!*/
+	width: 300px;
+	height: 300px;
+	border-radius: 300px;
+	-webkit-border-radius: 300px;
+	-moz-border-radius: 300px;
+    background:url("../pages/images/icon/nuage.jpg") no-repeat center ;
+    background-size:cover;
+    position:absolute;
+	margin-top:300px;
+	margin-left: 50%;
+	border:1px solid#eff0f0;
+	}
+
+
+.sources{ /*Projet Retour aux sources*/
+	width: 290px;
+	height: 290px;
+	border-radius: 290px;
+	-webkit-border-radius: 290px;
+	-moz-border-radius: 290px;
+    background:url("../pages/images/sources/source2.jpg") no-repeat center ;
+    background-size:cover;
+    position:absolute;
+    margin-top:	530px;
+	margin-left: 29%;
+	}
+
+	
+.turner { /*Projet Turner*/
+	width: 280px;
+	height: 280px;
+	border-radius: 280px;
+	-webkit-border-radius: 280px;
+	-moz-border-radius: 280px;
+    background:url("../pages/images/turner/turner.jpg") no-repeat center ;
+    background-size:cover;
+    position:absolute;
+    margin-top:410px;
+	margin-left: 75%;
+	}
+
+.rencontre{ /*Projet Rencontre*/
+	width: 290px;
+	height: 290px;
+	border-radius: 290px;
+	-webkit-border-radius: 290px;
+	-moz-border-radius: 290px;
+    background:url("../pages/images/rencontre/4.jpg") no-repeat center ;
+    background-size:400%;
+    background-position-y: 40%;
+    position:absolute;
+    margin-top:	670px;
+	margin-left: 53%;
+	}
+
+.nautilus { /*Projet 20000 lieues sous les mers*/
+	width: 280px;
+	height: 280px;
+	border-radius: 280px;
+	-webkit-border-radius: 280px;
+	-moz-border-radius: 280px;
+    background:url("../pages/images/nautilus/eau2.jpg") no-repeat center ;
+    background-size:300%;
+    position:absolute;
+    margin-top:67%;
+	margin-left: 33%;
+	}
+
+.mam { /*Projet 20000 lieues sous les mers*/
+	width: 300px;
+	height: 300px;
+	border-radius: 300px;
+	-webkit-border-radius: 300px;
+	-moz-border-radius: 300px;
+    background:url("../pages/images/mam/affiche_2.jpg") no-repeat center ;
+    background-size:cover;
+    position:absolute;
+    margin-top:52%;
+	margin-left: 5%;
+	}
+
+.specimen{
+	width: 300px;
+	height: 300px;
+	border-radius: 300px;
+	-webkit-border-radius: 300px;
+	-moz-border-radius: 300px;
+    background:url("../pages/images/specimen/vignette.jpg") no-repeat center ;
+    background-size:250%;
+    position:absolute;
+    margin-top:70%;
+	margin-left:62%;
+}
+
+
+
+/* *****************************PAGES - PROJETS ********************************* */
+
+
+
+/* *****************VOYAGE******************** */	
+
+#pont{ /*les images de la page Voyage*/
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom:1%;
+	width:75%;
+	}
+
+
+/* ****************TROMBINOSCOPE***************** */
+
+ul.grid {              /* Bloc qui contient les items de la grille */
+	width:85%;         /* Largeur du bloc */
+	margin-left:10.5%;  /* Centrage latéral */
+	margin-right:auto; /* Centrage latéral */
+	margin-bottom:2em;
+	}	
+
+ul.grid li { /*éléments de la grille*/
+
+	width:45.5%;
+	display:inline-block; /* Alignement horizontal */
+	text-align:center;    /* Texte centré */
+	margin-right:2%;    /* Marge à droite de l'item */
+	margin-bottom:1em;
+	}
+
+ul.grid li img{
+	width:100%; /* Largeur des blocs pour grille 3 colonnes */
+	vertical-align: middle;}	
+
+ul.grid li.fatma { 
+	background:url("../pages/images/trombi/Fatma-gif.gif"); /*on met une image en fond d'item*/
+	background-size:cover;} 
+ul.grid li.julief {
+	background:url("../pages/images/trombi/JulieF-gif.gif");
+	background-size:cover;}
+ul.grid li.solene {
+	background:url("../pages/images/trombi/Solene-gif.gif");
+	background-size:cover;}
+ul.grid li.anjali {
+	background:url("../pages/images/trombi/Anjali-gif.gif");
+	background-size:cover;}
+ul.grid li.charlotte {
+	background:url("../pages/images/trombi/Charlotte-gif.gif");
+	background-size:cover;}
+ul.grid li.eloi {
+	background:url("../pages/images/trombi/Eloi-gif.gif");
+	background-size:cover;}
+ul.grid li.julieb {
+	background:url("../pages/images/trombi/JulieB-gif.gif");
+	background-size:cover;}
+ul.grid li.marion {
+	background:url("../pages/images/trombi/Marion-gif.gif");
+	background-size:cover;}
+ul.grid li.clement {
+	background:url("../pages/images/trombi/Clement-gif.gif");
+	background-size:cover;}
+ul.grid li.florian {
+	background:url("../pages/images/trombi/Florian-gif.gif");
+	background-size:cover;}
+ul.grid li.manu {
+	background:url("../pages/images/trombi/Manu-gif.gif");
+	background-size:cover;}
+ul.grid li.lucile {
+	background:url("../pages/images/trombi/Lucile-gif.gif");
+	background-size:cover;}
+
+
+
+ul.grid1 li:hover img{ /*au survol, l'image contenue dans l'item disparait, pour laisser apparaitre le fond de l'item*/
+	visibility:hidden ;}
+
+
+ul.columns3 li:nth-child(3n),    /* Grille de 3 colonnes : cible tous les 2e éléments de la liste */
+/* http://stackoverflow.com/questions/13691699/styling-every-3rd-item-of-a-list-using-css */
+	{ margin-right:0;
+	}	
+
+
+
+/* ************************FLEUVE NOIR*************************** */
+
+.eau3 { /*texture*/
+	z-index:-200;
+	position:absolute;
+	margin-bottom:0;
+	margin-top:-10%;
+	width:100%;
+	}
+
+/* ************************LE CANCRE*************************** */
+.conteneurvideo{
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+}
+
+.video{
+	margin-top:3%;
+	width:750px;
+	height:423px;
+	}
+
+
+
+/* ************************CROQUIS*************************** */
+
+
+.croquis1 { /*bali*/
+	width:40%;
+	display:block;
+	margin-bottom:5%;
+	margin-top:2%;
+	}
+
+.bali1 { /*bali*/
+	width:50%;
+	z-index:2000;
+	position:absolute;
+	margin-left:10%;
+	}
+
+.bali2 { /*bali*/
+	position:absolute;
+	margin-left:50%;
+	}
+
+.croquis2 { /*villa savoye*/
+	width:20%;
+	margin-top:40%;
+	margin-right:auto;
+	margin-left:auto;
+	}
+
+.croquis3 { /*forme coin droit*/
+	width:20%;
+	margin-left:80%;
+	position:absolute;
+	}
+
+.croquis4 { /*plante*/
+	width:24%;
+	display:inline-block;
+	position:absolute;
+	margin-top:40%;
+	margin-left:10%;
+	}
+
+.croquis5 { /*fleurs*/
+	width:50%;
+	margin-left:40%;
+	margin-top:40%;
+	position:absolute;
+	}
+
+.croquis6 { /*femme cheveux colorés*/
+	position:absolute;
+	z-index:2000;
+	width:50%;
+	margin-left:8%;
+	margin-top:84%;
+	margin-bottom:19%;
+	}
+
+.croquis7 { /*forme glacier*/
+	width:30%;
+	margin-left:62%;
+	margin-top:70%;
+	z-index:3000;
+	position:absolute;
+	}
+
+/* ************************ICON*************************** */
+
+.splashscreen,.iconesinternes{ /*on cible les images de la page Icon Your App!*/
+	margin-top:4%;
+	}
+ 
+.splashscreen{ /*logotype Mind Reader*/
+	margin-left:10.5%;
+	width:20%;
+	}
+
+.icone{  /*icône Mind Reader*/
+	position:absolute;
+	margin-top:2%;
+	display:inline;
+	margin-left:8%;
+	width:40%;
+	}
+
+.interne{ /*icônes internes Mind Reader*/
+	margin-top:8%;
+	width:15%;
+	}
+
+.interne1,.interne2,.interne3{
+	position:absolute;
+	margin-top:30%;
+	}
+
+.interne1{
+	margin-left:10%;
+	}
+
+.interne2{
+	margin-left:26%;
+	}
+
+.interne3{
+	margin-left:42%;
+	}
+
+
+
+
+/* ************************FRED TURNER*************************** */
+
+.screenturner{
+	margin-top:2%;
+	width:50%;
+	margin-left:25%;
+	}
+
+
+	
+
+/* ****************************MAM************************************  */
+
+.affiche{
+	text-align:center;
+	}
+
+.affiche img{
+	width:50%;
+}
+
+/* **************************MENU SMARTPHONE*************************************** */
+
+
+
+
+#menuplus{display: none; z-index: 10000000000000000000000000000000000;} 
+#menuplus img{
+	width:70%;
+	margin-top:50px;
+	margin-left:20px;
+	margin-bottom:-60px;
+	}
+
+.container{width: 100%;
+      z-index: 100000;
+      position: fixed;
+      }
+.pushmenu { /*this is the nav*/
+  background: #64e4c8; /*turquoise*/
+  opacity:0.9;
+  width: 80%;
+  height: 100%;
+  top: 0;
+  z-index: 1000;
+  position:fixed;
+  overflow: scroll;
+	}
+
+a.hov {
+  display: block; /* drops the nav vertically*/
+  color: white;
+  font-size: 1.1em;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 0.7em;
+  padding-left: 1.5em;
+	}
+a.proj{font-size: 0.9em;padding-left: 4em;}
+
+.lgo{width: 80%; 
+	margin-left:1.5em;
+	margin-top: 5em;
+	}
+a.prem{
+	margin-top: 2em;
+	}
+a.last{
+	margin-top: 1.5em;
+	}
+a.hov:hover {
+  color: #751ce3;  /*violet*/
+	}
+
+.pushmenu a:active {
+  background: white;
+  color: #751ce3; /*violet*/
+	}
+
+.pushmenu-left { /*largeur à laquelle le menu s'ouvre*/
+  left: -80%;
+	}
+
+.pushmenu-left.pushmenu-open {
+  left: 0;
+	}
+
+.pushmenu-push {
+  overflow-x: hidden;
+  position: relative;
+  left: 0;
+	}
+
+.pushmenu-push-toright {
+  left:50%;
+	}
+
+/*Transition*/
+.pushmenu, .pushmenu-push {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;  
+	}
+
+#nav_list {
+  background: url(http://www.onlywebpro.com/demo/jquery/icon_nav.png) no-repeat left top;
+  cursor: pointer;
+  height: 27px;
+  width: 33px;
+	}
+
+#nav-list.active {
+  	background-position: -33px top;
+	}
+
+.menunav{
+	position:absolute;
+	font-size:1.3em;
+	margin-top:-10px;
+	}
+
+
+.buttonset {
+     background: #64e4c8; /*turquoise*/
+     opacity:0.6;
+     height: 16px;
+     padding: 10px 20px 20px;
+	 }
+ 
+section.content {
+   	font-family: Arial, Helvetica, sans-serif;
+   	padding: 10px 20px;
+	}
+
+div.minireseau{
+
+	height: 15%;
+  	padding: 1em;
+	padding-top: 2em;
+	}
+
+.res{
+	width:24%; 
+	margin-right: 1.2em;
+	float: left;
+	}
+
+.end{
+	margin-right: 0;
+	}
+
+.frist{
+	margin-left: 6%;
+	}
+
+.separation{ /*ligne séparation entre entête et titres des projets*/
+	color:white;
+	font-weight:bold;
+	font-size:2em;
+	width:90%;
+	margin-left:5%;
+	margin-right:5%;
+	opacity:0.6; 
+	}
+
+

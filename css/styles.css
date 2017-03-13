@@ -1,0 +1,1323 @@
+
+
+
+/***************************************PARAMETRES GENERAUX***************************************/
+body, html {
+
+	font-family:'NimbusSansL-Bold', Arial, sans-serif; 
+	margin:0; 
+	padding:0;
+	min-height:100%; /* Pour avoir des blocs en pleine hauteur */
+	}
+	
+
+a{
+	text-decoration: none; /*on enlève les décorations des liens*/
+	color:black; /*bleu turquoise*/
+	}
+
+
+.previous,.next {
+    position:absolute;
+    top:600px;
+    height:580%;
+    width:50%;
+    opacity:0.2;
+    display:inline-block;
+    z-index:7;
+}
+
+.next{
+	/*background:red;*/
+	cursor: url("../images/droite2.png"),auto;
+	margin-left:50%;
+}
+
+.previous{
+	/*background:blue;*/
+	cursor: url("../images/gauche2.png"),auto;
+}
+
+
+/***************************************ACCUEIL***************************************/
+/************BIENVENUE************/
+
+#fondhome{
+	width: 100%;
+	height: 100%;
+	background-color:white /* #b2ebdf turquoise*/;background-image: url("../images/texture.jpg");
+	background-size: 80%;
+	background-repeat: no-repeat;
+	background-position:center;
+	text-align:center;
+	margin-bottom:30px;
+	margin-top:20px;
+	padding-top:110px;
+	padding-bottom:50px;
+}
+
+
+#fondhome #logo{
+	width:13%;
+	margin:auto;
+	display:none; /***** !!!! LOGO CACHE !!!! *****/
+}
+
+#fondhome p{
+	font-size:3.5em;
+	text-align:center;
+	width:63%;
+	margin:auto;
+	color:white;
+	opacity:0.9;
+}
+
+
+#down{
+	padding-top:200px;
+	margin-bottom:20px;
+	width:5%;
+}
+
+#down img{
+	width:5%;
+	margin-top:30px;
+}
+
+
+
+/************HEADER************/
+header{
+	margin-top:0;
+	padding-top:15px;
+	width:80%;
+	margin:auto;
+	display:flex;
+	background-color:white;
+}
+
+
+header #logo{
+	width:10%;
+	margin-left:5%;
+	margin:auto;
+}
+
+header p{
+	width:85%;
+	margin:auto;
+	font-size:1.3em;
+	color:black;
+	opacity:0.8;
+	margin:auto;
+}
+
+header span{
+	font-family:'NimbusSansL-Regular', Arial, sans-serif; 
+}
+
+
+
+
+/************PROJETS************/
+.b-x { /*mouvement x de certaines bulles*/
+	-webkit-animation: anim-x 6s infinite linear; 
+	-moz-animation: anim-x 6s infinite linear; /*vitesse sous mozilla*/
+	-o-animation: anim-x 6s infinite linear; /*vitesse sous opera*/
+	}
+
+@-webkit-keyframes anim-x {
+	0% { -webkit-transform:  translate(0px,10px) ; } 
+	30% { -webkit-transform:  translate(0px,0px); }
+	100% { -webkit-transform:  translate(0px,10px); }
+	}
+	
+@-moz-keyframes anim-x { /*mozilla*/
+	0% { -moz-transform:  translate(0px,10px) ; } 
+	30% { -moz-transform: translate(0px,0px); }
+	100% { -moz-transform:  translate(0px,10px); }
+	}
+	
+@-o-keyframes anim-x { /*opera*/
+	0% { -o-transform: translate(0px,10px) ; }
+	30% { -o-transform:  translate(0px,0px); }
+	100% { -o-transform: translate(0px,10px); }
+	}
+
+.b-y{ /*mouvement y de certaines bulles*/
+	-webkit-animation: anim-y 15s infinite linear;
+	-moz-animation: anim-y 15s infinite linear;
+	-o-animation: anim-y 15s infinite linear;
+	}
+
+@-webkit-keyframes anim-y {
+	0% { -webkit-transform: translate(0px,10px); }
+	60% { -webkit-transform: translate(0px,30px); }
+	100% { -webkit-transform: translate(0px,10px); }
+	}
+
+@-moz-keyframes anim-y {
+	0% { -moz-transform: translate(0px,10px); }
+	60% { -moz-transform: translate(0px,30px); }
+	100% { -moz-transform: translate(0px,10px); }
+	}
+
+@-o-keyframes anim-y {
+	0% { -o-transform:translate(0px,10px); }
+	60% { -o-transform: translate(0px,30px); }
+	100% { -o-transform:translate(0px,10px); }
+	}
+
+
+
+#projets{
+	width:100%;
+	height:100%;
+	margin:auto;
+	margin-top:-110px;
+}
+
+.projet{
+	opacity:0.75;
+	-ms-filter: "prodig:DXImageTransform.Microsoft.Alpha(Opacity=25)"; /* Hack IE8 */
+    filter: alpha(opacity = 25); /* Hack IE 5-7 */
+    -webkit-transition: opacity 0.5s ease-in-out;
+    -moz-transition: opacity 0.5s ease-in-out;
+    -o-transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
+}
+
+
+.legende{  /*bloc dans le bloc vignette, contenant le titre du projet*/
+	font-family:'NimbusSansL-Regular', Arial, sans-serif; 
+	font-size:0.7em;
+	width:100%;
+	color:black;
+	opacity:0;
+	-ms-filter: "prodig:DXImageTransform.Microsoft.Alpha(Opacity=25)"; /* Hack IE8 */
+    filter: alpha(opacity = 25); /* Hack IE 5-7 */
+    -webkit-transition: opacity 0.5s ease-in-out;/* transition pour Chrome et Safari */
+    -moz-transition: opacity 0.5s ease-in-out;/* transition pour Firefox */
+    -o-transition: opacity 0.5s ease-in-out;/* transition pour Opéra */
+    transition: opacity 0.5s ease-in-out; /* on écrit cette ligne à la fin de façon à ce que ce soit elle qui soit prise en compte lorsque l'attribut transition sera pris en compte par tous les navigateurs */
+ 	}
+
+
+
+
+/*Projet Trombinoscope*/
+#trombi { 
+	width: 400px;
+	height: 300px;
+    background:url("../pages/images/trombi/Marion.jpg") no-repeat center ;
+    background-size:100%;
+    margin-left:13%;
+    margin-top:200px;
+    position:relative;
+	}
+
+#trombi:hover{
+	opacity:1;
+	z-index:6;
+}
+
+#trombi:hover .legende{
+	opacity:1;
+}
+
+
+/*Projet Back Home*/
+#sources { 
+	width: 300px;
+	height: 270px;
+    background:url("../pages/images/sources/source1.jpg") no-repeat center ;
+    background-size:100%;
+    margin-left:41%;
+    margin-top:-390px;
+    position:relative;
+    }
+
+#sources:hover{
+	opacity:1;
+	z-index:6;
+}
+
+#sources:hover .legende{
+	opacity:1;
+}
+
+/*Projet Regards*/
+#regards { 
+	width: 250px;
+	height: 395px;
+    background:url("../pages/images/mam/affiche.jpg")no-repeat center ;;
+    background-size:100%;
+    margin-left:62%;
+    margin-top:-230px;
+    position:relative;
+	}
+
+#regards:hover{
+	opacity:1;
+	z-index:6;
+}
+
+#regards:hover .legende{
+	opacity:1;
+}
+
+
+/*Projet Magritte*/
+#magritte { 
+	width: 430px;
+	height: 320px;
+    background:url("../pages/images/magritte/3.jpg")no-repeat center ;;
+    background-size:100%;
+    margin-left:39%;
+    margin-top:-211px;
+    position:relative;
+    z-index:4;
+	}
+
+#magritte .legende{
+	color:white;
+	}
+
+#magritte:hover{
+	opacity:1;
+	z-index:6;
+}
+
+#magritte:hover .legende{
+	opacity:1;
+}
+
+
+
+/*Projet Voyage au bout de la nuit*/
+#nuit { 
+	width: 300px;
+	height: 235px;
+    background:url("../pages/images/nuit/3.jpg")no-repeat center ;;
+    background-size:100%;
+    margin-left:20%;
+    margin-top:-228px;
+    position:relative;
+    z-index:3;
+	}
+
+
+#nuit:hover{
+	opacity:1;
+	z-index:6;
+}
+
+#nuit:hover .legende{
+	opacity:1;
+}
+
+
+/*Projet Blue Velvet*/
+#bluevelvet { 
+	width: 350px;
+	height: 225px;
+    background:url("../pages/images/bluevelvet/bluevelvet.png")no-repeat center ;;
+    background-size:100%;
+    margin-left:28%;
+    margin-top:-35px;
+    position:relative;
+    z-index:3;
+	}
+
+#bluevelvet:hover{
+	opacity:1;
+	z-index:6;
+}
+
+#bluevelvet:hover .legende{
+	opacity:1;
+}
+
+#bluevelvet .legende{
+	color:white;
+	}
+
+
+
+/*Projet I see you*/
+#iseeyou { 
+	width: 360px;
+	height: 300px;
+    background:url("../pages/images/iseeyou/iseeyou.png")no-repeat center ;;
+    background-size:100%;
+    margin-left:50%;
+    margin-top:-280px;
+    position:relative;
+    z-index:1;
+	}
+
+#iseeyou:hover{
+	opacity:1;
+	z-index:6;
+}
+
+#iseeyou:hover .legende{
+	opacity:1;
+}
+
+#iseeyou .legende{
+	color:white;
+	}
+
+
+/*Projet Synesthésie*/
+#synesthesie { 
+	width: 300px;
+	height: 240px;
+    background:url("../pages/images/synesthesie/synesthesie2.png")no-repeat center ;;
+    background-size:100%;
+    margin-left:35%;
+    margin-top:-110px;
+   	margin-bottom:200px;
+    position:relative;
+    z-index:1;
+	}
+
+#synesthesie:hover{
+	opacity:1;
+	z-index:6;
+}
+
+#synesthesie:hover .legende{
+	opacity:1;
+}
+
+
+
+/*Projet Dingbats*/
+#dingbats { 
+	width: 350px;
+	height: 270px;
+    background:url("../pages/images/dingbats/dingbats.png")no-repeat center ;;
+    background-size:100%;
+    margin-left:56%;
+    margin-top:-380px;
+   	margin-bottom:200px;
+    position:relative;
+    z-index:1;
+	}
+
+#dingbats:hover{
+	opacity:1;
+	z-index:6;
+}
+
+#dingbats:hover .legende{
+	opacity:1;
+}
+
+#dingbats p{
+
+    color:white;
+}
+
+
+/************FOOTER************/
+footer, .footer-projets{
+	width:100%;
+	padding-top:14px;
+	padding-bottom:15px;
+	position:fixed;
+	bottom:0;
+	background:white;
+	opacity:0.9;
+	z-index:10;
+	font-size:0.8em;
+}
+
+footer ul{
+	display:flex;
+}
+
+footer li{
+	margin:auto;
+	font-family:'NimbusSansL-Regular', Arial, sans-serif;
+	opacity:0.8;
+	-ms-filter: "prodig:DXImageTransform.Microsoft.Alpha(Opacity=25)"; /* Hack IE8 */
+    filter: alpha(opacity = 25); /* Hack IE 5-7 */
+    -webkit-transition: opacity 0.3s ease-in-out;
+    -moz-transition: opacity 0.3s ease-in-out;
+    -o-transition: opacity 0.3s ease-in-out;
+    transition: opacity 0.3s ease-in-out;
+}
+
+footer li:hover{
+	opacity:0.2;
+}
+
+
+
+
+/***************************************PAGES INTERNES - PROJETS***************************************/
+
+	
+/************HEADER************/
+
+.descriptionprojet h1{
+	margin-bottom:50px;
+}
+
+/*
+.footer-projets{
+	top:0;
+	height:15px;
+	opacity:0.5;
+} 
+*/
+
+/* *****************NUIT******************** */
+.descriptionprojet{ 
+	width: 100%;
+	height: 100%;
+	font-weight:bold;
+	margin:auto;
+	text-align:center;
+
+}
+
+#projet-nuit{
+	background-image: url("../pages/images/nuit/4.png");
+	background-size: 80%;
+	background-repeat: no-repeat;
+	background-position:center;
+	text-align:center;
+	margin-bottom:30px;
+	margin-top:20px;
+	padding-top:110px;
+	padding-bottom:50px;
+	height:100%;
+	width:100%;
+}
+
+h1{
+	font-family:'NimbusSansL-Bold', Arial, sans-serif; 
+	font-size:4em;
+	opacity:0.8;
+	margin-top:40px;
+	margin-bottom:30px;
+}
+
+#projet-nuit p{
+	font-size:2.5em;
+	width:50%;
+}
+
+.descriptionprojet p{
+	text-align:center;
+	margin:auto;
+	opacity:0.6;
+	padding-bottom:20px;
+}
+
+#section-projetnuit{
+	width:80%;
+	margin:auto;
+	text-align:center;
+}
+
+#section-projetnuit img{
+	width:100%;
+	margin-top:30px;
+}
+/* *****************MAGRITTE******************** */
+#projet-magritte{
+	height:100%;
+	width:100%;
+	background-image: url("../pages/images/magritte/IMG_3211-2.png");
+	background-size: 80%;
+	background-repeat: no-repeat;
+	background-position:center;
+	text-align:center;
+	margin-bottom:30px;
+	margin-top:20px;
+	padding-top:110px;
+	padding-bottom:50px;
+}
+
+#projet-magritte p{
+	width:60%;
+	font-size:2.3em;
+	padding-bottom:30px;
+	opacity:0.8;
+}
+
+
+#section-magritte{
+	width:80%;
+	margin:auto;
+	margin-top:50px;
+}
+
+#section-magritte img{
+	width:25%;
+}
+
+#section-magritte .explication{
+	z-index:5;
+	background-color:white;
+	padding:5px;
+	width:30%;
+}
+
+#section-magritte #tableau{
+	position:relative;
+}
+
+#section-magritte #photos{
+	margin:auto;
+	display:inline;
+	margin-left:3%;
+}
+
+#section-magritte #m1{
+	margin-left:150px;
+	margin-top:90px;
+	position:absolute;
+	z-index:4;
+}
+
+#section-magritte #m2{
+	margin-left:50px;
+	margin-top:50px;
+	position:absolute;
+	z-index:4;
+}
+
+#section-magritte #m3{
+	margin-left:300px;
+	margin-top:70px;
+	width:30%;
+	position:absolute;
+	z-index:1;
+}
+/* *****************TROMBINOSCOPE******************** */
+#projet-trombi{
+	background-image: url("../pages/images/trombi/Julie B.png");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-size: 80%;
+	background-repeat: no-repeat;
+	background-position:center;
+	text-align:center;
+	margin-bottom:40px;
+	margin-top:20px;
+	padding-top:110px;
+	padding-bottom:20px;
+	height:100%;
+	width:100%;
+}
+
+#projet-trombi p{
+	width:55%;
+	font-size:2.4em;
+}
+
+#projet-trombi p a{
+	font-style:italic;
+}
+
+ul.grid {              /* Bloc qui contient les items de la grille */
+	width:85%;         /* Largeur du bloc */
+	margin-left:10.5%;  /* Centrage latéral */
+	margin-right:auto; /* Centrage latéral */
+	margin-bottom:2em;
+	margin-top:20px;
+	}	
+
+ul.grid li { /*éléments de la grille*/
+
+	width:45.5%;
+	display:inline-block; /* Alignement horizontal */
+	text-align:center;    /* Texte centré */
+	margin-right:2%;    /* Marge à droite de l'item */
+	margin-bottom:1em;
+	}
+
+ul.grid li img{
+	width:100%; /* Largeur des blocs pour grille 3 colonnes */
+	vertical-align: middle;}	
+
+ul.grid li.fatma { 
+	background:url("../pages/images/trombi/Fatma-gif.gif"); /*on met une image en fond d'item*/
+	background-size:cover;} 
+ul.grid li.julief {
+	background:url("../pages/images/trombi/JulieF-gif.gif");
+	background-size:cover;}
+ul.grid li.solene {
+	background:url("../pages/images/trombi/Solene-gif.gif");
+	background-size:cover;}
+ul.grid li.anjali {
+	background:url("../pages/images/trombi/Anjali-gif.gif");
+	background-size:cover;}
+ul.grid li.charlotte {
+	background:url("../pages/images/trombi/Charlotte-gif.gif");
+	background-size:cover;}
+ul.grid li.eloi {
+	background:url("../pages/images/trombi/Eloi-gif.gif");
+	background-size:cover;}
+ul.grid li.julieb {
+	background:url("../pages/images/trombi/JulieB-gif.gif");
+	background-size:cover;}
+ul.grid li.marion {
+	background:url("../pages/images/trombi/Marion-gif.gif");
+	background-size:cover;}
+ul.grid li.clement {
+	background:url("../pages/images/trombi/Clement-gif.gif");
+	background-size:cover;}
+ul.grid li.florian {
+	background:url("../pages/images/trombi/Florian-gif.gif");
+	background-size:cover;}
+ul.grid li.manu {
+	background:url("../pages/images/trombi/Manu-gif.gif");
+	background-size:cover;}
+ul.grid li.lucile {
+	background:url("../pages/images/trombi/Lucile-gif.gif");
+	background-size:cover;}
+
+
+
+ul.grid1 li:hover img{ /*au survol, l'image contenue dans l'item disparait, pour laisser apparaitre le fond de l'item*/
+	visibility:hidden ;}
+
+
+ul.columns3 li:nth-child(3n),    /* Grille de 3 colonnes : cible tous les 2e éléments de la liste */
+/* http://stackoverflow.com/questions/13691699/styling-every-3rd-item-of-a-list-using-css */
+	{ margin-right:0;
+	}	
+
+
+/* *****************BLUE VELVET******************** */
+#projet-bluevelvet{
+	background-image: url("../pages/images/bluevelvet/bluevelvet.png");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-size: 80%;
+	background-repeat: no-repeat;
+	background-position:center;
+	text-align:center;
+	margin-bottom:30px;
+	margin-top:20px;
+	padding-top:110px;
+	padding-bottom:10px;
+	height:100%;
+	width:100%;
+}
+
+#projet-bluevelvet p{
+	width:70%;
+	font-size:2.5em;
+}
+
+#projet-bluevelvet span{
+	font-style:italic;
+}
+
+#section-bluevelvet{
+	width:80%;
+	margin:auto
+}
+
+#video-bluevelvet, #video-magritte, #video-regards{
+	margin-top:50px;
+	margin-bottom:100px;
+	display:inline-block;
+}
+
+.explication{
+	display:inline-block;
+	margin-left:20px;
+	width:33%;
+	position:relative;
+	margin-top:-500px;
+}
+
+.explication p{
+	font-family:'NimbusSansL-Regular', Arial, sans-serif; 
+	font-size:0.7em;
+}
+
+.synopsis{
+	font-style:italic;
+}
+
+.synopsis span{
+	text-decoration:underline;
+}
+
+#p2{
+	
+
+}
+/* *****************SOIREES REGARDS******************** */
+#projet-regards{
+	background-image: url("../pages/images/mam/affiche_2.png");
+	background-size: 80%;
+	background-repeat: no-repeat;
+	background-position:center;
+	text-align:center;
+	margin-bottom:30px;
+	margin-top:20px;
+	padding-top:110px;
+	padding-bottom:20px;
+	height:100%;
+	width:100%;
+	color:white;
+}
+
+#projet-regards p{
+	width:62%;
+	font-size:2.1em;
+	opacity:0.5;
+}
+
+#projet-regards span{
+	font-style:italic;
+}
+
+#projet-regards p a{
+	font-style:italic;
+	color:white;
+}
+
+#section-regards{
+	width:80%;
+	margin:auto;
+}
+
+#section-regards img{
+	width:40%;
+	margin-left:4%;
+}
+
+#section-regards .explication{
+	position:absolute;
+	margin-top:210px;
+	width:30%;
+}
+
+#video-regards{
+	margin-bottom:50px;
+}
+
+/* *****************I SEE YOU******************** */
+#projet-iseeyou{
+	background-image: url("../pages/images/iseeyou/iseeyou_2.png");
+	background-size: 80%;
+	background-repeat: no-repeat;
+	background-position:center;
+	text-align:center;
+	margin-bottom:30px;
+	margin-top:20px;
+	padding-top:110px;
+	padding-bottom:50px;
+	height:100%;
+	width:100%;
+}
+
+#projet-iseeyou p{
+	width:70%;
+	font-size:2.5em;
+	opacity:0.7;
+}
+
+#projet-iseeyou span{
+	font-style:italic;
+}
+
+#projet-iseeyou p a{
+	font-style:italic;
+}
+
+#section-iseeyou{
+	margin-top:50px;
+	width:80%;
+	margin:auto;
+}
+}
+
+#article-iseeyou{
+	width:70%;
+}
+
+#article-iseeyou img{
+	width:45%;
+	margin-right:10px;
+	margin-bottom:10px;
+}
+
+#section-iseeyou .explication{
+	margin-left:40%;
+	background-color:white;
+	padding:15px;
+}
+
+/* *****************SPECIMEN TYPO******************** */
+#projet-specimen{
+	background-image: url("../pages/images/specimen/vignette.png");
+	background-size: 80%;
+	background-repeat: no-repeat;
+	background-position:center;
+	text-align:center;
+	margin-bottom:30px;
+	margin-top:20px;
+	padding-top:110px;
+	padding-bottom:50px;
+	height:100%;
+	width:100%;
+}
+
+#projet-specimen p{
+	width:60%;
+	font-size:2.3em;
+	padding-bottom:39px;
+	color:white;
+}
+
+#projet-specimen span{
+	font-style:italic;
+}
+
+#projet-specimen p a{
+	font-style:italic;
+	color:white;
+}
+
+#projet-specimen h1{
+	color:white;
+}
+
+
+/* *****************SYNESTHESIE******************** */
+#projet-synesthesie{
+	background-image: url("../pages/images/synesthesie/synesthesie.png");
+	background-size: 80%;
+	background-repeat: no-repeat;
+	background-position:center;
+	text-align:center;
+	margin-bottom:30px;
+	margin-top:20px;
+	padding-top:110px;
+	padding-bottom:40px;
+	height:100%;
+	width:100%;
+}
+
+#projet-synesthesie p{
+	width:66%;
+	font-size:2.2em;
+	color:white;
+	opacity:0.7;
+}
+
+#projet-synesthesie span{
+	font-style:italic;
+}
+
+
+#projet-synesthesie h1{
+	color:white;
+}
+
+#section-synesthesie{
+	width:80%;
+	margin:auto;
+}
+
+#video-synesthesie{
+	text-align:center;
+	margin-top:50px;
+	margin-bottom:100px;
+}
+
+/* *****************BACK HOME******************** */
+#projet-sources{
+	background-image: url("../pages/images/sources/source1.png");
+	background-size: 80%;
+	background-repeat: no-repeat;
+	background-position:center;
+	text-align:center;
+	margin-bottom:30px;
+	margin-top:20px;
+	padding-top:110px;
+	padding-bottom:50px;
+	height:100%;
+	width:100%;
+}
+
+#projet-sources p{
+	width:55%;
+	font-size:2.4em;
+	padding-bottom:60px;
+	opacity:0.7;
+}
+
+#projet-sources span{
+	font-style:italic;
+}
+
+
+#section-projetsources{
+	margin:auto;
+	text-align:center;
+}
+
+#section-projetsources img{
+	width:70%;
+	margin-top:30px;
+}
+
+
+
+/* *****************DINGBATS******************** */
+#projet-dingbats{
+	background-image: url("../pages/images/dingbats/caractères.png");
+	background-size: 80%;
+	background-repeat: no-repeat;
+	background-position:center;
+	text-align:center;
+	margin-bottom:30px;
+	margin-top:20px;
+	padding-top:110px;
+	padding-bottom:50px;
+	height:100%;
+	width:100%;
+}
+
+#projet-dingbats p{
+	width:63%;
+	font-size:2.5em;
+	padding-bottom:10px;
+	opacity:0.7;
+}
+
+#projet-dingbats span{
+	font-style:italic;
+}
+
+#section-dingbats{
+	width:80%;
+	margin:auto;
+	height:500px;
+	margin-top:120px;
+}
+
+
+#section-dingbats .explication{
+	margin-left:4%;
+	width:30%;
+	background-color:white;
+	padding:20px;
+	z-index:4;
+	border:1px solid black;
+}
+
+
+.experimentation{
+	width:50%;
+}
+
+#exp2{
+	width:40%;
+	position:relative;
+	margin-left:55%;
+	margin-top:-500px;
+	z-index:2;
+}
+
+#caractere{
+	width:60%;
+	z-index:1000;
+	margin:auto;
+	margin-bottom:100px;
+}
+
+
+#article-affiche-dingbats{
+	width:80%;
+	margin:auto;
+}
+
+
+ul.grille {              
+	width:100%;
+	margin-top:20px;
+	margin:auto;
+	}	
+
+ul.grille li { 
+	width:55%;
+	text-align:center;
+	position:relative;
+	opacity:0.7;
+	-ms-filter: "prodig:DXImageTransform.Microsoft.Alpha(Opacity=25)"; /* Hack IE8 */
+    filter: alpha(opacity = 25); /* Hack IE 5-7 */
+    -webkit-transition: opacity 0.5s ease-in-out;/* transition pour Chrome et Safari */
+    -moz-transition: opacity 0.5s ease-in-out;/* transition pour Firefox */
+    -o-transition: opacity 0.5s ease-in-out;/* transition pour Opéra */
+    transition: opacity 0.5s ease-in-out;
+	}
+
+ul.grille li img{
+	width:100%; 
+	vertical-align: middle;}
+
+
+ul.grille li:nth-child(2n){
+	margin-left:10%;
+	margin-top:-100px;
+}	
+
+
+ul.grille li:nth-child(4n){
+	margin-left:12%;
+	margin-top:-100px;
+}	
+
+ul.grille #grille3{
+	margin-left:10%;
+	z-index:1;
+}
+
+ul.grille #grille5{
+	margin-left:15%;
+}
+
+
+ul.grille li:hover{
+	z-index:5;
+	opacity:1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/***************************************A PROPOS***************************************/
+#apropos{
+	width: 80%;
+	height: 100%;
+	margin:auto;
+	background-image: url("../images/autoportrait2.jpg");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	text-align:center;
+	padding-bottom:60px;
+	margin-bottom:15px;
+}
+
+#apropos p{
+	font-size:2.8em;
+	text-align:center;
+	width:75%;
+	margin:auto;
+	padding-top:60px;
+	opacity:0.7;
+}
+
+#apropos a{
+	color:turquoise;
+}
+
+#header-apropos{
+	margin-top:7px;
+	padding-top:5px;
+	padding-bottom:5px;
+	width:100%;
+	opacity:0.8;
+	display:flex;
+}
+
+
+#header-apropos #logo{
+	width:7%;
+	margin-left:5%;
+	margin:auto;
+}
+
+#header-apropos p{
+	width:85%;
+	margin:auto;
+	font-size:1em;
+	color:black;
+	opacity:0.8;
+}
+
+#header-apropos span{
+	font-family:'NimbusSansL-Regular', Arial, sans-serif; 
+}
+
+/* **************************MENU SMARTPHONE*************************************** */
+#menuplus{display: none; z-index: 10000000000000000000000000000000000;} 
+#menuplus img{
+	width:70%;
+	margin-top:50px;
+	margin-left:20px;
+	margin-bottom:-60px;
+	}
+
+.container{width: 100%;
+      z-index: 100000;
+      position: fixed;
+      }
+.pushmenu { /*this is the nav*/
+  background: #64e4c8; /*turquoise*/
+  opacity:0.9;
+  width: 80%;
+  height: 100%;
+  top: 0;
+  z-index: 1000;
+  position:fixed;
+  overflow: scroll;
+	}
+
+a.hov {
+  display: block; /* drops the nav vertically*/
+  color: white;
+  font-size: 1.1em;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 0.7em;
+  padding-left: 1.5em;
+	}
+a.proj{font-size: 0.9em;padding-left: 4em;}
+
+.lgo{width: 80%; 
+	margin-left:1.5em;
+	margin-top: 5em;
+	}
+a.prem{
+	margin-top: 2em;
+	}
+a.last{
+	margin-top: 1.5em;
+	}
+a.hov:hover {
+  color: #751ce3;  /*violet*/
+	}
+
+.pushmenu a:active {
+  background: white;
+  color: #751ce3; /*violet*/
+	}
+
+.pushmenu-left { /*largeur à laquelle le menu s'ouvre*/
+  left: -80%;
+	}
+
+.pushmenu-left.pushmenu-open {
+  left: 0;
+	}
+
+.pushmenu-push {
+  overflow-x: hidden;
+  position: relative;
+  left: 0;
+	}
+
+.pushmenu-push-toright {
+  left:50%;
+	}
+
+/*Transition*/
+.pushmenu, .pushmenu-push {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;  
+	}
+
+#nav_list {
+  background: url(http://www.onlywebpro.com/demo/jquery/icon_nav.png) no-repeat left top;
+  cursor: pointer;
+  height: 27px;
+  width: 33px;
+	}
+
+#nav-list.active {
+  	background-position: -33px top;
+	}
+
+.menunav{
+	position:absolute;
+	font-size:1.3em;
+	margin-top:-10px;
+	}
+
+
+.buttonset {
+     background: #64e4c8; /*turquoise*/
+     opacity:0.6;
+     height: 16px;
+     padding: 10px 20px 20px;
+	 }
+ 
+section.content {
+   	font-family: Arial, Helvetica, sans-serif;
+   	padding: 10px 20px;
+	}
+
+div.minireseau{
+
+	height: 15%;
+  	padding: 1em;
+	padding-top: 2em;
+	}
+
+.res{
+	width:24%; 
+	margin-right: 1.2em;
+	float: left;
+	}
+
+.end{
+	margin-right: 0;
+	}
+
+.frist{
+	margin-left: 6%;
+	}
+
+.separation{ /*ligne séparation entre entête et titres des projets*/
+	color:white;
+	font-weight:bold;
+	font-size:2em;
+	width:90%;
+	margin-left:5%;
+	margin-right:5%;
+	opacity:0.6; 
+	}
+
+

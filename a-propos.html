@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8"> 
+
+    <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+<script src="js/pushmenu.js"></script>
+
+<script>
+
+$(document).ready(function() 
+    { $menuLeft = $('.pushmenu-left'); 
+    $nav_list = $('#nav_list'); 
+    $nav_list.click(function(e) { e.stopPropagation(); 
+        $(this).toggleClass('active'); 
+        $('.pushmenu-push').toggleClass('pushmenu-push-toright'); 
+        $menuLeft.toggleClass('pushmenu-open'); }); 
+    $('html').click(function() { $nav_list.removeClass('active'); 
+        $('.pushmenu-push').removeClass('pushmenu-push-toright'); 
+        $menuLeft.removeClass('pushmenu-open'); }); });
+</script>
+
+    <title>A propos | Marion Robin</title>
+  
+    <link rel="stylesheet" href="css/master.css" type="text/css" media="screen" />
+	<link rel="icon" type="image/png" href="images/favicon1.png" />
+
+	<meta name="viewport" content="initial-scale=1.0,width=device-width" />
+
+</head>
+
+<body class="pages a-propos">
+
+<div id="menuplus">
+<nav class="pushmenu pushmenu-left">
+
+	<img src="images/logo.svg">
+    <a class="hov prem" href="a-propos.html">Marion Robin ?</a>
+    <a class="hov last" href="plooups@gmail.com">Mail me </a>
+    <p class="separation">_________________</p>
+    <a class="hov" href="pages/voyage.html">● Voyage</a>
+    <a class="hov" href="pages/trombi.html">● Trombinoscope</a>
+    <a class="hov" href="pages/ulysse.html">● L'odyssée du couple</a>   
+    <a class="hov" href="pages/refresh.html">● Refresh ! </a>
+    <a class="hov" href="pages/lecancre.html">● Le Cancre</a>
+    <a class="hov" href="pages/sources.html">● Back home</a>
+    <a class="hov" href="pages/icon.html">● Mind Reader</a>
+    <a class="hov" href="pages/rencontre.html">● Rencontre</a>
+    <a class="hov" href="pages/nautilus.html">● Le fleuve noir</a>
+    <a class="hov" href="pages/turner.html">● Utopie numérique</a>
+</nav>
+  
+<div class="container">
+        <div class="main">
+        <section class="buttonset">
+            <div id="nav_list"><a class="menunav"href="index.html">Accueil</a></div>
+        </section>
+        </div><!-- End Main -->
+</div><!-- End Container --> 
+</div><!--menuplus-->
+
+
+
+
+<!--**************************HEADER**************************-->
+<header id="header-apropos">
+        <img id="logo" src="images/logo.png">
+        <p>Marion Robin <span>| Design graphique</span></p>
+</header>
+
+
+<!--**************************A PROPOS**************************-->
+<div id="apropos">
+        <p class="b-x">Urbaine, rêveuse, perfectionniste et imprévisible, je suis tout et son contraire. Obsédée par le turquoise et les sacs en toile, je cultive un goût prononcé pour la déformation d’images, les tatouages et l’onirologie. Pour en savoir un peu plus, voici mon <a href="images/CV.pdf">CV</a>.</p>
+</div>
+
+
+<!--**************************FOOTER**************************-->
+<footer>
+    <ul>
+        <li><a class="js-scrollTo" id="down" href="index.html">PROJETS</a></li>
+        <li><a href="#">A PROPOS</a></li>
+        <li><a href="https://www.instagram.com/dreamsmell/">INSTAGRAM</a></li>
+        <li><a href="mailto:plooups@gmail.com">MAIL</a></li>
+    </ul>
+</footer>
+
+
+
+</body> <!-- On referme la partie body -->
+</html> <!-- On referme la page web -->

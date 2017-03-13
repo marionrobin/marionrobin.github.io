@@ -1,0 +1,194 @@
+<!doctype html>
+
+<html lang="fr">
+<html prefix="og: http://ogp.me/ns#">
+
+
+<head>
+<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+<script src="js/pushmenu.js"></script>
+
+<script>
+$(document).ready(function() 
+    { $menuLeft = $('.pushmenu-left'); 
+    $nav_list = $('#nav_list'); 
+    $nav_list.click(function(e) { e.stopPropagation(); 
+        $(this).toggleClass('active'); 
+        $('.pushmenu-push').toggleClass('pushmenu-push-toright'); 
+        $menuLeft.toggleClass('pushmenu-open'); }); 
+    $('html').click(function() { $nav_list.removeClass('active'); 
+        $('.pushmenu-push').removeClass('pushmenu-push-toright'); 
+        $menuLeft.removeClass('pushmenu-open'); }); });
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>
+	$(document).ready(function() {
+		$('.js-scrollTo').on('click', function() { // Au clic sur un élément
+			var page = $(this).attr('href'); // Page cible
+			var speed = 950; // Durée de l'animation (en ms)
+			$('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
+			return false;
+		});
+	});
+</script>
+
+
+
+<meta charset="utf-8"> 
+
+<title>Hey ! | Marion Robin</title>
+
+<meta property="og:image" content="http://www.marionrobin.com/images/autoportrait.jpg"/>
+<meta property='og:title' content='Marion Robin | Portfolio'/>
+<meta property='og:url' content='http://www.marionrobin.com/' />
+<meta property='og:type' content='website' />
+<meta property='og:description' content=" Bienvenue dans ma tête ! Tu es invité à entrer dans l'univers d'une étudiante en design graphique. Bonne visite !" />
+
+<meta name="viewport" content="initial-scale=1.0,width=device-width" />
+
+<link rel="stylesheet" href="css/master.css" type="text/css" media="screen" />
+<link rel="icon" type="image/png" href="images/favicon1.png" />
+
+
+</head>
+<body class="pages">
+
+<!-- menu reponsive -->
+<div id="menuplus">
+	<nav class="pushmenu pushmenu-left">
+	<img src="images/logo.svg">
+    	<a class="hov prem" href="a-propos.html">Marion Robin ?</a>
+    	<a class="hov last" href="plooups@gmail.com">Mail me </a>
+    	<p class="separation">_________________</p>
+    	<a class="hov" href="pages/voyage.html">● Voyage</a>
+    	<a class="hov" href="pages/trombi.html">● Trombinoscope</a>
+    	<a class="hov" href="pages/ulysse.html">● L'odyssée du couple</a>   
+    	<a class="hov" href="pages/refresh.html">● Refresh ! </a>
+    	<a class="hov" href="pages/lecancre.html">● Le Cancre</a>
+    	<a class="hov" href="pages/sources.html">● Back home</a>
+   	 	<a class="hov" href="pages/icon.html">● Mind Reader</a>
+   		<a class="hov" href="pages/rencontre.html">● Rencontre</a>
+   		<a class="hov" href="pages/nautilus.html">● Le fleuve noir</a>
+    	<a class="hov" href="pages/turner.html">● Utopie numérique</a>
+	</nav>
+	<div class="container">
+        <div class="main">
+        	<section class="buttonset">
+            	<div id="nav_list">
+            		<a class="menunav"href="#">Hello !</a>
+            	</div>
+       		</section>
+        </div><!-- End Main -->
+	</div><!-- End Container --> 
+</div><!--menuplus-->
+
+
+
+
+<!--**************************BIENVENUE**************************-->
+<div id="fondhome">
+		<img id="logo" src="images/logo1.png"/>
+		<p id="intro">Bienvenue à toi ! </br> Je me présente, Marion Robin, étudiante en design graphique. Tu es invité à découvrir mon univers à travers ce site. </br> Bonne visite !</p>
+		<a class="js-scrollTo" id="down" href="header"><img class="b-x" src="images/bas.png"></a>
+</div>
+
+
+
+
+
+
+<!--**************************HEADER**************************-->
+<header>
+	<img id="logo" src="images/logo.png">
+	<p>Marion Robin <span>| Design graphique</span></p>
+</header>
+
+<!--**************************PROJETS**************************-->
+<section id ="projets">
+	<a href="pages/trombi.html">
+		<div class="projet b-x" id="trombi">	
+			<div class="vignette">
+				<p class="legende">trombinoscope | photographie</p>
+			</div>
+		</div>
+	</a>
+
+	<a href="pages/sources.html">
+		<div class="projet b-y" id="sources">
+			<div class="vignette">
+				<p class="legende">back home | photographie</p>
+			</div>
+		</div>
+	</a>
+	
+	<a href="pages/regards.html">
+		<div class="projet b-x" id="regards">
+			<div class="vignette">
+				<p class="legende">soirées regards - Musée d'Art Moderne | communication globale </p>
+			</div>
+		</div>
+	</a>
+
+	<a href="pages/magritte.html">	
+		<div class="projet b-z" id="magritte">
+			<div class="vignette">
+				<p class="legende">l'heure bleue | print & motion</p>
+			</div>
+		</div>
+	</a>
+
+	<a href="pages/nuit.html">	
+		<div class="projet b-y" id="nuit">
+			<div class="vignette">
+				<p class="legende"> voyage au boût de la nuit | photographie</p>
+			</div>
+		</div>
+	</a>
+
+	<a href="pages/bluevelvet.html">	
+		<div class="projet b-z" id="bluevelvet">
+			<div class="vignette">
+				<p class="legende">Blue Velvet | générique</p>
+			</div>
+		</div>
+	</a>
+
+	<a href="pages/iseeyou.html">	
+		<div class="projet b-x" id="iseeyou">
+			<div class="vignette">
+				<p class="legende">i see you | application</p>
+			</div>
+		</div>
+	</a>
+
+	<a href="pages/synesthesie.html">	
+		<div class="projet b-x" id="synesthesie">
+			<div class="vignette">
+				<p class="legende">synesthésie | motion</p>
+			</div>
+		</div>
+	</a>
+
+	<a href="pages/dingbats.html">	
+		<div class="projet b-x" id="dingbats">
+			<div class="vignette">
+				<p class="legende">dingdot | typographie & sérigraphie</p>
+			</div>
+		</div>
+	</a>
+
+</section>
+</div>
+
+<footer>
+	<ul>
+		<li><a class="js-scrollTo" id="down" href="header">PROJETS</a></li>
+		<li><a href="a-propos.html">A PROPOS</a></li>
+		<li><a href="https://www.instagram.com/dreamsmell/">INSTAGRAM</a></li>
+		<li><a href="mailto:plooups@gmail.com">MAIL</a></li>
+	</ul>
+</footer>
+
+
+</body>
