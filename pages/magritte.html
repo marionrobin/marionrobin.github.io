@@ -1,0 +1,140 @@
+ <!doctype html>
+
+<html lang="fr">
+<html prefix="og: http://ogp.me/ns#">
+
+
+<head>
+<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+<script src="js/pushmenu.js"></script>
+
+<script>
+$(document).ready(function() 
+    { $menuLeft = $('.pushmenu-left'); 
+    $nav_list = $('#nav_list'); 
+    $nav_list.click(function(e) { e.stopPropagation(); 
+        $(this).toggleClass('active'); 
+        $('.pushmenu-push').toggleClass('pushmenu-push-toright'); 
+        $menuLeft.toggleClass('pushmenu-open'); }); 
+    $('html').click(function() { $nav_list.removeClass('active'); 
+        $('.pushmenu-push').removeClass('pushmenu-push-toright'); 
+        $menuLeft.removeClass('pushmenu-open'); }); });
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $('.js-scrollTo').on('click', function() { // Au clic sur un élément
+            var page = $(this).attr('href'); // Page cible
+            var speed = 950; // Durée de l'animation (en ms)
+            $('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
+            return false;
+        });
+    });
+</script>
+
+
+
+<meta charset="utf-8"> 
+
+<title>L'heure bleue - Photographie & vidéo</title>
+
+<meta property="og:image" content="http://www.marionrobin.com/images/autoportrait.jpg"/>
+<meta property='og:title' content='Marion Robin | Portfolio'/>
+<meta property='og:url' content='http://www.marionrobin.com/' />
+<meta property='og:type' content='website' />
+<meta property='og:description' content=" Bienvenue dans ma tête ! Tu es invité à entrer dans l'univers d'une étudiante en design graphique. Bonne visite !" />
+
+<meta name="viewport" content="initial-scale=1.0,width=device-width" />
+
+<link rel="stylesheet" href="../css/master.css" type="text/css" media="screen" />
+<link rel="icon" type="image/png" href="../images/favicon1.png" />
+</head>
+
+
+
+<body>
+
+<!-- menu reponsive -->
+<div id="menuplus">
+    <nav class="pushmenu pushmenu-left">
+    <img src="images/logo.svg">
+        <a class="hov prem" href="a-propos.html">Marion Robin ?</a>
+        <a class="hov last" href="plooups@gmail.com">Mail me </a>
+        <p class="separation">_________________</p>
+        <a class="hov" href="pages/voyage.html">● Voyage</a>
+        <a class="hov" href="pages/trombi.html">● Trombinoscope</a>
+        <a class="hov" href="pages/ulysse.html">● L'odyssée du couple</a>   
+        <a class="hov" href="pages/refresh.html">● Refresh ! </a>
+        <a class="hov" href="pages/lecancre.html">● Le Cancre</a>
+        <a class="hov" href="pages/sources.html">● Back home</a>
+        <a class="hov" href="pages/icon.html">● Mind Reader</a>
+        <a class="hov" href="pages/rencontre.html">● Rencontre</a>
+        <a class="hov" href="pages/nautilus.html">● Le fleuve noir</a>
+        <a class="hov" href="pages/turner.html">● Utopie numérique</a>
+    </nav>
+    <div class="container">
+        <div class="main">
+            <section class="buttonset">
+                <div id="nav_list">
+                    <a class="menunav"href="#">Hello !</a>
+                </div>
+            </section>
+        </div><!-- End Main -->
+    </div><!-- End Container --> 
+</div><!--menuplus-->
+
+
+
+
+<!--**************************INTRODUCTION**************************-->
+<div class="descriptionprojet" id="projet-magritte">
+        <!--***************PRESENTATION***************-->
+        <h1>l'heure bleue</h1>
+        <p>Le projet a pour point de départ «L’heureux donateur» de René Magritte et en propose une réinterprétation à travers la production d'un objet print, complété par un objet numérique. Le point de départ est l'idée du souvenir comme image mentale à la fois précise et impalpable.</p>
+</div>
+
+
+
+<!--**************************PROJET*************************-->
+<a href="regards.html"><div class="previous"></div></a> <!-- fin de "previous"-->
+<a href="nuit.html"><div class="next"></div></a> <!-- fin de "next">-->
+
+<section id="section-magritte">
+    <img id="tableau" src="images/magritte/tableau.jpg">
+    <div id="photos">
+    <img id="m2" src="images/magritte/1.jpg">
+    <img id="m1" src="images/magritte/3.jpg">
+    <img id="m3" src="images/magritte/2.jpg">
+    </div>
+
+
+
+    <div class="explication">
+        <p class="synopsis"><span>L'heureux donnateur</span> : ce talbeau de Magritte peut évoquer le souvenir d'un lieu, et la nostalgie qu'il provoque. Cependant, il s'agit d'un souvenir lointain, réveillé par des stimulations sensorielles à un moment précis de la journée. </p>
+        </br>
+        <p id="p2">Le projet s'appuie sur des photographies prises au moment précis de l'heure bleue, moment transitoire entre le jour et la nuit. Cet instant calme entre chien et loup possède une atmosphère singulière propice à l'introspection et au souvenir d'un lieu, à la nostalgie. L'idée est donc de retranscrire cette expérience sensorielle du levé du jour, où les choses se brouillent, pour se rapprocher de la maison renfermant les souvenirs de l'enfance. Le calque permet la superposition et le mélange des images, comme des souvenirs qui s'enchevêtrent et se confondent. L'objet numérique, propose une expérience sensorielle : les images se déforment et se tordent à la manière des souvenirs, changeants et imprécis, dans une ambiance sonore propice à l'introspection. 
+        </p>
+    </div>
+
+
+<!--**************************VIDEO**************************-->
+<div class="videoWrapper" id="video-bluevelvet">
+    <iframe src="https://player.vimeo.com/video/206052870" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+</div>
+
+</section>
+
+<!--**************************FOOTER**************************-->
+<footer class="footer-projets">
+    <ul>
+        <li><a class="js-scrollTo" id="down" href="../index.html">PROJETS</a></li>
+        <li><a href="../a-propos.html">A PROPOS</a></li>
+        <li><a href="https://www.instagram.com/dreamsmell/">INSTAGRAM</a></li>
+        <li><a href="mailto:plooups@gmail.com">MAIL</a></li>
+    </ul>
+</footer>
+
+
+</body> 
+</html> 

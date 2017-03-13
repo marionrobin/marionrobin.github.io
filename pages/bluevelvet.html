@@ -1,0 +1,132 @@
+ <!doctype html>
+
+<html lang="fr">
+<html prefix="og: http://ogp.me/ns#">
+
+
+<head>
+<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+<script src="js/pushmenu.js"></script>
+
+<script>
+$(document).ready(function() 
+    { $menuLeft = $('.pushmenu-left'); 
+    $nav_list = $('#nav_list'); 
+    $nav_list.click(function(e) { e.stopPropagation(); 
+        $(this).toggleClass('active'); 
+        $('.pushmenu-push').toggleClass('pushmenu-push-toright'); 
+        $menuLeft.toggleClass('pushmenu-open'); }); 
+    $('html').click(function() { $nav_list.removeClass('active'); 
+        $('.pushmenu-push').removeClass('pushmenu-push-toright'); 
+        $menuLeft.removeClass('pushmenu-open'); }); });
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $('.js-scrollTo').on('click', function() { // Au clic sur un élément
+            var page = $(this).attr('href'); // Page cible
+            var speed = 950; // Durée de l'animation (en ms)
+            $('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
+            return false;
+        });
+    });
+</script>
+
+
+
+<meta charset="utf-8"> 
+
+<title>Blue Velvet - Générique</title>
+
+<meta property="og:image" content="http://www.marionrobin.com/images/autoportrait.jpg"/>
+<meta property='og:title' content='Marion Robin | Portfolio'/>
+<meta property='og:url' content='http://www.marionrobin.com/' />
+<meta property='og:type' content='website' />
+<meta property='og:description' content=" Bienvenue dans ma tête ! Tu es invité à entrer dans l'univers d'une étudiante en design graphique. Bonne visite !" />
+
+<meta name="viewport" content="initial-scale=1.0,width=device-width" />
+
+<link rel="stylesheet" href="../css/master.css" type="text/css" media="screen" />
+<link rel="icon" type="image/png" href="../images/favicon1.png" />
+</head>
+
+
+
+<body>
+
+<!-- menu reponsive -->
+<div id="menuplus">
+    <nav class="pushmenu pushmenu-left">
+    <img src="images/logo.svg">
+        <a class="hov prem" href="a-propos.html">Marion Robin ?</a>
+        <a class="hov last" href="plooups@gmail.com">Mail me </a>
+        <p class="separation">_________________</p>
+        <a class="hov" href="pages/voyage.html">● Voyage</a>
+        <a class="hov" href="pages/trombi.html">● Trombinoscope</a>
+        <a class="hov" href="pages/ulysse.html">● L'odyssée du couple</a>   
+        <a class="hov" href="pages/refresh.html">● Refresh ! </a>
+        <a class="hov" href="pages/lecancre.html">● Le Cancre</a>
+        <a class="hov" href="pages/sources.html">● Back home</a>
+        <a class="hov" href="pages/icon.html">● Mind Reader</a>
+        <a class="hov" href="pages/rencontre.html">● Rencontre</a>
+        <a class="hov" href="pages/nautilus.html">● Le fleuve noir</a>
+        <a class="hov" href="pages/turner.html">● Utopie numérique</a>
+    </nav>
+    <div class="container">
+        <div class="main">
+            <section class="buttonset">
+                <div id="nav_list">
+                    <a class="menunav"href="#">Hello !</a>
+                </div>
+            </section>
+        </div><!-- End Main -->
+    </div><!-- End Container --> 
+</div><!--menuplus-->
+
+
+
+
+<!--**************************BIENVENUE**************************-->
+<div class="descriptionprojet" id="projet-bluevelvet">
+        <h1>blue velvet</h1>
+        <p>Remake du générique d'ouverture du film <span>Blue Velvet</span> de David Lynch. L'idée est de dresser le portrait de l'Amérique des années 1950, idéale en superficie le jour, et métamorphosée la nuit : les choses se déforment, se modulent et changent d'aspect, jusqu'à devenir insaisissables et irréelles.</p>
+</div>
+
+
+
+    <!--***************PROJET***************-->
+<a href="nuit.html"><div class="previous"></div></a> <!-- fin de "previous"-->
+<a href="iseeyou.html"><div class="next"></div></a> <!-- fin de "next">-->
+
+
+<!--**************************VIDEO**************************-->
+<section id="section-bluevelvet">
+
+<div class="videoWrapper" id="video-bluevelvet">
+    <iframe src="https://player.vimeo.com/video/206073263" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+</div>
+
+<div class="explication">
+    <p class="synopsis"><span>Synopsis</span> : Alors qu'il rend visite à son père victime d'une crise cardiaque, Jeffrey trouve une oreille humaine dans un terrain vague. Il décide de mener lui-même l'enquête avec Sandy, la fille de l'inspecteur. Celle-ci l'oriente vers la suspecte Dorothy Vallens, une chanteuse de cabaret aux moeurs étranges. Jeffrey assiste au curieux traitement qu'inflige à Dorothy une sombre brute, Frank, avant de tenter de la consoler et de se retrouver pris au piège de l'amour... 
+    </p>
+    </br>
+    <p id="p2">Le générique retranscrit le passage de la lumière du jour, pure et claire, à l'ambiance de la nuit, faite de lumière artificielle et électrique. Les images utilisées représentent les stéréotypes de l'Amérique édulcorée des années 1950, les couleurs saturées montrent son artificialité. La déformation de ces images et de la typographie apporte un aspect étrange et insaisissable propre au monde fantastique et violent de la nuit. La musique, brouillée et sourde, tend à retranscrire l'atmosphère pesante du film et la psychologie floue des personnages. Musique : David Lynch - I know
+    </p>
+</div>
+
+</section>
+
+<!--**************************FOOTER**************************-->
+<footer class="footer-projets">
+    <ul>
+        <li><a class="js-scrollTo" id="down" href="../index.html">PROJETS</a></li>
+        <li><a href="../a-propos.html">A PROPOS</a></li>
+        <li><a href="https://www.instagram.com/dreamsmell/">INSTAGRAM</a></li>
+        <li><a href="mailto:plooups@gmail.com">MAIL</a></li>
+    </ul>
+</footer>
+
+
+</body> 
+</html> 

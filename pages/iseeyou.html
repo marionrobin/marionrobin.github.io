@@ -1,0 +1,134 @@
+ <!doctype html>
+
+<html lang="fr">
+<html prefix="og: http://ogp.me/ns#">
+
+
+<head>
+<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+<script src="js/pushmenu.js"></script>
+
+<script>
+$(document).ready(function() 
+    { $menuLeft = $('.pushmenu-left'); 
+    $nav_list = $('#nav_list'); 
+    $nav_list.click(function(e) { e.stopPropagation(); 
+        $(this).toggleClass('active'); 
+        $('.pushmenu-push').toggleClass('pushmenu-push-toright'); 
+        $menuLeft.toggleClass('pushmenu-open'); }); 
+    $('html').click(function() { $nav_list.removeClass('active'); 
+        $('.pushmenu-push').removeClass('pushmenu-push-toright'); 
+        $menuLeft.removeClass('pushmenu-open'); }); });
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $('.js-scrollTo').on('click', function() { // Au clic sur un élément
+            var page = $(this).attr('href'); // Page cible
+            var speed = 950; // Durée de l'animation (en ms)
+            $('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
+            return false;
+        });
+    });
+</script>
+
+
+
+<meta charset="utf-8"> 
+
+<title>I see you, Centre Pompidou - Application de médiation</title>
+
+<meta property="og:image" content="http://www.marionrobin.com/images/autoportrait.jpg"/>
+<meta property='og:title' content='Marion Robin | Portfolio'/>
+<meta property='og:url' content='http://www.marionrobin.com/' />
+<meta property='og:type' content='website' />
+<meta property='og:description' content=" Bienvenue dans ma tête ! Tu es invité à entrer dans l'univers d'une étudiante en design graphique. Bonne visite !" />
+
+<meta name="viewport" content="initial-scale=1.0,width=device-width" />
+
+<link rel="stylesheet" href="../css/master.css" type="text/css" media="screen" />
+<link rel="icon" type="image/png" href="../images/favicon1.png" />
+</head>
+
+
+
+<body>
+
+<!-- menu reponsive -->
+<div id="menuplus">
+    <nav class="pushmenu pushmenu-left">
+    <img src="images/logo.svg">
+        <a class="hov prem" href="a-propos.html">Marion Robin ?</a>
+        <a class="hov last" href="plooups@gmail.com">Mail me </a>
+        <p class="separation">_________________</p>
+        <a class="hov" href="pages/voyage.html">● Voyage</a>
+        <a class="hov" href="pages/trombi.html">● Trombinoscope</a>
+        <a class="hov" href="pages/ulysse.html">● L'odyssée du couple</a>   
+        <a class="hov" href="pages/refresh.html">● Refresh ! </a>
+        <a class="hov" href="pages/lecancre.html">● Le Cancre</a>
+        <a class="hov" href="pages/sources.html">● Back home</a>
+        <a class="hov" href="pages/icon.html">● Mind Reader</a>
+        <a class="hov" href="pages/rencontre.html">● Rencontre</a>
+        <a class="hov" href="pages/nautilus.html">● Le fleuve noir</a>
+        <a class="hov" href="pages/turner.html">● Utopie numérique</a>
+    </nav>
+    <div class="container">
+        <div class="main">
+            <section class="buttonset">
+                <div id="nav_list">
+                    <a class="menunav"href="#">Hello !</a>
+                </div>
+            </section>
+        </div><!-- End Main -->
+    </div><!-- End Container --> 
+</div><!--menuplus-->
+
+
+
+
+<!--**************************BIENVENUE**************************-->
+<div class="descriptionprojet" id="projet-iseeyou">
+        <h1>i see you</h1>
+        <p>Application de médiation autour de l'oeuvre <span>Stranger Visions</span> de Heather Dewey Hagborg, présentée à l'exposition <span>Imprimer le monde</span> au Centre Pompidou en mars 2017. L'objectif est de proposer une interprétation de l'oeuvre afin de la faire comprendre au visiteur, et de le mener à une réflexion personnelle. 
+</div>
+
+
+    <!--***************PROJET***************-->
+<a href="bluevelvet.html"><div class="previous"></div></a> <!-- fin de "previous"-->
+<a href="synesthesie.html"><div class="next"></div></a> <!-- fin de "next">-->
+
+
+<section id="section-iseeyou">
+
+    <article id="article-iseeyou">
+        <img src="images/iseeyou/iseeyou_2.png">
+        <img src="images/iseeyou/iseeyou_2.png">
+        <img src="images/iseeyou/iseeyou_2.png">
+    </article>
+
+    <div class="explication">
+        <p class="synopsis"><span>Stranger Visions</span> : après avoir récolté des déchets (mégots, chewing gum, cheveux...) sur une rue de New-York, Heather Dewey Hagborg les a amenés en laboratoire pour en extraire l'ADN et obtenir des informations sur son propriétaire : genre, couleur des yeux et des cheveux, origine... Grâce à ces informations elle a pu créer des portraits robots résultant du mélange des ADN récoltées, qu'elle a ensuite imprimés en 3D. Son oeuvre met en avant les possibilités de traçage liées à l'ADN et pose la question de la surveillance et par extension de sa légitimité. </p>
+        </br>
+        </br>
+        <p id="p2">J'ai voulu retranscrire l'atmosphère pesante de la surveillance, et amener l'utilisateur à se questionner sur la fiabilité de l'ADN, ainsi que sur les utilisations malveillantes qui peuvent en être faites. L'application consiste donc en une série de tests factices afin de "prélever l'ADN du visiteur". Si certains semblent crédibles (relevés d'empreintes), d'autres sont exagérés et ridicules. L'expérience se conclut par un portrait psychologique du visiteur, absurde et simpliste, afin de questionner la fiabilité de l'ADN : jusqu'où pouvons-nous faire confiance à la génétique ? Quelles informations nous délivre-t-elle vraiment ? 
+        Des formes abstraites et mouvantes évoquent la matière organique, rendue artificielle par les couleurs fluorescentes. Elles font écho aux caméras de surveillance défectueuses, aux bugs d'affichage, au glitch. L'ambiance sonore est pensée de manière à retranscrire la dimension oppressante du projet, de façon à rendre l'ensemble immersif.
+        Projet en partenariat avec le Centre Pompidou et PandaSuite (développement de l'application). Projet réalisé avec <a href="">Vincent Pittiglio</a>.</p>
+        </p>
+    </div>
+</section>
+
+
+<!--**************************FOOTER**************************-->
+<footer class="footer-projets">
+    <ul>
+        <li><a class="js-scrollTo" id="down" href="../index.html">PROJETS</a></li>
+        <li><a href="../a-propos.html">A PROPOS</a></li>
+        <li><a href="https://www.instagram.com/dreamsmell/">INSTAGRAM</a></li>
+        <li><a href="mailto:plooups@gmail.com">MAIL</a></li>
+    </ul>
+</footer>
+
+
+</body> 
+</html> 

@@ -1,0 +1,137 @@
+ <!doctype html>
+
+<html lang="fr">
+<html prefix="og: http://ogp.me/ns#">
+
+
+<head>
+<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+<script src="js/pushmenu.js"></script>
+
+<script>
+$(document).ready(function() 
+    { $menuLeft = $('.pushmenu-left'); 
+    $nav_list = $('#nav_list'); 
+    $nav_list.click(function(e) { e.stopPropagation(); 
+        $(this).toggleClass('active'); 
+        $('.pushmenu-push').toggleClass('pushmenu-push-toright'); 
+        $menuLeft.toggleClass('pushmenu-open'); }); 
+    $('html').click(function() { $nav_list.removeClass('active'); 
+        $('.pushmenu-push').removeClass('pushmenu-push-toright'); 
+        $menuLeft.removeClass('pushmenu-open'); }); });
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $('.js-scrollTo').on('click', function() { // Au clic sur un élément
+            var page = $(this).attr('href'); // Page cible
+            var speed = 950; // Durée de l'animation (en ms)
+            $('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
+            return false;
+        });
+    });
+</script>
+
+
+
+<meta charset="utf-8"> 
+
+<title>Trombinoscope - Photographie</title>
+
+<meta property="og:image" content="http://www.marionrobin.com/images/autoportrait.jpg"/>
+<meta property='og:title' content='Marion Robin | Portfolio'/>
+<meta property='og:url' content='http://www.marionrobin.com/' />
+<meta property='og:type' content='website' />
+<meta property='og:description' content=" Bienvenue dans ma tête ! Tu es invité à entrer dans l'univers d'une étudiante en design graphique. Bonne visite !" />
+
+<meta name="viewport" content="initial-scale=1.0,width=device-width" />
+
+<link rel="stylesheet" href="../css/master.css" type="text/css" media="screen" />
+<link rel="icon" type="image/png" href="../images/favicon1.png" />
+</head>
+
+
+
+<body>
+
+<!-- menu reponsive -->
+<div id="menuplus">
+    <nav class="pushmenu pushmenu-left">
+    <img src="images/logo.svg">
+        <a class="hov prem" href="a-propos.html">Marion Robin ?</a>
+        <a class="hov last" href="plooups@gmail.com">Mail me </a>
+        <p class="separation">_________________</p>
+        <a class="hov" href="pages/voyage.html">● Voyage</a>
+        <a class="hov" href="pages/trombi.html">● Trombinoscope</a>
+        <a class="hov" href="pages/ulysse.html">● L'odyssée du couple</a>   
+        <a class="hov" href="pages/refresh.html">● Refresh ! </a>
+        <a class="hov" href="pages/lecancre.html">● Le Cancre</a>
+        <a class="hov" href="pages/sources.html">● Back home</a>
+        <a class="hov" href="pages/icon.html">● Mind Reader</a>
+        <a class="hov" href="pages/rencontre.html">● Rencontre</a>
+        <a class="hov" href="pages/nautilus.html">● Le fleuve noir</a>
+        <a class="hov" href="pages/turner.html">● Utopie numérique</a>
+    </nav>
+    <div class="container">
+        <div class="main">
+            <section class="buttonset">
+                <div id="nav_list">
+                    <a class="menunav"href="#">Hello !</a>
+                </div>
+            </section>
+        </div><!-- End Main -->
+    </div><!-- End Container --> 
+</div><!--menuplus-->
+
+
+
+
+<!--**************************INTRODUCTION**************************-->
+<div class="descriptionprojet" id="projet-trombi">
+
+        <!--***************PRESENTATION***************-->
+        <h1>trombinoscope</h1>
+        <p>Revisiter le trombinoscope, à travers la notion de pudeur et de dévoilement de soi, exprimée par le contraste entre un portrait frontal et direct, et un gif où le visage se dévoile partiellement. Projet réalisé avec <a href="http://www.charlottepeze.com">Charlotte Pezé</a>, <a href="http://www.guillaumepontes.com/">Guillaume Pontes</a> et <a href="http://lea-francois.fr/index.html">Léa François</a>.</p>
+</div>
+
+
+
+    <!--***************PROJET***************-->
+
+    <ul class="grid grid1">
+        <li class="anjali"><img src="images/trombi/Anjali.jpg"> </li> 
+        <li class="charlotte"><img src="images/trombi/Charlotte.jpg"> </li> 
+        <li class="clement"><img src="images/trombi/Clement.jpg"> </li> 
+        <li class="eloi"><img src="images/trombi/Eloi.jpg"> </li> 
+        <li class="fatma"><img src="images/trombi/Fatma.jpg"> </li> 
+        <li class="florian"><img src="images/trombi/Florian.jpg"> </li> 
+        <li class="julieb"><img src="images/trombi/Julie B.jpg"> </li> 
+        <li class="julief"><img src="images/trombi/Julie F.jpg"> </li> 
+        <li class="lucile"><img src="images/trombi/Lucile.jpg"> </li> 
+        <li class="manu"><img src="images/trombi/Manu.jpg"> </li> 
+        <li class="marion"><img src="images/trombi/Marion.jpg"> </li> 
+        <li class="solene"><img src="images/trombi/Solene.jpg"> </li> 
+    </ul><!-- ul .grid .columns3 -->
+
+
+<a href="dingbats.html"><div class="previous"></div></a> <!-- fin de "previous"-->
+<a href="sources.html"><div class="next"></div></a> <!-- fin de "next">-->
+
+
+<footer class="footer-projets">
+    <ul>
+        <li><a class="js-scrollTo" id="down" href="../index.html">PROJETS</a></li>
+        <li><a href="../a-propos.html">A PROPOS</a></li>
+        <li><a href="https://www.instagram.com/dreamsmell/">INSTAGRAM</a></li>
+        <li><a href="mailto:plooups@gmail.com">MAIL</a></li>
+    </ul>
+</footer>
+
+
+
+
+
+
+</body> 
+</html> 

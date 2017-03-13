@@ -1,0 +1,143 @@
+ <!doctype html>
+
+<html lang="fr">
+<html prefix="og: http://ogp.me/ns#">
+
+
+<head>
+<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+<script src="js/pushmenu.js"></script>
+
+<script>
+$(document).ready(function() 
+    { $menuLeft = $('.pushmenu-left'); 
+    $nav_list = $('#nav_list'); 
+    $nav_list.click(function(e) { e.stopPropagation(); 
+        $(this).toggleClass('active'); 
+        $('.pushmenu-push').toggleClass('pushmenu-push-toright'); 
+        $menuLeft.toggleClass('pushmenu-open'); }); 
+    $('html').click(function() { $nav_list.removeClass('active'); 
+        $('.pushmenu-push').removeClass('pushmenu-push-toright'); 
+        $menuLeft.removeClass('pushmenu-open'); }); });
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $('.js-scrollTo').on('click', function() { // Au clic sur un élément
+            var page = $(this).attr('href'); // Page cible
+            var speed = 950; // Durée de l'animation (en ms)
+            $('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
+            return false;
+        });
+    });
+</script>
+
+
+
+<meta charset="utf-8"> 
+
+<title>Dingdots - Manifeste typo</title>
+
+<meta property="og:image" content="http://www.marionrobin.com/images/autoportrait.jpg"/>
+<meta property='og:title' content='Marion Robin | Portfolio'/>
+<meta property='og:url' content='http://www.marionrobin.com/' />
+<meta property='og:type' content='website' />
+<meta property='og:description' content=" Bienvenue dans ma tête ! Tu es invité à entrer dans l'univers d'une étudiante en design graphique. Bonne visite !" />
+
+<meta name="viewport" content="initial-scale=1.0,width=device-width" />
+
+<link rel="stylesheet" href="../css/master.css" type="text/css" media="screen" />
+<link rel="icon" type="image/png" href="../images/favicon1.png" />
+</head>
+
+
+
+<body class="page-projet">
+
+<!-- menu reponsive -->
+<div id="menuplus">
+    <nav class="pushmenu pushmenu-left">
+    <img src="images/logo.svg">
+        <a class="hov prem" href="a-propos.html">Marion Robin ?</a>
+        <a class="hov last" href="plooups@gmail.com">Mail me </a>
+        <p class="separation">_________________</p>
+        <a class="hov" href="pages/voyage.html">● Voyage</a>
+        <a class="hov" href="pages/trombi.html">● Trombinoscope</a>
+        <a class="hov" href="pages/ulysse.html">● L'odyssée du couple</a>   
+        <a class="hov" href="pages/refresh.html">● Refresh ! </a>
+        <a class="hov" href="pages/lecancre.html">● Le Cancre</a>
+        <a class="hov" href="pages/sources.html">● Back home</a>
+        <a class="hov" href="pages/icon.html">● Mind Reader</a>
+        <a class="hov" href="pages/rencontre.html">● Rencontre</a>
+        <a class="hov" href="pages/nautilus.html">● Le fleuve noir</a>
+        <a class="hov" href="pages/turner.html">● Utopie numérique</a>
+    </nav>
+    <div class="container">
+        <div class="main">
+            <section class="buttonset">
+                <div id="nav_list">
+                    <a class="menunav"href="#">Hello !</a>
+                </div>
+            </section>
+        </div><!-- End Main -->
+    </div><!-- End Container --> 
+</div><!--menuplus-->
+
+
+
+
+<!--**************************BIENVENUE**************************-->
+<div class="descriptionprojet" id="projet-dingbats">
+        <h1>dingdot</h1>
+        <p>Création d’une dingbats à partir de la police <span>Matrix</span> de Zuzanna Licko, conçue spécialement pour les imprimantes matricielles et les premiers Macintosh. La Dingdot propose une réinterprétation à travers la trame et le principe de la matrice. </p>
+</div>
+
+
+<!--**************************PROJET*************************-->
+<a href="synesthesie.html"><div class="previous"></div></a> <!-- fin de "previous"-->
+<a href="trombi.html"><div class="next"></div></a> <!-- fin de "next">-->
+
+
+<section id="section-dingbats">
+    <img class="experimentation" id="exp1" src="images/dingbats/exp1.png">
+    <div class="explication">
+        <p class="synopsis">Le Matrix de Zuzanna Licko est conçu dans le but de faciliter l'impression de caractères typographiques avec les imprimantes matricielles dont la tête d'impression est composée d'une multitude d'aiguille. La lettre prend forme grâce à une multitude de minuscules points. Le dessin du caractère doit donc être simplifié (angle d'empattement à 45°, empattements triangulaires, géométrisation...), pour éviter de surcharger la mémoire de l'imprimante et de l'ordinateur. </p>
+        </br>
+        <p id="p2">La Dingdot propose donc une relecture du Matrix, en effectuant un zoom dans la matrice du caractère. La matrice du point devient alors un motif ornemental, capable de créer de nouvelles formes, délicates et modulables et une nouvelle plasiticté. La typographie possède 26 caractères et 4 déclinaisons exploitant ses possibilités : dessin de la forme, de la contre-forme, combinaison des deux, ajout du carré pour retrouver l'aspect anguleux de la Matrix. 
+        Par la suite, les caractères ont été mis en scène dans la création d'une affiche imprimée en sérigraphie.
+        </p>
+    </div>
+
+    <img class="experimentation" id="exp2" src="images/dingbats/exp2.png">
+    <img id="caractere" src="images/dingbats/clavier.jpg">
+
+
+    <article id="article-affiche-dingbats">
+        <ul class="grille">
+            <li><img src="images/dingbats/1.jpg"> </li> 
+            <li><img src="images/dingbats/2.jpg"> </li> 
+            <li><img id="grille3" src="images/dingbats/3.jpg"> </li> 
+            <li><img id="grille5" src="images/dingbats/4.jpg"> </li> 
+            <li><img src="images/dingbats/5.jpg"> </li>
+            <li><img src="images/dingbats/6.jpg"> </li> 
+        </ul><!-- ul .grid .columns3 -->
+    </article>
+</section>
+
+
+
+
+<!--**************************FOOTER**************************-->
+<footer class="footer-projets">
+    <ul>
+        <li><a class="js-scrollTo" id="down" href="../index.html">PROJETS</a></li>
+        <li><a href="../a-propos.html">A PROPOS</a></li>
+        <li><a href="https://www.instagram.com/dreamsmell/">INSTAGRAM</a></li>
+        <li><a href="mailto:plooups@gmail.com">MAIL</a></li>
+    </ul>
+</footer>
+
+
+</body> 
+</html> 

@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="fr">
+
+
+<head>
+    <meta charset="utf-8"> 
+    <meta name="viewport" content="initial-scale=1.0,width=device-width" />
+
+    <title>Soirées Regards | Marion Robin</title>
+
+
+<link rel="stylesheet" href="../css/master.css" type="text/css" media="screen" />
+<link rel="icon" type="image/png" href="../images/favicon1.png" />
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $('.scrollTo').click( function() { // Au clic sur un élément
+            var page = $(this).attr('href'); // Page cible
+            var speed = 750; // Durée de l'animation (en ms)
+            $('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
+            return false;
+        });
+    });
+</script>
+
+<script>
+
+$(document).ready(function() 
+    { $menuLeft = $('.pushmenu-left'); 
+    $nav_list = $('#nav_list'); 
+    $nav_list.click(function(e) { e.stopPropagation(); 
+        $(this).toggleClass('active'); 
+        $('.pushmenu-push').toggleClass('pushmenu-push-toright'); 
+        $menuLeft.toggleClass('pushmenu-open'); }); 
+    $('html').click(function() { $nav_list.removeClass('active'); 
+        $('.pushmenu-push').removeClass('pushmenu-push-toright'); 
+        $menuLeft.removeClass('pushmenu-open'); }); });
+</script>
+
+</head>
+<body class="pages">
+
+
+<div id="menuplus">
+    <nav class="pushmenu pushmenu-left">
+    <img src="../images/logo.svg">
+    <a class="hov prem" href="../a-propos.html">Marion Robin ?</a>
+    <a class="hov last" href="plooups@gmail.com">Mail me </a>
+    <p class="separation">_________________</p>
+    <a class="hov" href="voyage.html">● Voyage</a>
+    <a class="hov" href="trombi.html">● Trombinoscope</a>
+    <a class="hov" href="ulysse.html">● L'odyssée du couple</a>   
+    <a class="hov" href="refresh.html">● Refresh ! </a>
+    <a class="hov" href="lecancre.html">● Le Cancre</a>
+    <a class="hov" href="sources.html">● Back home</a>
+    <a class="hov" href="icon.html">● Mind Reader</a>
+    <a class="hov" href="rencontre.html">● Rencontre</a>
+    <a class="hov" href="nautilus.html">● Le fleuve noir</a>
+    <a class="hov" href="turner.html">● Utopie numérique</a>
+    </nav>
+  
+<div class="container">
+        <div class="main">
+        <section class="buttonset">
+            <div id="nav_list"><a class="menunav"href="../index.html">Accueil</a></div>
+
+        </section>
+        </div><!-- End Main -->
+</div><!-- End Container --> 
+</div><!--menuplus-->
+
+
+<div id="b-x"class="fleche gauche"><a href=".html"><</a></div>
+<div id="b-x"class="fleche droite"><a href="voyage.html">></a></div>
+
+<div class="header">
+    <div class="portfolio">
+    <a href="../index.html">
+    Projets
+    </a>
+    </div>
+
+    <div class="apropos">
+        <a href="../a-propos.html">
+        Qui suis-je ? 
+        </a>
+    </div>
+    
+    <div class="apropos">
+    <a href="croquis.html">
+    Gribouillis
+    </a>
+    </div>
+</div>
+
+<div class="logo"><a href="../a-propos.html"><img src="../images/logo.svg"></a></div>
+
+<h2 class="au-centre"> SOIRÉES REGARDS </h2>
+
+
+<div class="legende odyssee"> Conception de la communication des Soirées Regards du Musée d'Art Moderne, pour les jeunes et par les jeunes, qui deviennent médiateurs de l'exposition de Jan Dibbets le temps d'une soirée, révélatrice de regards échangés, affirmés, singuliers. Projet réalisé avec <a href="http://nicolaspauthier.fr">Nicolas Pauthier</a>.  </div>
+
+
+
+<div class="conteneurvideo">
+<iframe class="video" src="https://player.vimeo.com/video/162946201" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+</div>
+
+<div class="affiche"><img src="images/mam/affiche.png"></div>
+
+
+
+<div id="b-f"class="scrollup">
+   <a class="scrollTo" href=".header"><img id="fleche-haut"src="../images/fleche_haut.png"></a>
+</div>  
+
+<div class="pieddepage">
+        <div class="reseaux">
+        <a href="https://www.flickr.com/photos/100214640@N05/"><img class="reseau"src="../images/flickr.png"></a>
+        <a href="https://fr.pinterest.com/plooups/"><img class="reseau"src="../images/pinterest.png"></a>
+        <a href="https://www.instagram.com/dreamsmell/"><img class="reseau"src="../images/instagram.png"></a>
+        <a><img class="reseau"src="../images/mail.png"></a>
+        </div>
+</div>
+</body> 
+</html> 
+
