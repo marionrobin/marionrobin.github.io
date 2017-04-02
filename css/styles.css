@@ -38,6 +38,34 @@ a{
 	cursor: url("../images/gauche2.png"),auto;
 }
 
+.videoWrapper,.grid1{
+	z-index:15;
+	position:relative;
+}
+
+#body-trombi .next,.previous{
+	height:320%;
+}
+
+#body-sources .next,.previous{
+	height:700%;
+}
+
+#body-regards .next,.previous{
+	height:180%;
+}
+
+#body-nuit .next,.previous{
+	height:960%;
+}
+
+#body-bluevelvet .next,.previous{
+	height:100%;
+}
+
+#body-synesthesie .next,.previous{
+	height:80%;
+}
 
 /***************************************ACCUEIL***************************************/
 /************BIENVENUE************/
@@ -431,7 +459,7 @@ footer, .footer-projets{
 	bottom:0;
 	background:white;
 	opacity:0.9;
-	z-index:10;
+	z-index:100;
 	font-size:0.8em;
 }
 
@@ -627,15 +655,13 @@ h1{
 }
 
 ul.grid {              /* Bloc qui contient les items de la grille */
-	width:85%;         /* Largeur du bloc */
-	margin-left:10.5%;  /* Centrage latéral */
-	margin-right:auto; /* Centrage latéral */
+	width:78%;         /* Largeur du bloc */
+	margin-left:13%;
 	margin-bottom:2em;
 	margin-top:20px;
 	}	
 
 ul.grid li { /*éléments de la grille*/
-
 	width:45.5%;
 	display:inline-block; /* Alignement horizontal */
 	text-align:center;    /* Texte centré */
@@ -853,6 +879,10 @@ ul.columns3 li:nth-child(3n),    /* Grille de 3 colonnes : cible tous les 2e él
 	width:45%;
 	margin-right:10px;
 	margin-bottom:10px;
+}
+
+.forme1{
+	width:100%;
 }
 
 #section-iseeyou .explication{
