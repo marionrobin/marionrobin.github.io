@@ -12,111 +12,11 @@
 @media screen and (min-width:1920px) { 
 	/* iMac 21.5" paysage = 1920px */
 
-	.header{
-		background-color:blue;
+	.descriptionprojet p{
+		width:5%;
 	}
-
-
-
-	.parent{
-		margin-top:750px;
-	}
-
-	.ulysse {  /*vignette trombinoscope*/
-	width: 400px;
-	height: 400px;
-	}
-
-	.voyage { /*vignette voyage au bout de la rue*/
-	width: 450px;
-	height: 450px;
-	}
-
-	.nautilus { /*vignette 20000 lieues sous les mers*/
-	width: 560px;
-	height:560px;
-	}
-
-	.icon { /*vignette icon you app!*/
-	width: 400px;
-	height:400px;
-	}
-
-	.trombi { /*vignette l'Odyssée*/
-	width: 400px;
-	height: 400px;
-	}
-
-	.lecancre{ /*vignette Le Cancre*/
-	width: 450px;
-	height: 450px;
-	margin-left:5%;
-	margin-top:400px;
-	}	
-
-	.rencontre{ /*vignette Rencontre*/
-	width: 350px;
-	height:350px;
-	margin-top:750px;
-	margin-left:60%;
-	}
-	
-	.turner { /*vignette turner*/
-	width: 350px;
-	height:350px;
-	}
-
-	.refresh { /*vignette Fred Turner*/
-	width: 400px;
-	height:400px;
-	}
-
-	.sources{
-		width:400px;
-		height:400px;
-	}
-	.mam{
-		width:450px;
-		height:450px;
-		margin-top:950px;
-		margin-left:40%;
-	}
-	.nautilus{
-		width:400px;
-		height:400px;
-		margin-left:10%;
-		margin-top:900px;
-	}
-
-	.cat {
-	font-size:1.5em;
-	}
-
-.legende, .moi{
-	width:50%;
-	font-size:1.8em;
-	text-align:center;
-	margin-left:auto;
-	margin-right:auto;
-	}
-
-h2{
-	font-size:5em;
-}
-
-.portfolio a ,.apropos a{
-	text-decoration:none;
-	color:white;
-	font-size:1.7em;
-}
-
-.logo1 {
-	margin-bottom:-600px;
-}
 
 	} /*accolade du media*/
-
-
 
 
 
@@ -124,72 +24,6 @@ h2{
 @media screen and (min-width:2560px) {
 	/* iMac 27" paysage = 2560px */
 
-	.header{
-		background-color:yellow;
-	}
-
-	.portfolio a ,.apropos a{
-	text-decoration:none;
-	color:white;
-	font-size:2.3em;
-	}
-
-	.logo1{
-		width:22%;
-		margin-top:80px;
-	}
-
-	.parent{
-		margin-top:800px;
-	}
-
-	.voyage,.lecancre,.refresh,.mam,.trombi{
-		width:500px;
-		height:500px;
-	}
-	.sources,.icon,.ulysse{
-		width:450px;
-		height:450px;
-	}
-	.nautilus,.turner,.rencontre{
-		width:400px;
-		height:400px;
-	}
-
-	.voyage{
-		margin-top:-400px;
-	}
-	.trombi{
-		margin-left:13%;
-	}
-	.refresh{
-		margin-top:-100px;
-	}
-	.nautilus{
-		margin-left:18%;
-	}
-
-
-
-
-
-	.legende{
-    width: 37%;
-    font-size:2em;
-	}
-
-
-	.fleche{
-		font-size:9em;
-	}
-
-	.scrollup {
-	margin-top:250px;
-    margin-left:auto;
-    margin-right:auto;
-    width: 80px;
-    height: 80px;
-	}
 
 }	/*accolade du media*/
 
@@ -201,22 +35,7 @@ h2{
 
 @media screen and (max-width:1280px) {
 	/* Notebook */
-	.header{
-		background: red;
-	}
 
-	.parent{
-		margin-top:400px;
-	}
-
-	.logo1{
-		margin-top:50px;
-	}
-
-	.vignette{
-		width:250px;
-		height:250px;
-	}
 
 }/*accolade du media*/
 
@@ -227,132 +46,43 @@ h2{
 @media screen and (max-width:1024px) {
 	/* iPad portrait & landscape */
 	/* iPhone6+ paysage = 960px */
-	.header{
-		background: yellow;
-	}
 
-	.logo1{
-		margin-top:3px;
-		width:30%;
-	}
-
-	.parent{
-		margin-top:430px;
-	}
-
-	.ulysse{
-		margin-top:0px;
-	}
-
-	.trombi{
-		margin-left:13%;
-	}
-	.icon{
-		margin-top:180px;
-		margin-left:50%;
-	}
-	.lecancre{
-		margin-top:200px;
-	}
-	.sources{
-		margin-top:340px;
-		margin-left:32%;
-	}
-	.mam{
-		margin-top:400px;
-	}
-	.nautilus{
-		margin-top:570px;
-	}
-	.turner{
-		margin-left:60%;
-	}
+}/*accolade du media*/
 
 
+@media screen and (max-width:980px) {
+	#fondhome p{
+	font-size:2.5em;
+	}
 
-	.presentation{
-		font-size:0.8em;
-		width:30%;
+	#fondhome{
+		padding-bottom:50px;
+		margin-top:70px;
+		padding-top:100px;
+	}
+
+	p.legende{
+		font-size:0.7em;
+	}
+
+	#apropos{
+		margin-top:20px;
+	}
+
+	#apropos p{
+		font-size:2.3em;
+	}
+
+	#projet-regards p{
+		font-size:2em;
 	}
 }/*accolade du media*/
 
 
 
-
-
 @media screen and (max-width:768px) {
 	/* iPad portrait = 768px */
-	.header{
-		background: green;
-	}
-
-	.logo1 {
-    width: 30%;
-    margin-top:20px;
-    	}
-
-    .parent{
-    	margin-top:350px;
-    }
-    .trombi{
-    	margin-top:-6px;
-    }
-    .rencontre{
-    	margin-top:720px;
-    	margin-left:10%;
-    }
-  	.ulysse {  /*vignette trombinoscope*/
-	width: 220px;
-	height: 220px;
-	margin-top:10px;
-	}
-
-	.voyage { /*vignette voyage au bout de la rue*/
-	width: 240px;
-	height: 240px;
-	}
-
-	.nautilus { /*vignette 20000 lieues sous les mers*/
-	width: 240px;
-	height: 240px;
-	z-index:-2000;
-	}
-
-	.icon { /*vignette icon you app!*/
-	width: 240px;
-	height: 240px;
-	}
-
-	.trombi { /*vignette l'Odyssée*/
-	width: 200px;
-	height: 200px;
-	z-index:2000;
-	}
-
-	.lecancre{ /*vignette Le Cancre*/
-	width: 240px;
-	height: 240px;
-	}	
-
-	.sources{ /*vignette Retour aux sources*/
-	width: 200px;
-	height: 200px;
-	}
-
-	.rencontre{ /*vignette Rencontre*/
-	width: 200px;
-	height: 200px;
-	}
 	
-	.turner { /*vignette turner*/
-	width: 200px;
-	height: 200px;
-	}
-
-	.refresh { /*vignette Fred Turner*/
-	width: 200px;
-	height: 200px;
-	}
 }/*accolade du media*/
 
 
@@ -381,59 +111,6 @@ h2{
 	} /*à la place on fait apparaitre le menu pour smartphones*/
 
 
-
-	.logo1{ /*logo accueil*/
-	margin-right:auto;
-	margin-left:auto;
-	margin-top:40px;
-	width:40%;
-	size:cover;
-	}
-
-	.logo {
-	display:none;
-	}
-
-	.parent{
-		margin-top:400px;
-		margin-left:-20px;
-	}
-	.trombi{
-		margin-left:9%;
-		margin-top:-20px;
-	}
-	.voyage{
-		margin-top:-70px;
-		margin-left:65%;
-	}
-	.mam{
-		width:220px;
-		height:220px;
-	}
-	.nautilus{
-		width:200px;
-		height:200px;
-	}	
-	.refresh{
-		margin-top:90px;
-	}
-	.icon{
-		margin-top:200px;
-	}
-	.turner{
-		margin-top:400px;
-	}
-	.rencontre{
-		margin-left:63%;
-		margin-top:650px;
-	}
-	.cat{
-		display:none;
-	}
-	.vignette{
-		width:180px;
-		height:180px;
-	}
 
 }/*accolade du media*/
 
@@ -495,130 +172,6 @@ h2{
 
 
 
-/* **********************************************IPAD PAYSAGE********************************************************************** */
-
-@media screen and (max-width:1024px) {
-	.cat p{
-	font-size:1.3em;
-	}
-
-	.video{
-	width:90%;
-	height:300px;
-	margin-left:1%;
-
-}
-
-/* **********************************************IPAD PORTRAIT********************************************************************** */
-
-
-@media screen and (max-width:768px) {/* iPad portrait = 768px */
-
-
-	.logo { /*logo dans les pages internes*/
-	width:15%;
-	opacity:0.9;
-	margin-top:-3%;
-	}
-
-	.fleche{
-	margin-top:	40%;
-	position:absolute;
-	position:fixed; /*permet de garder les flèches au même endroit même au scroll*/
-	font-size:5em;
-	z-index:4000;
-	}
-
-	h2{
-	font-size:4em;
-	width:70%;
-	margin-left:auto;
-	margin-right:auto;
-	}
-
-
-	.cat{
-		font-size:0.5em;
-	}
-
-
-
-/* ******************************************************************************************************************** */
-
-
-	img.reseau { /*icones reseaux sociaux*/
-	width:7%;
-	height:7%;
-	}
-
-	#pont, img#rencontre {
-	width:100%;
-	}
-
-	ul.grid li { /*éléments de la grille*/
-	width:100%;
-	}
-
-	ul.grid {
-	margin-left:auto;
-	margin-right:auto;
- 	}
-
-	.legende, .moi{
-	width:70%;
-	font-size:1.8em;
-	text-align:center;
-	margin-left:auto;
-	margin-right:auto;
-	}
-
-
-	.video{
-	margin-left:9%
-	}
-
-	.pageturner img{
-	width:90%;
-	margin-left:6%;
-	}
-
-	.croquis8{
-		visibility:hidden;
-	}
-
-}/*accolade du media*/
-
-
-
-/* **********************************IPHONE 6********************************************** */
-
-
-	h2{
-		font-size:2em;
-	}
-
-	.fleche{
-		font-size:2em;
-		font-weight:bold;
-	}
-
-	.legende,.moi{
-		font-size:1.1em;
-	}
-
-	.moi{
-		width:90%;
-	}
-
-	.autoportrait{
-		width:200px;
-		height:200px;
-	}
-
-	img.reseau{ /*icones reseaux sociaux*/
-	width:15%;
-	height:15%;
-	}
 
 
 /* **********************************IPHONE 4********************************************** */
@@ -627,10 +180,6 @@ h2{
 
 @media screen and (max-width:320px) {
 
-	.logo1{
-		margin-top:-20px;
-		margin-bottom:-100px;
-	}
 
 } /*accolade du média*/
 
