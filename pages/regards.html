@@ -1,31 +1,14 @@
-<!doctype html>
+ <!doctype html>
+
 <html lang="fr">
+<html prefix="og: http://ogp.me/ns#">
 
 
 <head>
-    <meta charset="utf-8"> 
-    <meta name="viewport" content="initial-scale=1.0,width=device-width" />
-
-    <title>Soirées Regards | Marion Robin</title>
-
-
-<link rel="stylesheet" href="../css/master.css" type="text/css" media="screen" />
-<link rel="icon" type="image/png" href="../images/favicon1.png" />
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script>
-    $(document).ready(function() {
-        $('.scrollTo').click( function() { // Au clic sur un élément
-            var page = $(this).attr('href'); // Page cible
-            var speed = 750; // Durée de l'animation (en ms)
-            $('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
-            return false;
-        });
-    });
-</script>
+<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+<script src="js/pushmenu.js"></script>
 
 <script>
-
 $(document).ready(function() 
     { $menuLeft = $('.pushmenu-left'); 
     $nav_list = $('#nav_list'); 
@@ -38,91 +21,113 @@ $(document).ready(function()
         $menuLeft.removeClass('pushmenu-open'); }); });
 </script>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $('.js-scrollTo').on('click', function() { // Au clic sur un élément
+            var page = $(this).attr('href'); // Page cible
+            var speed = 950; // Durée de l'animation (en ms)
+            $('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
+            return false;
+        });
+    });
+</script>
+
+
+
+<meta charset="utf-8"> 
+
+<title>Soirées Regard, MAM - Communication globale</title>
+
+<meta property="og:image" content="http://www.marionrobin.com/images/autoportrait.jpg"/>
+<meta property='og:title' content='Marion Robin | Portfolio'/>
+<meta property='og:url' content='http://www.marionrobin.com/' />
+<meta property='og:type' content='website' />
+<meta property='og:description' content=" Bienvenue dans ma tête ! Tu es invité à entrer dans l'univers d'une étudiante en design graphique. Bonne visite !" />
+
+<meta name="viewport" content="initial-scale=1.0,width=device-width" />
+
+<link rel="stylesheet" href="../css/master.css" type="text/css" media="screen" />
+<link rel="icon" type="image/png" href="../images/favicon1.png" />
 </head>
-<body class="pages">
 
 
+
+<body id="body-regards">
+
+<!-- menu reponsive -->
 <div id="menuplus">
     <nav class="pushmenu pushmenu-left">
-    <img src="../images/logo.svg">
-    <a class="hov prem" href="../a-propos.html">Marion Robin ?</a>
-    <a class="hov last" href="plooups@gmail.com">Mail me </a>
-    <p class="separation">_________________</p>
-    <a class="hov" href="voyage.html">● Voyage</a>
-    <a class="hov" href="trombi.html">● Trombinoscope</a>
-    <a class="hov" href="ulysse.html">● L'odyssée du couple</a>   
-    <a class="hov" href="refresh.html">● Refresh ! </a>
-    <a class="hov" href="lecancre.html">● Le Cancre</a>
-    <a class="hov" href="sources.html">● Back home</a>
-    <a class="hov" href="icon.html">● Mind Reader</a>
-    <a class="hov" href="rencontre.html">● Rencontre</a>
-    <a class="hov" href="nautilus.html">● Le fleuve noir</a>
-    <a class="hov" href="turner.html">● Utopie numérique</a>
+    <img src="images/logo.svg">
+        <a class="hov prem" href="a-propos.html">Marion Robin ?</a>
+        <a class="hov last" href="plooups@gmail.com">Mail me </a>
+        <p class="separation">_________________</p>
+        <a class="hov" href="pages/voyage.html">● Voyage</a>
+        <a class="hov" href="pages/trombi.html">● Trombinoscope</a>
+        <a class="hov" href="pages/ulysse.html">● L'odyssée du couple</a>   
+        <a class="hov" href="pages/refresh.html">● Refresh ! </a>
+        <a class="hov" href="pages/lecancre.html">● Le Cancre</a>
+        <a class="hov" href="pages/sources.html">● Back home</a>
+        <a class="hov" href="pages/icon.html">● Mind Reader</a>
+        <a class="hov" href="pages/rencontre.html">● Rencontre</a>
+        <a class="hov" href="pages/nautilus.html">● Le fleuve noir</a>
+        <a class="hov" href="pages/turner.html">● Utopie numérique</a>
     </nav>
-  
-<div class="container">
+    <div class="container">
         <div class="main">
-        <section class="buttonset">
-            <div id="nav_list"><a class="menunav"href="../index.html">Accueil</a></div>
-
-        </section>
+            <section class="buttonset">
+                <div id="nav_list">
+                    <a class="menunav"href="#">Hello !</a>
+                </div>
+            </section>
         </div><!-- End Main -->
-</div><!-- End Container --> 
+    </div><!-- End Container --> 
 </div><!--menuplus-->
 
 
-<div id="b-x"class="fleche gauche"><a href=".html"><</a></div>
-<div id="b-x"class="fleche droite"><a href="voyage.html">></a></div>
 
-<div class="header">
-    <div class="portfolio">
-    <a href="../index.html">
-    Projets
-    </a>
-    </div>
 
-    <div class="apropos">
-        <a href="../a-propos.html">
-        Qui suis-je ? 
-        </a>
-    </div>
-    
-    <div class="apropos">
-    <a href="croquis.html">
-    Gribouillis
-    </a>
-    </div>
+<!--**************************BIENVENUE**************************-->
+<div class="descriptionprojet" id="projet-regards">
+        <h1>soirées regards</h1>
+        <p>Communication des Soirées Regards du Musée d'Art Moderne pour les jeunes, et par les jeunes qui deviennent médiateurs de l'exposition <span>La Boîte de Pandore</span> de Jan Dibbets pour la soirée. Le terme de "soirées révélatrices" a mené à l'idée d'une révélation basée sur le partage de points de vues différents qui se confrontent et se complètent. Projet réalisé avec <a href="http://nicolaspauthier.fr">Nicolas Pauthier</a>.</p>
 </div>
 
-<div class="logo"><a href="../a-propos.html"><img src="../images/logo.svg"></a></div>
+    <!--***************PROJET***************-->
+<a href="sources.html"><div class="previous"></div></a> <!-- fin de "previous"-->
+<a href="magritte.html"><div class="next"></div></a> <!-- fin de "next"-->
 
-<h2 class="au-centre"> SOIRÉES REGARDS </h2>
+<section id="section-regards">
+    <div class="videoWrapper" id="video-regards">
+        <iframe src="https://player.vimeo.com/video/162946201" width="680" height="440" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    </div>
+
+    <img src="images/mam/affiche.png">
+
+    <div class="explication">
+        <p class="synopsis">L'exposition "La Boîte de Pandore - Une autre photographie par Jan Dibbets" propose une version alternative de l'histoire de la photographie, en mettant en avant les innovations du médium, à la fois sur le plan artistique que documentaire, ou scientifique. 
+        Les soirées regards proposées par le Musée d'Art Moderne de Paris permettent quant à elles de donner la parole aux étudiants, qui vont devenir le temps d'une soirée, les "éclaireurs" face à des oeuvres énigmatiques. La plupart d'entre eux n'ont pas de lien direct avec le monde de la photographie, venant d'horizons variés. </p>
+        </br>
+        </br>
+        <p id="p2">Après l'appropriation du concept de ces soirées, la baseline devient "Les soirées regards, soirées révélatrices". Le parti-pris est celui de la révélation face aux oeuvres et grâce à un échange de points de vue différents. Le principe est formalisé par la superposition de visages en transparence, montrant la diversité de regards. Le morphing vient accentuer l'idée d'évolution et de modelage de la pensée, en évoquant également le bain révélateur utilisé en photographie argentique, où l'image se révèle petit à petit. Le rythme lent du teaser traduit la progression et le cadre propice à la méditation.
+        </p>
+    </div>
+</section>
 
 
-<div class="legende odyssee"> Conception de la communication des Soirées Regards du Musée d'Art Moderne, pour les jeunes et par les jeunes, qui deviennent médiateurs de l'exposition de Jan Dibbets le temps d'une soirée, révélatrice de regards échangés, affirmés, singuliers. Projet réalisé avec <a href="http://nicolaspauthier.fr">Nicolas Pauthier</a>.  </div>
+<!--**************************FOOTER**************************-->
+<footer class="footer-projets">
+    <ul>
+        <li><a class="js-scrollTo" id="down" href="../index.html">PROJETS</a></li>
+        <li><a href="../a-propos.html">A PROPOS</a></li>
+        <li><a href="https://www.instagram.com/dreamsmell/">INSTAGRAM</a></li>
+        <li><a href="mailto:plooups@gmail.com">MAIL</a></li>
+    </ul>
+</footer>
 
 
 
-<div class="conteneurvideo">
-<iframe class="video" src="https://player.vimeo.com/video/162946201" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-</div>
-
-<div class="affiche"><img src="images/mam/affiche.png"></div>
 
 
-
-<div id="b-f"class="scrollup">
-   <a class="scrollTo" href=".header"><img id="fleche-haut"src="../images/fleche_haut.png"></a>
-</div>  
-
-<div class="pieddepage">
-        <div class="reseaux">
-        <a href="https://www.flickr.com/photos/100214640@N05/"><img class="reseau"src="../images/flickr.png"></a>
-        <a href="https://fr.pinterest.com/plooups/"><img class="reseau"src="../images/pinterest.png"></a>
-        <a href="https://www.instagram.com/dreamsmell/"><img class="reseau"src="../images/instagram.png"></a>
-        <a><img class="reseau"src="../images/mail.png"></a>
-        </div>
-</div>
 </body> 
 </html> 
-
