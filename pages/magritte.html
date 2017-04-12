@@ -53,7 +53,7 @@ $(document).ready(function()
 
 
 
-<body>
+<body id="body-magritte">
 
 <!-- menu reponsive -->
 <div id="menuplus">
@@ -101,28 +101,27 @@ $(document).ready(function()
 <a href="nuit.html"><div class="next"></div></a> <!-- fin de "next">-->
 
 <section id="section-magritte">
-    <img id="tableau" src="images/magritte/tableau.jpg">
-    <div id="photos">
-    <img id="m2" src="images/magritte/1.jpg">
-    <img id="m1" src="images/magritte/3.jpg">
-    <img id="m3" src="images/magritte/2.jpg">
+    <article id ="magritte-images">
+        <img id="tableau" src="images/magritte/tableau.jpg">
+        <div class="explication p_legende">
+            <p class="synopsis"><span>L'heureux donateur</span> : ce tableau de Magritte peut évoquer le souvenir d'un lieu, et la nostalgie qu'il provoque. Cependant, il s'agit d'un souvenir lointain, réveillé par des stimulations sensorielles à un moment précis de la journée. </p>
+            </br>
+            <p id="p2">Le projet s'appuie sur des photographies prises au moment précis de l'heure bleue, moment transitoire entre le jour et la nuit. Cet instant calme entre chien et loup possède une atmosphère singulière propice à l'introspection et au souvenir d'un lieu, à la nostalgie. L'idée est donc de retranscrire cette expérience sensorielle du levé du jour, où les choses se brouillent, pour se rapprocher de la maison renfermant les souvenirs de l'enfance. Le calque permet la superposition et le mélange des images, comme des souvenirs qui s'enchevêtrent et se confondent. L'objet numérique, propose une expérience sensorielle : les images se déforment et se tordent à la manière des souvenirs, changeants et imprécis, dans une ambiance sonore propice à l'introspection. 
+            </p>
+        </div>
+        <br>
+        <img class="magritte-print" id="print-1" src="images/magritte/edition_1.jpg">
+        <div id="magritte-print-conteneur">
+        <img class="magritte-print" id="print-2" src="images/magritte/edition_2.jpg">
+        <img class="magritte-print" id="print-3" src="images/magritte/edition_3.jpg">
+        </div>
+    </article>
+
+    <!--**************************VIDEO**************************-->
+
+    <div class="videoWrapper" id="video-magritte">
+        <iframe src="https://player.vimeo.com/video/206052870" width="1050" height="600" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
     </div>
-
-
-
-    <div class="explication">
-        <p class="synopsis"><span>L'heureux donnateur</span> : ce talbeau de Magritte peut évoquer le souvenir d'un lieu, et la nostalgie qu'il provoque. Cependant, il s'agit d'un souvenir lointain, réveillé par des stimulations sensorielles à un moment précis de la journée. </p>
-        </br>
-        <p id="p2">Le projet s'appuie sur des photographies prises au moment précis de l'heure bleue, moment transitoire entre le jour et la nuit. Cet instant calme entre chien et loup possède une atmosphère singulière propice à l'introspection et au souvenir d'un lieu, à la nostalgie. L'idée est donc de retranscrire cette expérience sensorielle du levé du jour, où les choses se brouillent, pour se rapprocher de la maison renfermant les souvenirs de l'enfance. Le calque permet la superposition et le mélange des images, comme des souvenirs qui s'enchevêtrent et se confondent. L'objet numérique, propose une expérience sensorielle : les images se déforment et se tordent à la manière des souvenirs, changeants et imprécis, dans une ambiance sonore propice à l'introspection. 
-        </p>
-    </div>
-
-
-<!--**************************VIDEO**************************-->
-<div class="videoWrapper" id="video-bluevelvet">
-    <iframe src="https://player.vimeo.com/video/206052870" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-</div>
-
 </section>
 
 <!--**************************FOOTER**************************-->
