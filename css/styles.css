@@ -43,28 +43,36 @@ a{
 	position:relative;
 }
 
-#body-trombi .next,.previous{
+#body-trombi .next, #body-trombi .previous{
 	height:320%;
 }
 
-#body-sources .next,.previous{
+#body-dingbats .next, #body-dingbats .previous{
+	height:1400%;
+}
+
+#body-sources .next, #body-sources .previous{
 	height:700%;
 }
 
-#body-regards .next,.previous{
+#body-regards .next, #body-regards .previous{
 	height:180%;
 }
 
-#body-nuit .next,.previous{
+#body-nuit .next, #body-nuit .previous{
 	height:960%;
 }
 
-#body-bluevelvet .next,.previous{
+#body-bluevelvet .next, #body-bluevelvet .previous{
 	height:100%;
 }
 
-#body-synesthesie .next,.previous{
+#body-synesthesie .next, #body-synesthesie .previous{
 	height:80%;
+}
+
+#body-oxfam .next, #body-oxfam .previous{
+	height:10px;
 }
 
 /***************************************ACCUEIL***************************************/
@@ -196,6 +204,30 @@ header span{
 	100% { -o-transform:translate(0px,10px); }
 	}
 
+.b-z{ /*mouvement y de certaines bulles*/
+	-webkit-animation: anim-z 15s infinite linear;
+	-moz-animation: anim-z 15s infinite linear;
+	-o-animation: anim-z 15s infinite linear;
+	}
+
+@-webkit-keyframes anim-z {
+	0% { -webkit-transform: translate(0px,0px); }
+	40% { -webkit-transform: translate(0px,-40px); }
+	100% { -webkit-transform: translate(0px,0px); }
+	}
+
+@-moz-keyframes anim-z {
+	0% { -moz-transform: translate(0px,00px); }
+	40% { -moz-transform: translate(0px,-40px); }
+	100% { -moz-transform: translate(0px,00px); }
+	}
+
+@-o-keyframes anim-z {
+	0% { -o-transform:translate(0px,0px); }
+	40% { -o-transform: translate(0px,-40px); }
+	100% { -o-transform:translate(0px,0px); }
+	}
+
 
 
 #projets{
@@ -302,7 +334,7 @@ header span{
     background:url("../pages/images/magritte/3.jpg")no-repeat center ;;
     background-size:100%;
     margin-left:39%;
-    margin-top:-211px;
+    margin-top:-205px;
     position:relative;
     z-index:4;
 	}
@@ -349,10 +381,10 @@ header span{
 #bluevelvet { 
 	width: 350px;
 	height: 225px;
-    background:url("../pages/images/bluevelvet/bluevelvet.png")no-repeat center ;;
+    background:url("../pages/images/bluevelvet/bluevelvet_bouche.png")no-repeat center ;;
     background-size:100%;
-    margin-left:28%;
-    margin-top:-35px;
+    margin-left:38%;
+    margin-top:-58px;
     position:relative;
     z-index:3;
 	}
@@ -366,11 +398,6 @@ header span{
 	opacity:1;
 }
 
-#bluevelvet .legende{
-	color:white;
-	}
-
-
 
 /*Projet I see you*/
 #iseeyou { 
@@ -378,7 +405,7 @@ header span{
 	height: 300px;
     background:url("../pages/images/iseeyou/iseeyou.png")no-repeat center ;;
     background-size:100%;
-    margin-left:50%;
+    margin-left:60%;
     margin-top:-280px;
     position:relative;
     z-index:1;
@@ -405,7 +432,7 @@ header span{
     background:url("../pages/images/synesthesie/synesthesie2.png")no-repeat center ;;
     background-size:100%;
     margin-left:35%;
-    margin-top:-110px;
+    margin-top:-70px;
    	margin-bottom:200px;
     position:relative;
     z-index:1;
@@ -424,12 +451,12 @@ header span{
 
 /*Projet Dingbats*/
 #dingbats { 
-	width: 350px;
-	height: 270px;
+	width: 390px;
+	height: 310px;
     background:url("../pages/images/dingbats/dingbats.png")no-repeat center ;;
     background-size:100%;
     margin-left:56%;
-    margin-top:-380px;
+    margin-top:-420px;
    	margin-bottom:200px;
     position:relative;
     z-index:1;
@@ -444,10 +471,29 @@ header span{
 	opacity:1;
 }
 
-#dingbats p{
 
-    color:white;
+/*Projet Oxfam*/
+#oxfam { 
+	width: 300px;
+	height: 220px;
+    background:url("../pages/images/oxfam/Oxfam6.PNG")no-repeat center ;;
+    background-size:100%;
+    margin-left:18%;
+    margin-top:-650px;
+   	margin-bottom:200px;
+    position:relative;
+    z-index:1;
+	}
+
+#oxfam:hover{
+	opacity:1;
+	z-index:6;
 }
+
+#oxfam:hover .legende{
+	opacity:1;
+}
+
 
 
 /************FOOTER************/
@@ -502,6 +548,18 @@ footer li:hover{
 	opacity:0.5;
 } 
 */
+
+
+/* descriptions et légendes dans les projets */
+.p_legende{
+	font-size:0.7em;
+	font-family:'NimbusSansL-Regular', Arial, sans-serif; 
+	width:20%;
+	background-color:white;
+	padding:20px;
+	border:1px solid black;
+	z-index:1;
+}
 
 /* *****************NUIT******************** */
 .descriptionprojet{ 
@@ -780,10 +838,7 @@ ul.columns3 li:nth-child(3n),    /* Grille de 3 colonnes : cible tous les 2e él
 	text-decoration:underline;
 }
 
-#p2{
-	
 
-}
 /* *****************SOIREES REGARDS******************** */
 #projet-regards{
 	background-image: url("../pages/images/mam/affiche_2.png");
@@ -868,7 +923,6 @@ ul.columns3 li:nth-child(3n),    /* Grille de 3 colonnes : cible tous les 2e él
 	margin-top:50px;
 	width:80%;
 	margin:auto;
-}
 }
 
 #article-iseeyou{
@@ -1010,7 +1064,7 @@ ul.columns3 li:nth-child(3n),    /* Grille de 3 colonnes : cible tous les 2e él
 
 /* *****************DINGBATS******************** */
 #projet-dingbats{
-	background-image: url("../pages/images/dingbats/caractères.png");
+	background-image: url("../pages/images/dingbats/motif.png");
 	background-size: 80%;
 	background-repeat: no-repeat;
 	background-position:center;
@@ -1051,6 +1105,10 @@ ul.columns3 li:nth-child(3n),    /* Grille de 3 colonnes : cible tous les 2e él
 	border:1px solid black;
 }
 
+article#specimen{
+	width:100%;
+	margin:auto;
+}
 
 .experimentation{
 	width:50%;
@@ -1061,77 +1119,124 @@ ul.columns3 li:nth-child(3n),    /* Grille de 3 colonnes : cible tous les 2e él
 	position:relative;
 	margin-left:55%;
 	margin-top:-500px;
-	z-index:2;
+	z-index:0;
 }
 
-#caractere{
-	width:60%;
+.caracteres{
+	width:100%;
+	margin-top:30px;
+}
+
+#clavier{
+	width:100%;
 	z-index:1000;
 	margin:auto;
-	margin-bottom:100px;
+	margin-bottom:50px;
+	margin-top:50px;
+}
+
+.affiche{
+	width:49%;
+	display:inline;
+	margin-bottom:5px;
+	margin-left:5px;
+}
+
+#p3{
+	position:absolute;
+	margin-left:400px;
+	margin-top:150px;
+	margin-bottom:30px;
 }
 
 
-#article-affiche-dingbats{
-	width:80%;
+#p3 span,#p4 span{
+	font-family:'NimbusSansL-Bold', Arial, sans-serif;
+}
+
+.edition-photos{
+	width:100%;
+	display:inline;
+	margin-top:100px;
+}
+
+#edition1{
+	width:30%;
+	position:relative;
+}
+
+#edition3,#edition4,#edition5{
+	width:52%;
+	display:inline;
+}
+
+#edition3{
+	margin-left:380px;
+	position:absolute;
+	margin-top:-160px;
+}
+
+#edition4{
+	margin-top:30px;
+}
+
+#edition7{
+	width:47%;
+	margin-top:-50px;
+	margin-right:20px;
+}
+
+#edition6{
+	width:47%;
+}
+
+#p4{
+	position:absolute;
+	margin-top:50px;
+	margin-left:50px;
+}
+
+#affiches_serigraphie{
+	width:100%;
 	margin:auto;
+	margin-top:100px;
+	margin-bottom:10px;
 }
-
 
 ul.grille {              
 	width:100%;
-	margin-top:20px;
 	margin:auto;
 	}	
 
 ul.grille li { 
-	width:55%;
+	width:100%;
 	text-align:center;
-	position:relative;
-	opacity:0.7;
-	-ms-filter: "prodig:DXImageTransform.Microsoft.Alpha(Opacity=25)"; /* Hack IE8 */
-    filter: alpha(opacity = 25); /* Hack IE 5-7 */
-    -webkit-transition: opacity 0.5s ease-in-out;/* transition pour Chrome et Safari */
-    -moz-transition: opacity 0.5s ease-in-out;/* transition pour Firefox */
-    -o-transition: opacity 0.5s ease-in-out;/* transition pour Opéra */
-    transition: opacity 0.5s ease-in-out;
+	margin:auto;
+	margin-bottom:5px;
 	}
 
 ul.grille li img{
 	width:100%; 
-	vertical-align: middle;}
-
-
-ul.grille li:nth-child(2n){
-	margin-left:10%;
-	margin-top:-100px;
-}	
-
-
-ul.grille li:nth-child(4n){
-	margin-left:12%;
-	margin-top:-100px;
-}	
-
-ul.grille #grille3{
-	margin-left:10%;
-	z-index:1;
-}
-
-ul.grille #grille5{
-	margin-left:15%;
 }
 
 
-ul.grille li:hover{
-	z-index:5;
+
+#body-oxfam p{
+	margin-left:35%;
+	margin-top:300px;
+	font-size:2.5em;
 	opacity:1;
 }
 
-
-
-
-
+#body-oxfam .previous, #body-oxfam .next {
+    position:absolute;
+    margin-top:-600px;
+    height:100%;
+    width:50%;
+    opacity:0.2;
+    display:inline-block;
+    z-index:7;
+}
 
 
 
