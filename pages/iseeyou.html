@@ -37,7 +37,7 @@ $(document).ready(function()
 
 <meta charset="utf-8"> 
 
-<title>I see you, Centre Pompidou - Application de médiation</title>
+<title>I see you, Centre Pompidou - Cultural mediation application</title>
 
 <meta property="og:image" content="http://www.marionrobin.com/images/autoportrait.jpg"/>
 <meta property='og:title' content='Marion Robin | Portfolio'/>
@@ -53,31 +53,32 @@ $(document).ready(function()
 
 
 
-<body>
+<body id="body-iseeyou">
 
 <!-- menu reponsive -->
 <div id="menuplus">
     <nav class="pushmenu pushmenu-left">
-    <img src="images/logo.svg">
-        <a class="hov prem" href="a-propos.html">Marion Robin ?</a>
-        <a class="hov last" href="plooups@gmail.com">Mail me </a>
+    <img id="apropos-logo" src="images/logo.png"/>
+        <a class="hov prem" href="../a-propos.html">about</a>
+        <a class="hov last" href="plooups@gmail.com">mail me !</a>
+        <a class="hov last" href="instagram.com/dreamsmell">instagram</a>
         <p class="separation">_________________</p>
-        <a class="hov" href="pages/voyage.html">● Voyage</a>
-        <a class="hov" href="pages/trombi.html">● Trombinoscope</a>
-        <a class="hov" href="pages/ulysse.html">● L'odyssée du couple</a>   
-        <a class="hov" href="pages/refresh.html">● Refresh ! </a>
-        <a class="hov" href="pages/lecancre.html">● Le Cancre</a>
-        <a class="hov" href="pages/sources.html">● Back home</a>
-        <a class="hov" href="pages/icon.html">● Mind Reader</a>
-        <a class="hov" href="pages/rencontre.html">● Rencontre</a>
-        <a class="hov" href="pages/nautilus.html">● Le fleuve noir</a>
-        <a class="hov" href="pages/turner.html">● Utopie numérique</a>
+        <a class="hov" href="trombi.html">portraits - photography</a>
+        <a class="hov" href="sources.html">home sweet home - photography</a>
+        <a class="hov" href="nuit.html">night - photography</a>   
+        <a class="hov" href="regards.html">regards - event communication</a>
+        <a class="hov" href="magritte.html">the small hours - print + motion </a>
+        <a class="hov" href="bluevelvet.html">blue velvet - opening credits</a>
+        <a class="hov" href="oxfam.html">oxfam - datavisualisation</a>
+        <a class="hov" href="iseeyou.html">i see you - ux/ui</a>
+        <a class="hov" href="synesthesie.html">synaesthesia - animation</a>
+        <a class="hov" href="dingbats.html">dots - typography + screen printing</a>
     </nav>
     <div class="container">
         <div class="main">
             <section class="buttonset">
                 <div id="nav_list">
-                    <a class="menunav"href="#">Hello !</a>
+                    <a class="menunav" href="../index.html">Marion Robin</a>
                 </div>
             </section>
         </div><!-- End Main -->
@@ -90,7 +91,7 @@ $(document).ready(function()
 <!--**************************BIENVENUE**************************-->
 <div class="descriptionprojet" id="projet-iseeyou">
         <h1>i see you</h1>
-        <p>Application de médiation autour de l'oeuvre <span>Stranger Visions</span> de Heather Dewey Hagborg, présentée à l'exposition <span>Imprimer le monde</span> au Centre Pompidou en mars 2017. L'objectif est de proposer une interprétation de l'oeuvre afin de la faire comprendre au visiteur, et de le mener à une réflexion personnelle. 
+        <p>Creation of a cultural mediation application about <span>Stranger Visions</span> (Heather Dewey Hagborg) in the exhibition <span>"Imprimer le monde"</span> (Centre Pompidou - March 2017). The main goal was to make the artwork more understandable and to make the visitors wonder about it. </p>
 </div>
 
 
@@ -101,29 +102,43 @@ $(document).ready(function()
 
 <section id="section-iseeyou">
 
-    <article id="article-iseeyou">
-        <img id="forme1" src="images/iseeyou/forme.png">
-        <img src="images/iseeyou/iseeyou_2.png">
-        <img src="images/iseeyou/iseeyou_2.png">
-    </article>
+
+    <img id="iseeyou-forme2" src="images/iseeyou/forme.png">
 
     <div class="explication">
-        <p class="synopsis"><span>Stranger Visions</span> : après avoir récolté des déchets (mégots, chewing gum, cheveux...) sur une rue de New-York, Heather Dewey Hagborg les a amenés en laboratoire pour en extraire l'ADN et obtenir des informations sur son propriétaire : genre, couleur des yeux et des cheveux, origine... Grâce à ces informations elle a pu créer des portraits robots résultant du mélange des ADN récoltées, qu'elle a ensuite imprimés en 3D. Son oeuvre met en avant les possibilités de traçage liées à l'ADN et pose la question de la surveillance et par extension de sa légitimité. </p>
+        <p class="synopsis"><span>Stranger Visions</span> : after she collected rubbish (chewing gum, hair...) on the streets of New-York, Heather Dewey Hagborg analysed their DNA in a laboratory to get some information on their owners : gender, hair and eye colour... With these samples she created photofit-pictures by mixing them together. Finally, she printed them in 3D. Her project highlights how we can be tracked with our DNA. 
+ </p>
         </br>
-        </br>
-        <p id="p2">J'ai voulu retranscrire l'atmosphère pesante de la surveillance, et amener l'utilisateur à se questionner sur la fiabilité de l'ADN, ainsi que sur les utilisations malveillantes qui peuvent en être faites. L'application consiste donc en une série de tests factices afin de "prélever l'ADN du visiteur". Si certains semblent crédibles (relevés d'empreintes), d'autres sont exagérés et ridicules. L'expérience se conclut par un portrait psychologique du visiteur, absurde et simpliste, afin de questionner la fiabilité de l'ADN : jusqu'où pouvons-nous faire confiance à la génétique ? Quelles informations nous délivre-t-elle vraiment ? 
-        Des formes abstraites et mouvantes évoquent la matière organique, rendue artificielle par les couleurs fluorescentes. Elles font écho aux caméras de surveillance défectueuses, aux bugs d'affichage, au glitch. L'ambiance sonore est pensée de manière à retranscrire la dimension oppressante du projet, de façon à rendre l'ensemble immersif.
-        Projet en partenariat avec le Centre Pompidou et PandaSuite (développement de l'application). Projet réalisé avec <a href="">Vincent Pittiglio</a>.</p>
+        <p id="p2">In the application, I wanted to retranscribe the atmosphere of mistrust of the artwork with a fake analysis of the visitor's DNA, based on absurd tests. After the tests, the app gives the visitor an absurd portrait of personnality. The goal is to make them wonder "Can I trust my DNA ? What are its limits ?". 
+        Project in partnership with Centre Pompidou and PandaSuite (development). Realised with <a href="https://vincentpittiglio.github.io/">Vincent Pittiglio</a>.</p>
         </p>
     </div>
+
+    <article id="article-iseeyou">
+        <img id="iseeyou-forme1" src="images/iseeyou/splashscreen.PNG">
+        <img id="iseeyou-forme1" src="images/iseeyou/choix.PNG">
+        <img id="iseeyou-forme1" src="images/iseeyou/tache.PNG">
+        <img id="iseeyou-forme1" src="images/iseeyou/mediation.PNG">
+        <img id="iseeyou-forme1" src="images/iseeyou/resultat.PNG">
+        <img id="iseeyou-forme1" src="images/iseeyou/avis.PNG">
+
+        <div id="conteneur-video-iseeyou">
+            <iframe id="video-iseeyou" width="905" height="510" src="https://www.youtube.com/embed/DQSIb1JQ-aY?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen>
+            </iframe>
+        </div>
+        <!--<img src="images/iseeyou/iseeyou_2.png">
+        <img src="images/iseeyou/iseeyou_2.png"> -->
+    </article>
+
+
 </section>
 
 
 <!--**************************FOOTER**************************-->
 <footer class="footer-projets">
     <ul>
-        <li><a class="js-scrollTo" id="down" href="../index.html">PROJETS</a></li>
-        <li><a href="../a-propos.html">A PROPOS</a></li>
+        <li><a class="js-scrollTo" id="down" href="../index.html">WORKS</a></li>
+        <li><a href="../a-propos.html">ABOUT</a></li>
         <li><a href="https://www.instagram.com/dreamsmell/">INSTAGRAM</a></li>
         <li><a href="mailto:plooups@gmail.com">MAIL</a></li>
     </ul>
