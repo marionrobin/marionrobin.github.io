@@ -1,22 +1,91 @@
 
 #nav_list a{
-	color:white;
-	margin-left:70%;
+	color:black;
+	width:50%;
+	margin-left:60%;
+	padding-top:3px;
+	font-size:1.2em;
+	display:inline;
 }
+
 #nav_list a:hover{
-	color:#751ce3;
+	text-decoration: underline;
 }
 
 
 
-@media screen and (min-width:1920px) { 
-	/* iMac 21.5" paysage = 1920px */
+@media screen and (min-width:1920px) and (max-width:2400px){
+	/* Laptop */
 
-	.descriptionprojet p{
-		width:5%;
+	#fondhome{
+	padding-top:190px;
+	padding-bottom:190px;
 	}
 
-	} /*accolade du media*/
+	#fondhome p{
+		font-size:5em;
+		margin-bottom:30px;
+	}
+
+	/* *****************NUIT******************** */
+	#projet-nuit{
+	margin-bottom:30px;
+	margin-top:20px;
+	padding-top:150px;
+	padding-bottom:100px;
+	}
+
+	#projet-nuit p {
+    font-size: 2.9em;
+    width: 53%;
+	}
+
+
+
+
+	/* *****************BLUE VELVET******************** */
+	#projet-bluevelvet{
+	margin-bottom:30px;
+	margin-top:0px;
+	padding-top:150px;
+	padding-bottom:160px;
+	}
+
+	#projet-bluevelvet p{
+	width:60%;
+	font-size:2.8em;
+	}
+
+	#video-bluevelvet, #video-magritte, #video-regards{
+	margin-top:50px;
+	margin-bottom:100px;
+	}
+
+	#conteneurvideo{
+	margin:auto;
+	text-align:center;
+	width:100%;
+	}
+
+	.explication{
+	display:inline-block;
+	margin-left:20px;
+	width:33%;
+	border:1px solid black;
+	margin-top:-50px;
+	margin-bottom:70px;
+	margin-left:90px;
+	padding:20px;
+	}
+
+	.explication p{
+	font-family:'NimbusSansL-Regular', Arial, sans-serif; 
+	font-size:0.7em;
+	}
+
+}/*accolade du media*/
+
+
 
 
 
@@ -24,6 +93,437 @@
 @media screen and (min-width:2560px) {
 	/* iMac 27" paysage = 2560px */
 
+	#fondhome{
+	width: 100%;
+	height: 100%;
+	background-color:white /* #b2ebdf turquoise*/;background-image: url("../images/texture.jpg");
+	background-size: 80%;
+	background-repeat: no-repeat;
+	background-position:center;
+	text-align:center;
+	margin-top:20px;
+	margin-bottom:100px;
+	padding-top:250px;
+	padding-bottom:240px;
+	}
+
+
+	#fondhome p{
+	font-size:7.5em;
+	padding:90px;
+	}
+
+	header #logo{
+	width:10%;
+	margin-left:5%;
+	margin:auto;
+	}
+
+	header p{
+	font-size:2.8em;
+	}
+
+
+
+	/*Projet Trombinoscope*/
+	#trombi { 
+	width: 900px;
+	height: 670px;
+    margin-left:13%;
+    margin-top:200px;
+	}
+
+	/*Projet Back Home*/
+	#sources { 
+	width: 650px;
+	height: 580px;
+    margin-left:47%;
+    margin-top:-780px;
+    }
+
+    /*Projet Regards*/
+	#regards { 
+	width: 420px;
+	height: 600px;
+    margin-left:65%;
+    margin-top:-260px;
+	}
+
+	/*Projet Magritte*/
+	#magritte { 
+	width: 800px;
+	height: 680px;
+    margin-left:35%;
+    margin-top:-450px;
+	}
+
+	/*Projet Nuit*/
+	#nuit { 
+	width: 690px;
+	height: 510px;
+    margin-left:14%;
+    margin-top:-490px;
+	}
+
+	/*Projet Blue Velvet*/
+	#bluevelvet { 
+	width: 800px;
+	height: 655px;
+    margin-left:55%;
+    margin-top:-340px;
+	}
+
+	/*Projet I see you*/
+	#iseeyou { 
+	width: 785px;
+	height: 595px;
+    margin-left:28%;
+    margin-top:-450px;
+	}
+
+	/*Projet Synesthésie*/
+	#synesthesie { 
+	width: 670px;
+	height: 540px;
+    margin-left:60%;
+    margin-top:-320px;
+	}
+
+	/*Projet Dingbats*/
+	#dingbats { 
+	width: 850px;
+	height: 700px;
+	margin-left:15%;
+    margin-top:-630px;
+   	margin-bottom:200px;
+	}
+
+	/*Projet Oxfam*/
+	#oxfam { 
+	width: 600px;
+	height: 460px;
+    margin-left:40%;
+    margin-top:-810px;
+   	margin-bottom:200px;
+	}
+
+	footer, .footer-projets {
+	padding-top:44px;
+	padding-bottom:45px;
+	font-size:1.9em;
+	}
+
+
+	/**********************************************************************************************************************/
+
+
+	h1{
+	font-size:9em;
+	margin-top:20px;
+}
+
+	.p_legende{
+	width:20%;
+	padding:20px;
+	}
+
+
+	/*TROMBINOSCOPE*/
+	#projet-trombi{
+	margin-bottom:40px;
+	margin-top:50px;
+	padding-top:200px;
+	padding-bottom:200px;
+	}
+
+	#projet-trombi p{
+	margin-top:3%;
+	width:55%;
+	font-size:5.7em;
+	}
+
+	ul.grid{
+	margin-top:5%;
+	}
+
+	ul.grid li { /*éléments de la grille*/
+	margin-right:1%;    /* Marge à droite de l'item */
+	margin-bottom:1%;
+	}
+
+
+
+	/*HOME SWEET HOME*/
+	#projet-sources{
+	margin-bottom:100px;
+	margin-top:50px;
+	padding-top:300px;
+	padding-bottom:200px;
+	}
+
+	#projet-sources p{
+	margin-top:3%;
+	width:50%;
+	font-size:5.7em;
+	}
+
+	#section-projetsources img{
+	width:70%;
+	margin-top:45px;
+	}
+
+
+	/*MAGRITTE*/
+	#projet-magritte{
+	margin-bottom:100px;
+	margin-top:50px;
+	padding-top:270px;
+	padding-bottom:200px;
+	}
+
+	#projet-magritte p{
+	margin-top:3%;
+	width:50%;
+	font-size:5.7em;
+	}
+
+	#body-magritte .explication{
+	font-size:1.3em;
+	margin-top:5px;
+	margin-left:30px;
+	width:38%;
+	}
+
+	#section-magritte #tableau{
+	margin-left:52px;
+	}
+
+	.magritte-print{
+	margin-left:48px;
+	}
+
+	#magritte-gif{
+	width:45%;
+	margin-left:30px;
+	}
+
+
+	/*NIGHT TIME*/
+	#projet-nuit{
+	margin-bottom:100px;
+	margin-top:50px;
+	padding-top:280px;
+	padding-bottom:270px;
+	}
+
+	#projet-nuit p{
+	margin-top:3%;
+	width:58%;
+	font-size:5.7em;
+	}
+
+
+	/*BLUE VELVET*/
+	#projet-bluevelvet{
+	margin-bottom:100px;
+	padding-top:230px;
+	padding-bottom:220px;
+	}
+
+	#projet-bluevelvet p{
+	margin-top:3%;
+	width:59%;
+	font-size:5.7em;
+	}
+
+	.explication{
+	position:relative;
+	width:38%;
+	margin-left:1%;
+	padding:20px;
+	margin-top:3%;
+	}
+
+	.explication p{
+	font-size:1.8em;
+	}
+
+	#section-bluevelvet{
+	margin-bottom:200px;
+	}
+
+	#video-bluevelvet iframe{
+	width:1197px;
+	height:678.3px;
+	}
+
+	#section-bluevelvet #conteneurvideo{
+	margin-left:42%;
+	width:60%;
+	position:absolute;
+	margin-left:27%;
+	}
+
+
+
+	/*I SEE YOU*/
+	#projet-iseeyou{
+	margin-bottom:100px;
+	margin-top:50px;
+	padding-top:170px;
+	padding-bottom:270px;
+	}
+
+	#projet-iseeyou p{
+	margin-top:3%;
+	width:56%;
+	font-size:5.4em;
+	}
+
+	#article-iseeyou{
+	margin-left:-200px;
+	}
+
+	#iseeyou-images{
+	width:100%;
+	text-align:center;
+	display:inline;
+	}
+
+	#section-iseeyou .explication{
+	width:35%;
+	margin-top:10%;
+	}
+
+	#conteneur-video-iseeyou iframe {
+	width:1203.65px;
+	height:678.3px;
+	}
+
+	#section-iseeyou #conteneur-video-iseeyou{
+	width:60%;
+	margin:auto;
+	margin-top:2%;
+	margin-bottom:5%;
+	}
+
+
+	/*SYNESTHESIE*/
+	#projet-synesthesie{
+	margin-bottom:100px;
+	margin-top:50px;
+	padding-top:270px;
+	padding-bottom:270px;
+	}
+
+	#projet-synesthesie p{
+	margin-top:3%;
+	width:56%;
+	font-size:5.4em;
+	}
+
+	#conteneur-video-synesthesie{
+	text-align:center;
+	margin-bottom:15%;
+	}
+
+	#video-synesthesie{
+	width:2117.3733px;
+	height:1199.84487px;
+	}
+
+
+	/*DINGBATS*/
+	#projet-dingbats{
+	margin-bottom:100px;
+	margin-top:50px;
+	padding-top:210px;
+	padding-bottom:270px;
+	}
+
+	#projet-dingbats p{
+	margin-top:3%;
+	width:56%;
+	font-size:5.4em;
+	}
+
+	#section-dingbats{
+	width:80%;
+	height:100%;
+	margin:auto;
+	margin-top:120px;
+	margin-bottom:-200px;
+	}
+
+	#section-dingbats .explication{
+	margin-left:4%;
+	width:30%;
+	background-color:white;
+	padding:20px;
+	}
+
+	#p3{
+	margin-left:29%;
+	font-size:2em;
+	width:28%;
+	}
+
+	#edition3{
+	margin-left:25%;
+	position:absolute;
+	margin-top:-450px;
+	}
+
+	#p4{
+	font-size:2em;
+	}
+
+
+	/**********************************************************************************************************************/
+
+	/* A PROPOS*/
+	#conteneur-apropos{
+		width:100%;
+		height:100%;
+	}
+
+	#apropos{
+	width: 80%;
+	height: 20%;
+	margin:auto;
+	background-image: url("../images/autoportrait2.jpg");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	text-align:center;
+	margin-bottom:150px;
+	margin-top:-1000px;
+	padding-top:50px;
+	position:relative;
+	}
+
+	#apropos p{
+	font-size:6.9em;
+	padding:50px;
+	text-align:center;
+	width:75%;
+	margin:auto;
+	opacity:0.7;
+	}
+
+	#header-apropos{
+	opacity:0.8;
+	display:flex;
+	margin-top:-1000px;
+
+	}
+
+	#header-apropos #logo{
+	width:11%;
+	}
+
+	#header-apropos p{
+	font-size:3em;
+	}
 
 }	/*accolade du media*/
 
@@ -31,13 +531,11 @@
 
 
 
+/**************************************************************************************************************************/
 
 
-@media screen and (max-width:1280px) {
-	/* Notebook */
 
 
-}/*accolade du media*/
 
 
 
@@ -45,20 +543,307 @@
 
 @media screen and (max-width:1024px) {
 	/* iPad portrait & landscape */
-	/* iPhone6+ paysage = 960px */
+	
+	#fondhome{
+	background-size: 95%;
+	margin-bottom:30px;
+	margin-top:20px;
+	padding-top:160px;
+	padding-bottom:100px;
+	}
+
+	#fondhome p{
+	font-size:3.2em;
+	text-align:center;
+	width:63%;
+	margin:auto;
+	opacity:0.9;
+	}
+
+	#down img{
+	width:8%;
+	margin-top:40px;
+	}
+
+
+	/*Projet Trombinoscope*/
+	#trombi { 
+    margin-left:7%;
+	}
+
+	/*Projet Synesthesie*/
+	#synesthesie { 
+    margin-left:25%;
+	}
+
+	/*Projet Dingbats*/
+	#dingbats { 
+    margin-left:49%;
+	}
+
+
+	/* *****************TROMBINOSCOPE******************** */
+	#body-trombi .next, #body-trombi .previous{
+	height:100%;
+	}
+	#projet-trombi{
+	margin-bottom:40px;
+	margin-top:-30px;
+	padding-top:150px;
+	padding-bottom:150px;
+	}
+
+	#projet-trombi p{
+	width:70%;
+	font-size:2.6em;
+	}
+
+	h1{
+	font-size:4.3em;
+	}
+
+	/* *****************BACK HOME******************** */
+	#projet-sources{
+	margin-bottom:30px;
+	margin-top:20px;
+	padding-top:160px;
+	padding-bottom:60px;
+	}
+
+	#projet-sources p{
+	width:55%;
+	font-size:2.4em;
+	padding-bottom:120px;
+	opacity:0.7;
+	}
+
+	/* *****************MAGRITTE******************** */
+	#body-magritte .next, #body-magritte .previous{
+	height:280%;
+	}
+
+	#projet-magritte{
+	margin-bottom:50px;
+	margin-top:40px;
+	padding-top:150px;
+	padding-bottom:150px;
+	}
+
+	#projet-magritte p{
+	width:57%;
+	font-size:2.5em;
+	padding-bottom:30px;
+	opacity:0.8;
+	}
+
+	#section-magritte{
+	margin-top:-50px;
+	}
+
+	#body-magritte .explication{
+	font-size:1.2em;
+	position:absolute;
+	margin-top:1px;
+	margin-left:30px;
+	width:35%;
+	}
+
+	#section-magritte #tableau{
+	width:42%;
+	margin-bottom:30px;
+	margin-left:18px;
+	}
+
+	#video-magritte{
+	width:100%;
+	height:470px;
+	margin:auto;
+	}
+
+	#video-magritte iframe{
+	width:100%;
+	height:100%;
+	}
+
+	/* *****************NUIT******************** */
+	#body-nuit .next, #body-nuit .previous{
+	height:100%;
+	}	
+
+	#projet-nuit{
+	margin-bottom:0px;
+	margin-top:20px;
+	padding-top:80px;
+	padding-bottom:50px;
+	}
+
+	#projet-nuit p{
+	font-size:2.4em;
+	width:58%;
+	padding-bottom:200px;
+	}
+
+	#projet-nuit h1{
+	padding-top:70px;
+	}
+	
+	/* *****************BLUE VELVET******************** */
+	#projet-bluevelvet{
+	margin-bottom:10px;
+	margin-top:-50px;
+	padding-top:230px;
+	padding-bottom:220px;
+	}
+
+	#projet-bluevelvet p{
+	margin-top:3%;
+	width:59%;
+	font-size:2em;
+	}
+
+	.explication{
+	width:50%;
+	margin-left:0px;
+	}
+
+	#section-bluevelvet{
+	padding-top:0;
+	}
+
+	.explication p{
+	font-size:0.8em;
+	}
+
+	#video-bluevelvet {
+	width:100%;
+	height:470px;
+	}
+
+	#video-bluevelvet iframe{
+	width:100%;
+	height:100%;
+	}
+
+	
+	/* *****************I SEE YOU******************** */
+	#projet-iseeyou p{
+	margin-top:3%;
+	padding-bottom:60px;
+	width:60%;
+	}
+
+
+	/* ****************DINGBATS******************* */
+	
+	#body-dingbats .next, #body-dingbats .previous{
+	height:1000%;
+	}
+
+	#section-dingbats{
+	width:90%;
+	}
+
+	#affiches_serigraphie{
+	margin-top:50px;
+	margin-bottom:30px;
+	}
+
+	#affiches_serigraphie .grille{
+	width:100%;
+	}
+
+	#affiches_serigraphie img{
+	width:100%;
+	margin:auto;
+	margin-top:10px;
+	margin-left:0;
+	}
+
+
+	/******************* A PROPOS ***********************/
+	#apropos{
+	width: 80%;
+	height: 100%;
+	margin:auto;
+	background-image: url("../images/autoportrait2.jpg");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	text-align:center;
+	padding-bottom:200px;
+	margin-bottom:-100px;
+	}
+
+	#apropos p{
+	font-size:2.8em;
+	text-align:center;
+	width:75%;
+	margin:auto;
+	padding-top:60px;
+	opacity:0.7;
+	}
+
+	body #pageapropos{
+		height:100px;
+	}
+	
 
 }/*accolade du media*/
 
 
-@media screen and (max-width:980px) {
-	#fondhome p{
-	font-size:2.5em;
+
+
+
+@media screen and (max-width:416px) {
+	/* iPhone6+ portrait = 414px */
+
+	body{
+		height:70%
+	}
+
+	.headercomputer{
+		display:none;
+	}
+
+	.headerresponsive{
+		visibility: visible;
+	}
+
+	#menuplus{display: inline; 
+	} /*à la place on fait apparaitre le menu pour smartphones*/
+
+	footer, .footer-projets{
+	width:100%;
+	padding-top:14px;
+	padding-bottom:15px;
+	position:fixed;
+	bottom:0;
+	background:white;
+	opacity:0.9;
+	z-index:100;
+	font-size:0.8em;
 	}
 
 	#fondhome{
-		padding-bottom:50px;
-		margin-top:70px;
-		padding-top:100px;
+	width: 100%;
+	height: 536px;
+	background-size: 320%;
+	margin-bottom:30px;
+	margin-top:0px;
+	padding-top:-200px;
+	padding-bottom:0px;
+	}
+
+
+	#fondhome p{
+	margin-top:35px;
+	font-size:2.2em;
+	width:96%;
+	color:white;
+	}
+
+
+	#down img{
+		width:18%;
 	}
 
 	p.legende{
@@ -76,11 +861,642 @@
 	#projet-regards p{
 		font-size:2em;
 	}
+
+	footer{
+		display:none;
+	}
+
+
+	/**** PROJETS ****/
+	.b-x { /*mouvement x de certaines bulles*/
+	-webkit-animation: anim-x 6s infinite linear; 
+	-moz-animation: anim-x 6s infinite linear; /*vitesse sous mozilla*/
+	-o-animation: anim-x 6s infinite linear; /*vitesse sous opera*/
+	}
+
+	@-webkit-keyframes anim-x {
+	0% { -webkit-transform:  translate(0px,0px) ; } 
+	30% { -webkit-transform:  translate(0px,0px); }
+	100% { -webkit-transform:  translate(0px,10px); }
+	}
+	
+	@-moz-keyframes anim-x { /*mozilla*/
+	0% { -moz-transform:  translate(0px,0px) ; } 
+	30% { -moz-transform: translate(0px,0px); }
+	100% { -moz-transform:  translate(0px,0px); }
+	}
+	
+	@-o-keyframes anim-x { /*opera*/
+	0% { -o-transform: translate(0px,0px) ; }
+	30% { -o-transform:  translate(0px,0px); }
+	100% { -o-transform: translate(0px,0px); }
+	}
+
+	.b-y{ /*mouvement y de certaines bulles*/
+	-webkit-animation: anim-y 15s infinite linear;
+	-moz-animation: anim-y 15s infinite linear;
+	-o-animation: anim-y 15s infinite linear;
+	}
+
+	@-webkit-keyframes anim-y {
+	0% { -webkit-transform: translate(0px,0px); }
+	60% { -webkit-transform: translate(0px,0px); }
+	100% { -webkit-transform: translate(0px,0px); }
+	}
+
+	@-moz-keyframes anim-y {
+	0% { -moz-transform: translate(0px,0px); }
+	60% { -moz-transform: translate(0px,0px); }
+	100% { -moz-transform: translate(0px,0px); }
+	}
+
+	@-o-keyframes anim-y {
+	0% { -o-transform:translate(0px,0px); }
+	60% { -o-transform: translate(0px,0px); }
+	100% { -o-transform:translate(0px,0px); }
+	}
+
+	.b-z{ /*mouvement y de certaines bulles*/
+	-webkit-animation: anim-z 15s infinite linear;
+	-moz-animation: anim-z 15s infinite linear;
+	-o-animation: anim-z 15s infinite linear;
+	}
+
+	@-webkit-keyframes anim-z {
+	0% { -webkit-transform: translate(0px,0px); }
+	40% { -webkit-transform: translate(0px,0px); }
+	100% { -webkit-transform: translate(0px,0px); }
+	}
+
+	@-moz-keyframes anim-z {
+	0% { -moz-transform: translate(0px,00px); }
+	40% { -moz-transform: translate(0px,0px); }
+	100% { -moz-transform: translate(0px,00px); }
+	}
+
+	@-o-keyframes anim-z {
+	0% { -o-transform:translate(0px,0px); }
+	40% { -o-transform: translate(0px,0px); }
+	100% { -o-transform:translate(0px,0px); }
+	}
+
+	#projets{
+	margin-top:-80px;
+	}
+
+	.projet{
+	opacity:0.8;
+	}
+
+	.legende{  /*bloc dans le bloc vignette, contenant le titre du projet*/
+	font-family:'NimbusSansL-Regular', Arial, sans-serif; 
+	font-size:1.5em;
+	color:black;
+	opacity:1;
+ 	}
+
+	/*Projet Trombinoscope*/
+	#trombi { 
+	width: 90%;
+	height: 200px;
+    background:url("../pages/images/trombi/Marion.jpg") no-repeat center ;
+    background-size:100%;
+    margin-left:5%;
+    margin-top:110px;
+    position:relative;
+	}
+
+	/*Projet Back Home*/
+	#sources { 
+	width: 90%;
+	height: 200px;
+    margin-left:5%;
+    margin-top:5px;
+	}
+
+	/*Projet Regards*/
+	#regards { 
+	display:none;
+	}
+
+	/*Projet Magritte*/
+	#magritte { 
+	width: 90%;
+	height: 200px;
+    margin-left:5%;
+    margin-top:5px;
+	}
+
+	/*Projet Voyage au bout de la nuit*/
+	#nuit { 
+	width: 90%;
+	height: 200px;
+    margin-left:5%;
+    margin-top:5px;
+	}
+
+	/*Projet Blue Velvet*/
+	#bluevelvet { 
+	width: 90%;
+	height: 200px;
+    margin-left:5%;
+    margin-top:3px;
+	}
+
+	/*Projet I see you*/
+	#iseeyou { 
+	width: 90%;
+	height: 200px;
+    margin-left:5%;
+    margin-top:2px;
+	}
+
+	#synesthesie { 
+	width: 90%;
+	height: 200px;
+    margin-left:5%;
+    margin-top:7px;
+   	margin-bottom:0px;
+	}
+
+	#oxfam{
+	display:none;
+	}
+
+	#dingbats { 
+	width: 90%;
+	height: 200px;
+    margin-left:5%;
+    margin-top:6px;
+    margin-bottom:15px;
+	}
+
+
+
+	/***********PAGES INTERNE*************/
+	h1{
+	font-size:4em;
+	}
+
+	/* *****************TROMBINOSCOPE******************** */
+	#body-trombi .next, #body-trombi .previous{
+	height:100%;
+	}
+
+	#projet-trombi{
+	margin-bottom:40px;
+	margin-top:-0px;
+	padding-top:90px;
+	padding-bottom:150px;
+	background-size: 300%;
+	text-align:center;
+
+	}
+
+	#projet-trombi p{
+	width:90%;
+	font-size:1.8em;
+	}
+
+	ul.grid {              /* Bloc qui contient les items de la grille */
+	width:90%;         /* Largeur du bloc */
+	margin-left:5%;
+	margin-bottom:2em;
+	margin-top:20px;
+	}	
+
+	ul.grid li { /*éléments de la grille*/
+	width:100%;
+	display:inline-block; /* Alignement horizontal */
+	text-align:center;    /* Texte centré */
+	margin-right:1%;    /* Marge à droite de l'item */
+	margin-bottom:2%;
+	}
+
+
+	/* *****************BACK HOME******************** */
+	#projet-sources{
+	margin-bottom:30px;
+	margin-top:0px;
+	padding-top:160px;
+	padding-bottom:80px;
+	background-size: 300%;
+	}
+
+	#projet-sources p{
+	width:90%;
+	font-size:1.9em;
+	padding-bottom:120px;
+	opacity:0.7;
+	}
+
+	#body-sources{
+	margin-bottom:-400px;
+	}
+
+	/* *****************MAGRITTE******************** */
+	#body-magritte .next, #body-magritte .previous{
+	height:280%;
+	}
+
+	#section-magritte{
+		width:90%;
+	}
+
+	#projet-magritte{
+	margin-bottom:50px;
+	margin-top:0px;
+	padding-top:150px;
+	padding-bottom:150px;
+	background-size: 285%;
+	}
+
+	#projet-magritte p{
+	width:97%;
+	font-size:2.2em;	
+	padding-bottom:30px;
+	opacity:0.8;
+	}
+
+	#section-magritte{
+	margin-top:-50px;
+	}
+
+	#body-magritte .explication{
+	font-size:1.2em;
+	position:relative;
+	margin-top:1px;
+	margin-left:3px;
+	width:87%;
+	}
+
+	#section-magritte #tableau{
+	width:98%;
+	margin-bottom:30px;
+	margin-left:3px;
+	margin-top:50px;
+	position:relative;
+	}
+
+	.magritte-print{
+	width:98%;
+	margin:auto;
+	margin-bottom:10px;
+	margin-right:19px;
+	}
+
+	#print-2, #print-3{
+	width:48%;
+	}
+
+	#magritte-gif{
+	width:97%;
+	margin-left:3px;
+	margin-top:-25px;
+	}
+
+	.magritte-print-conteneur{
+	width:100%;
+	text-align:center
+	}
+
+	#video-magritte{
+	width:100%;
+	height:210px;
+	margin:auto;
+	margin-top:30px;
+	}
+
+	#video-magritte iframe{
+	width:100%;
+	height:100%;
+	}
+
+
+	/* *****************NUIT******************** */
+	#body-nuit .next, #body-nuit .previous{
+	height:100%;
+	}	
+
+	#projet-nuit{
+	margin-bottom:0px;
+	margin-top:0px;
+	padding-top:80px;
+	padding-bottom:10px;
+	background-size:300%;
+	}
+
+	#projet-nuit p{
+	width:95%;
+	font-size:2.1em;
+	padding-bottom:200px;
+	opacity:0.7;
+	}
+
+	#projet-nuit h1{
+	padding-top:70px;
+	}
+
+	#section-projetnuit{
+	width:93%;
+	margin:auto;
+	text-align:center;
+	margin-bottom:30px;
+	}
+	
+	/* *****************BLUE VELVET******************** */
+	#projet-bluevelvet{
+	margin-bottom:10px;
+	margin-top:0px;
+	padding-top:230px;
+	padding-bottom:130px;
+	background-size:420%;
+	}
+
+	#projet-bluevelvet h1{
+	margin-top:-50px;
+	}
+
+	#projet-bluevelvet p{
+	width:92%;
+	font-size:2.1em;
+	}
+
+	.explication{
+	width:87%;
+	font-size:1.2em;
+	margin-left:0px;
+	margin-top:-80px;
+	position:relative;
+	}
+
+	#section-bluevelvet{
+	padding-top:0;
+	width:95%;
+	}
+
+	.explication p{
+	font-size:0.8em;
+	}
+
+	#video-bluevelvet {
+	width:100%;
+	position:relative;
+	height:230px;
+	margin-top:50px;
+	}
+
+	
+	/* *****************I SEE YOU******************** */
+	#projet-iseeyou p{
+	margin-top:3%;
+	padding-bottom:60px;
+	width:95%;
+	font-size:2em;
+	}
+
+	#projet-iseeyou{
+	background-size: 300%;
+	margin-top:0;
+	}
+
+	#section-iseeyou .explication{
+	width:87%;
+	font-size:1.2em;
+	margin-left:0px;
+	}
+
+	#iseeyou-forme2{
+	display:none;
+	}
+
+	#section-iseeyou{
+	padding-top:0;
+	width:95%;
+	}
+
+	#article-iseeyou{
+	margin-top:380px;
+	width:95%;
+	margin-left:0;
+	}
+
+	#article-iseeyou img{
+	width:100%;
+	margin-bottom:10px;
+	}
+
+	#conteneur-video-iseeyou{
+	text-align:center;
+	margin:auto;
+	width:100%;
+	margin-bottom:20px;
+	}
+
+	#video-iseeyou{
+	width:100%;
+	height:200px;
+	}
+
+	/* *****************SYNESTHESIE******************** */
+	#projet-synesthesie{
+	background-size: 600%;
+	margin-bottom:30px;
+	margin-top:0px;
+	padding-top:110px;
+	padding-bottom:40px;
+	}
+
+	#projet-synesthesie h1{
+		font-size:3.5em;
+	}
+
+	#projet-synesthesie p{
+	width:90%;
+	font-size:2em;
+	margin-bottom:150px;
+	}
+
+	#section-synesthesie{
+	width:95%;
+	margin:auto;
+	}
+
+	#video-synesthesie{
+	width:100%;
+	height:210px;
+	margin:auto;
+	margin-top:30px;
+	}
+
+	#video-synesthesie iframe{
+	width:100%;
+	height:100%;
+	}
+
+	/* *****************DINGBATS******************** */
+	#body-dingbats .next, #body-dingbats .previous{
+	height:100%;
+	}
+
+	#projet-dingbats{
+	background-size: 300%;
+	text-align:center;
+	margin-bottom:30px;
+	margin-top:0px;
+	padding-top:110px;
+	padding-bottom:50px;
+	}
+
+	#projet-dingbats p{
+	width:90%;
+	font-size:2em;
+	padding-bottom:100px;
+	}
+
+	#section-dingbats{
+	width:91%;
+	height:100%;
+	}
+
+	#section-dingbats .explication{
+	font-size:1.2em;
+	position:relative;
+	margin-top:-150px;
+	margin-left:3px;
+	width:87%;
+	}
+
+	.experimentation{
+	width:50%;
+	}
+
+	#exp2{
+	width:95%;
+	position:relative;
+	margin-left:70px;
+	margin-top:-100px;
+	}
+
+	.caracteres{
+	margin-top:20px;
+	}
+
+	.affiche{
+	width:100%;
+	margin-left:0px;
+	}
+
+	#p3{
+	width:80%;
+	font-size:1em;
+	padding-bottom:20px;
+	margin-left:0px;
+	margin-top:50px;
+	}
+
+
+	.edition-photos{
+	width:100%;
+	display:inline;
+	margin:auto;
+	text-align:center;
+	margin-top:50px;
+	}
+
+	#edition1{
+	width:100%;
+	margin-top:250px;
+	position:relative;
+	}
+
+	#edition3,#edition4,#edition5{
+	width:90%;
+	display:inline;
+	}
+
+	#edition3{
+	margin-left:0px;
+	position:absolute;
+	margin-top:10px;
+	}
+
+	#edition4{
+	margin-top:295px;
+	width:98%;
+	}
+
+	#edition7{
+	display:none;
+	}
+
+	#edition6{
+	width:97%;
+	margin-top:7px;
+	}
+
+	#p4{
+	width:88%;
+	font-size:1em;
+	padding-bottom:20px;
+	margin-left:0px;
+	margin-top:0px;
+	position:relative;
+	}
+
+	#affiches_serigraphie{
+	margin-top:50px;
+	margin-bottom:30px;
+	}
+
+	#affiches_serigraphie .grille{
+	width:100%;
+	}
+
+	#affiches_serigraphie img{
+	width:100%;
+	margin:auto;
+	margin-top:10px;
+	margin-left:0;
+	}
+
+	/***********A PROPOS***********/
+	#apropos{
+	margin:auto;
+	padding-bottom:60px;
+	margin-top:80px;
+	margin-bottom:15px;
+	background-image: url("../images/autoportrait2.jpg");
+	background-size: 700%;
+	background-repeat: no-repeat;
+	text-align:center;
+	}
+	
+	#apropos p{
+	font-size:1.8em;
+	text-align:center;
+	text-align:left;
+	width:90%;
+	margin:auto;
+	padding-top:60px;
+	opacity:0.7;
+	}
+
+	#apropos a{
+	color:turquoise;
+	}
+
+	#header-apropos{
+	visibility:hidden;
+	}
+
+
+
 }/*accolade du media*/
 
 
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:800px) {
 	/* iPad portrait = 768px */
 	
 }/*accolade du media*/
@@ -95,20 +1511,7 @@
 	/* iPhone6 paysage = 667px */
 	/* iPhone 5s paysage = 568px */
 	/* iPhone 4 paysage = 468 px */
-	body{
-		height:60%
-	}
-
-	.buttonset{
-		background: #64e4c8;
-	}
-
-	.header{ /*le header disparait*/
-	opacity:0;
-	}
-
-	#menuplus{display: inline; 
-	} /*à la place on fait apparaitre le menu pour smartphones*/
+	
 
 
 
@@ -120,9 +1523,7 @@
 	/* iPhone6 paysage = 667px */
 	/* iPhone 5s paysage = 568px */
 	/* iPhone 4 paysage = 468 px */
-	.buttonset{
-		background: red;
-	}
+	
 	
 }
 
@@ -131,9 +1532,7 @@
 	/* iPhone6 paysage = 667px */
 	/* iPhone 5s paysage = 568px */
 	/* iPhone 4 paysage = 468 px */
-	.buttonset{
-		background: purple;
-	}
+
 }
 
 @media screen and (max-width:375px) {
@@ -141,9 +1540,7 @@
 	/* iPhone6+ portrait = 540px */
 	/* iPhone6 portrait = 375px */
 	/* iPhone4 & iPhone5 portrait = 320px */
-	.buttonset{
-		background: pink;
-	}
+	
 }/*accolade du media*/
 
 
