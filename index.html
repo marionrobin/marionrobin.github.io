@@ -57,26 +57,27 @@ $(document).ready(function()
 <!-- menu reponsive -->
 <div id="menuplus">
 	<nav class="pushmenu pushmenu-left">
-	<img src="images/logo.svg">
-    	<a class="hov prem" href="a-propos.html">Marion Robin ?</a>
-    	<a class="hov last" href="plooups@gmail.com">Mail me </a>
+	<img id="apropos-logo" src="images/logo.png"/>
+    	<a class="hov prem" href="a-propos.html">about</a>
+    	<a class="hov last" href="plooups@gmail.com">mail me !</a>
+    	<a class="hov last" href="instagram.com/dreamsmell">instagram</a>
     	<p class="separation">_________________</p>
-    	<a class="hov" href="pages/voyage.html">● Voyage</a>
-    	<a class="hov" href="pages/trombi.html">● Trombinoscope</a>
-    	<a class="hov" href="pages/ulysse.html">● L'odyssée du couple</a>   
-    	<a class="hov" href="pages/refresh.html">● Refresh ! </a>
-    	<a class="hov" href="pages/lecancre.html">● Le Cancre</a>
-    	<a class="hov" href="pages/sources.html">● Back home</a>
-   	 	<a class="hov" href="pages/icon.html">● Mind Reader</a>
-   		<a class="hov" href="pages/rencontre.html">● Rencontre</a>
-   		<a class="hov" href="pages/nautilus.html">● Le fleuve noir</a>
-    	<a class="hov" href="pages/turner.html">● Utopie numérique</a>
+    	<a class="hov" href="pages/trombi.html">portraits - photography</a>
+    	<a class="hov" href="pages/sources.html">home sweet home - photography</a>
+    	<a class="hov" href="pages/nuit.html">night - photography</a>   
+    	<a class="hov" href="pages/regards.html">regards - event communication</a>
+    	<a class="hov" href="pages/magritte.html">the small hours - print + motion </a>
+    	<a class="hov" href="pages/bluevelvet.html">blue velvet - opening credits</a>
+   	 	<a class="hov" href="pages/oxfam.html">oxfam - datavisualisation</a>
+   		<a class="hov" href="pages/iseeyou.html">i see you - ux/ui</a>
+   		<a class="hov" href="pages/synesthesie.html">synaesthesia - animation</a>
+   		<a class="hov" href="pages/dingbats.html">dots - typography + screen printing</a>
 	</nav>
 	<div class="container">
         <div class="main">
         	<section class="buttonset">
             	<div id="nav_list">
-            		<a class="menunav"href="#">Hello !</a>
+            		<a class="menunav" href="#">Marion Robin</a>
             	</div>
        		</section>
         </div><!-- End Main -->
@@ -89,7 +90,8 @@ $(document).ready(function()
 <!--**************************BIENVENUE**************************-->
 <div id="fondhome">
 		<img id="logo" src="images/logo1.png"/>
-		<p id="intro">Bienvenue à toi ! </br> Je me présente, Marion Robin, étudiante en design graphique. Tu es invité à découvrir mon univers à travers ce site. </br> Bonne visite !</p>
+		<p id="intro">Hi, nice to meet you !</br>I'm Marion, a student in digital graphic design from Paris. You're invited to explore my world through this website.
+		</br> Enjoy the trip !</p>
 		<a class="js-scrollTo" id="down" href="header"><img class="b-x" src="images/bas.png"></a>
 </div>
 
@@ -99,9 +101,13 @@ $(document).ready(function()
 
 
 <!--**************************HEADER**************************-->
-<header>
+<header class="headercomputer">
 	<img id="logo" src="images/logo.png">
-	<p>Marion Robin <span>| Design graphique</span></p>
+	<p>Marion Robin <span>| Graphic design</span></p>
+</header>
+
+<header class="headerresponsive">
+<p>works</p>
 </header>
 
 <!--**************************PROJETS**************************-->
@@ -109,7 +115,7 @@ $(document).ready(function()
 	<a href="pages/trombi.html">
 		<div class="projet b-x" id="trombi">	
 			<div class="vignette">
-				<p class="legende">trombinoscope | photographie</p>
+				<p class="legende">portrait | photography</p>
 			</div>
 		</div>
 	</a>
@@ -117,7 +123,7 @@ $(document).ready(function()
 	<a href="pages/sources.html">
 		<div class="projet b-y" id="sources">
 			<div class="vignette">
-				<p class="legende">back home | photographie</p>
+				<p class="legende">home sweet home | photography</p>
 			</div>
 		</div>
 	</a>
@@ -125,7 +131,7 @@ $(document).ready(function()
 	<a href="pages/regards.html">
 		<div class="projet b-x" id="regards">
 			<div class="vignette">
-				<p class="legende">soirées regards - Musée d'Art Moderne | communication globale </p>
+				<p class="legende">soirées regards - Musée d'Art Moderne | event communication </p>
 			</div>
 		</div>
 	</a>
@@ -133,7 +139,7 @@ $(document).ready(function()
 	<a href="pages/magritte.html">	
 		<div class="projet b-z" id="magritte">
 			<div class="vignette">
-				<p class="legende">l'heure bleue | édition & motion</p>
+				<p class="legende">the small hours | editorial & motion</p>
 			</div>
 		</div>
 	</a>
@@ -141,7 +147,7 @@ $(document).ready(function()
 	<a href="pages/nuit.html">	
 		<div class="projet b-y" id="nuit">
 			<div class="vignette">
-				<p class="legende"> voyage au boût de la nuit | photographie</p>
+				<p class="legende"> the night | photography</p>
 			</div>
 		</div>
 	</a>
@@ -149,7 +155,7 @@ $(document).ready(function()
 	<a href="pages/bluevelvet.html">	
 		<div class="projet b-x" id="bluevelvet">
 			<div class="vignette">
-				<p class="legende">Blue Velvet | générique</p>
+				<p class="legende">Blue Velvet | opening credits</p>
 			</div>
 		</div>
 	</a>
@@ -165,7 +171,7 @@ $(document).ready(function()
 	<a href="pages/synesthesie.html">	
 		<div class="projet b-y" id="synesthesie">
 			<div class="vignette">
-				<p class="legende">synesthésie | animation</p>
+				<p class="legende">synaesthesia | animation</p>
 			</div>
 		</div>
 	</a>
@@ -173,7 +179,7 @@ $(document).ready(function()
 	<a href="pages/dingbats.html">	
 		<div class="projet b-z" id="dingbats">
 			<div class="vignette">
-				<p class="legende">dingdot | typographie & sérigraphie</p>
+				<p class="legende">dots | typography & screen printing</p>
 			</div>
 		</div>
 	</a>
@@ -191,8 +197,8 @@ $(document).ready(function()
 
 <footer>
 	<ul>
-		<li><a class="js-scrollTo" id="down" href="header">PROJETS</a></li>
-		<li><a href="a-propos.html">A PROPOS</a></li>
+		<li><a class="js-scrollTo" id="down" href="header">WORKS</a></li>
+		<li><a href="a-propos.html">ABOUT</a></li>
 		<li><a href="https://www.instagram.com/dreamsmell/">INSTAGRAM</a></li>
 		<li><a href="mailto:plooups@gmail.com">MAIL</a></li>
 	</ul>
