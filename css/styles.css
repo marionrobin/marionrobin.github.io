@@ -56,8 +56,8 @@ a{
 	height:700%;
 }
 
-#body-regards .next, #body-regards .previous{
-	height:180%;
+#body-mask .next, #body-mask .previous{
+	height:550%;
 }
 
 #body-nuit .next, #body-nuit .previous{
@@ -286,11 +286,11 @@ header > * {
 
 /*Projet Trombinoscope*/
 #trombi { 
-	width: 400px;
+	width: 370px;
 	height: 300px;
     background:url("../pages/images/trombi/Marion.jpg") no-repeat center ;
     background-size:100%;
-    margin-left:13%;
+    margin-left:15%;
     margin-top:200px;
     position:relative;
 }
@@ -308,7 +308,7 @@ header > * {
 /*Projet Back Home*/
 #sources { 
 	width: 300px;
-	height: 270px;
+	height: 230px;
     background:url("../pages/images/sources/source1.jpg") no-repeat center ;
     background-size:100%;
     margin-left:41%;
@@ -325,23 +325,27 @@ header > * {
 	opacity:1;
 }
 
-/*Projet Regards*/
-#regards { 
-	width: 250px;
-	height: 395px;
-    background:url("../pages/images/mam/affiche.jpg")no-repeat center ;;
+/*Projet Mask*/
+#mask { 
+	width: 450px;
+	height: 310px;
+    background:url("../pages/images/mask/image1_low.jpg")no-repeat center ;;
     background-size:100%;
-    margin-left:62%;
-    margin-top:-230px;
+    margin-left:58%;
+    margin-top:-180px;
     position:relative;
 	}
 
-#regards:hover{
+#mask .legende{
+	margin-bottom:-10px;
+}
+
+#mask:hover{
 	opacity:1;
 	z-index:6;
 }
 
-#regards:hover .legende{
+#mask:hover .legende{
 	opacity:1;
 }
 
@@ -353,7 +357,7 @@ header > * {
     background:url("../pages/images/magritte/3.jpg")no-repeat center ;;
     background-size:100%;
     margin-left:39%;
-    margin-top:-205px;
+    margin-top:-115px;
     position:relative;
     z-index:4;
 	}
@@ -495,7 +499,7 @@ header > * {
 #oxfam { 
 	width: 300px;
 	height: 220px;
-    background:url("../pages/images/oxfam/Oxfam6.PNG")no-repeat center ;;
+    background:url("../pages/images/oxfam/Oxfam6.PNG")no-repeat center ;
     background-size:100%;
     margin-left:18%;
     margin-top:-650px;
@@ -547,6 +551,13 @@ footer li{
 footer li:hover{
 	opacity:0.2;
 }
+
+
+
+
+
+
+
 
 
 
@@ -798,7 +809,8 @@ ul.grid li.lucile {
 
 
 ul.grid1 li:hover img{ /*au survol, l'image contenue dans l'item disparait, pour laisser apparaitre le fond de l'item*/
-	visibility:hidden ;}
+	visibility:hidden ;
+}
 
 
 ul.columns3 li:nth-child(3n),    /* Grille de 3 colonnes : cible tous les 2e éléments de la liste */
@@ -875,66 +887,83 @@ ul.columns3 li:nth-child(3n),    /* Grille de 3 colonnes : cible tous les 2e él
 }
 
 
-/* *****************SOIREES REGARDS******************** */
-#projet-regards{
-	background-image: url("../pages/images/mam/affiche_2.png");
+/* *****************MASK******************** */
+#projet-mask{
+	background-image: url("../pages/images/mask/image3_low.jpg");
 	background-size: 80%;
 	background-repeat: no-repeat;
 	background-position:center;
 	text-align:center;
 	margin-bottom:30px;
 	margin-top:20px;
-	padding-top:150px;
+	padding-top:110px;
 	padding-bottom:100px;
 	height:100%;
 	width:100%;
 	color:white;
 }
 
-#projet-regards p{
+#projet-mask p{
 	width:58%;
 	font-size:2.1em;
 	opacity:0.5;
 }
 
-#projet-regards span{
+#projet-mask span{
 	font-style:italic;
 }
 
-#projet-regards p a{
+#projet-mask p a{
 	font-style:italic;
 	color:white;
 }
 
-#section-regards{
+#section-mask{
 	width:80%;
 	margin:auto;
+	margin-top:50px;
 }
 
-#section-regards img{
+#conteneur-images-mask{
+	width:100%;
+	margin:auto;
+	text-align:center;
+}
+
+#section-mask img:not(#mask-gif){
+	width:100%;
+	margin-bottom:1%;
+}
+
+#mask-gif{
 	width:40%;
-	margin-left:4%;
 }
 
-#section-regards .explication{
+#section-mask .explication{
 	position:absolute;
-	margin-top:210px;
-	width:30%;
+	margin-top:25px;
+	margin-left:40px;
+	width:21%;
 	border:1px solid black;
+	background-color:white;
 	padding:20px;
 	z-index:4000;
+	font-size:1.2em;
 }
 
-#section-regards a{
+#section-mask a{
 	text-decoration:underline;
 	font-weight: bold;
 }
 
-#video-regards{
-	margin-bottom:50px;
-	margin:auto;
-	text-align: center;
+#conteneur-video-mask{
+	text-align:center;
+	margin-top:50px;
+	margin-bottom:75px;
+	position:relative;
+	z-index:80;
 }
+
 
 /* *****************I SEE YOU******************** */
 #projet-iseeyou{
