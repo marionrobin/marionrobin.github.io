@@ -141,11 +141,11 @@
     margin-top:-780px;
     }
 
-    /*Projet Regards*/
-	#regards { 
-	width: 420px;
+    /*Projet Mask*/
+	#mask { 
+	width: 720px;
 	height: 600px;
-    margin-left:65%;
+    margin-left:62%;
     margin-top:-260px;
 	}
 
@@ -271,6 +271,62 @@
 	width:70%;
 	margin-top:45px;
 	}
+
+
+	/*MASK*/
+
+	#body-mask .next, #body-mask .previous{
+	height:440%;
+	}
+
+	#projet-mask{
+	margin-bottom:100px;
+	margin-top:50px;
+	padding-top:200px;
+	padding-bottom:200px;
+	}
+
+	#projet-mask p{
+	margin-top:1%;
+	width:50%;
+	font-size:5.2em;
+	}
+
+	#section-mask{
+	margin-top:200px;
+	}
+
+	#body-mask .explication{
+	font-size:1.3em;
+	margin-top:0px;
+	margin-left:30px;
+	width:30%;
+	}
+
+	#mask-gif{
+	width:43%;
+	}
+
+	#conteneur-video-mask{
+	margin-top:50px;
+	width:80%;
+	height:920px;
+	margin:auto;
+	margin-bottom:50px;
+	}
+
+	#conteneur-video-mask iframe{
+	width:100%;
+	height:100%;
+	margin:auto;
+	}
+
+	#conteneur-photos-mask{
+	margin-top:200px;
+	width:80%;
+	margin:auto;
+	}
+
 
 
 	/*MAGRITTE*/
@@ -488,7 +544,7 @@
 	}
 
 	#apropos{
-	width: 80%;
+	width: 100%;
 	height: 20%;
 	margin:auto;
 	background-image: url("../images/autoportrait2.jpg");
@@ -571,6 +627,11 @@
     margin-left:7%;
 	}
 
+	/*Projet Sources*/
+	#sources { 
+    margin-left:30%;
+	}
+
 	/*Projet Synesthesie*/
 	#synesthesie { 
     margin-left:25%;
@@ -579,6 +640,17 @@
 	/*Projet Dingbats*/
 	#dingbats { 
     margin-left:49%;
+	}
+
+	/*Projet Mask*/
+	#mask { 
+    width:350px;
+    z-index:10;
+	}
+
+	/*Projet Oxfam*/
+	#oxfam { 
+    margin-left:10%;
 	}
 
 
@@ -723,6 +795,60 @@
 	width:100%;
 	height:100%;
 	}
+
+	/* *****************MASK******************** */
+	#body-mask .next, #body-mask .previous{
+	height:100%;
+	}
+
+	#projet-mask{
+
+	}
+
+	#projet-mask p{
+	font-size:2.4em;
+	}
+
+	#section-mask{
+	width:80%;
+	margin:auto;
+	margin-top:50px;
+	}
+
+	#mask-gif{
+	width:50%;
+	margin-bottom:50px;
+	}
+
+	#section-mask .explication{
+	margin-top:0px;
+	width:31%;
+	font-size:1.2em;
+	}
+
+	#section-mask a{
+	text-decoration:underline;
+	font-weight: bold;
+	}
+
+	#conteneur-video-mask{
+	text-align:center;
+	width:100%;
+	height:470px;
+	margin:auto;
+	}
+
+	#conteneur-video-mask iframe{
+	width:100%;
+	height:100%;
+	}
+
+	#conteneur-photos-mask{
+	margin-top:50px;
+	margin-bottom:30px;
+}
+
+
 
 	
 	/* *****************I SEE YOU******************** */
@@ -974,9 +1100,12 @@
     margin-top:5px;
 	}
 
-	/*Projet Regards*/
-	#regards { 
-	display:none;
+	/*Projet Mask*/
+	#mask { 
+	width: 90%;
+	height: 200px;
+    margin-left:5%;
+    margin-top:5px;
 	}
 
 	/*Projet Magritte*/
@@ -1000,7 +1129,7 @@
 	width: 90%;
 	height: 200px;
     margin-left:5%;
-    margin-top:3px;
+    margin-top:5px;
 	}
 
 	/*Projet I see you*/
@@ -1008,14 +1137,14 @@
 	width: 90%;
 	height: 200px;
     margin-left:5%;
-    margin-top:2px;
+    margin-top:5px;
 	}
 
 	#synesthesie { 
 	width: 90%;
 	height: 200px;
     margin-left:5%;
-    margin-top:7px;
+    margin-top:5px;
    	margin-bottom:0px;
 	}
 
@@ -1092,6 +1221,51 @@
 
 	#body-sources{
 	margin-bottom:-400px;
+	}
+
+	/* *****************MASK******************** */
+	#projet-mask{
+	margin-bottom:30px;
+	margin-top:0px;
+	padding-top:120px;
+	padding-bottom:50px;
+	background-size: 600%;
+	}
+
+	#projet-mask p{
+	width:88%;
+	font-size:1.9em;
+	padding-bottom:120px;
+	opacity:0.7;
+	}
+
+	#section-mask{
+	width:95%;
+	}
+
+	#section-mask .explication{
+	margin-top:-20px;
+	margin-left:0px;
+	margin-bottom:30px;
+	position:relative;
+	width:89%;
+	font-size:1.3em;
+	}
+
+	#mask-gif{
+	width:100%;
+	}
+
+	#conteneur-video-mask{
+	width:100%;
+	height:220px;
+	margin:auto;
+	}
+
+	#video-mask iframe{
+	width:100%;
+	height:100%;
+	margin-bottom:10px;
 	}
 
 	/* *****************MAGRITTE******************** */
